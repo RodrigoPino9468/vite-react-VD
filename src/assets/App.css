@@ -1,21 +1,19 @@
 /* Cambiar el color del texto a blanco */
-*{
-  margin:0;
-  padding:0;
-
+* {
+  margin: 0;
+  padding: 0;
 }
-
 
 .nav-link {
   color: white !important; /* !important se utiliza para asegurarse de que prevalezca sobre los estilos de Bootstrap */
 }
 /* Cambiar la fuente del texto */
 .nav-link {
-  font-family: 'Futura PT Bold', sans-serif; /* Reemplaza 'TuFuentePersonalizada' con la fuente que desees usar */
+  font-family: "Futura PT Bold", sans-serif; /* Reemplaza 'TuFuentePersonalizada' con la fuente que desees usar */
 }
 
 .container-fluid {
-  font-family: 'Futura PT Bold', sans-serif; /* Reemplaza 'TuFuentePersonalizada' con la fuente que desees usar */
+  font-family: "Futura PT Bold", sans-serif; /* Reemplaza 'TuFuentePersonalizada' con la fuente que desees usar */
 }
 
 .navbar-nav li {
@@ -23,27 +21,14 @@
 }
 
 .Fuente {
-  font-family: 'Futura PT Bold', sans-serif; /* Reemplaza 'TuFuentePersonalizada' con la fuente que desees usar */
+  font-family: "Futura PT Bold", sans-serif; /* Reemplaza 'TuFuentePersonalizada' con la fuente que desees usar */
 }
-
 
 .Boton-Redondeado {
   border-radius: 50px; /* Ajusta el valor para controlar la curvatura del óvalo */
   padding: 10px 20px; /* Ajusta el relleno según tus necesidades */
   border: none; /* Elimina el borde si lo deseas */
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 @keyframes logo-spin {
   from {
@@ -60,19 +45,17 @@
   }
 }
 
-
-
 /*=================================================*/
 /*===========PANTALLAS GRANDES=====================*/
 /*Estilos para pantallas grandes (mayores de 768px)*/
 @media (min-width: 769px) {
   /* CSS personalizado */
   .nav-link {
-    font-size: 1.0rem; /* Tamaño de fuente deseado en píxeles ---cambiar por 20px---*/
+    font-size: 1rem; /* Tamaño de fuente deseado en píxeles ---cambiar por 20px---*/
   }
 
   /* CSS personalizado */
-  .Fuente-contenedores-lema{
+  .Fuente-contenedores-lema {
     font-size: 2.5rem; /* Tamaño de fuente deseado en píxeles ---cambiar por 20px---*/
   }
 
@@ -83,15 +66,14 @@
   .Fuente-carousel {
     font-size: 3rem; /* Tamaño de fuente deseado en píxeles ---cambiar por 20px---*/
   }
-  
+
   .Fuente-footer-titulo {
     font-size: 2rem; /* Tamaño de fuente deseado en píxeles ---cambiar por 20px---*/
   }
-  
+
   .Fuente-footer-general {
     font-size: 1rem; /* Tamaño de fuente deseado en píxeles ---cambiar por 20px---*/
   }
-
 
   .Fuente-Titulos {
     font-size: 2.5rem;
@@ -104,10 +86,8 @@
   .Fuente-Derechos {
     font-size: 0.7rem;
   }
-
 }
 /*=================================================*/
-
 
 /*=================================================*/
 /*===========PANTALLAS PEQUEÑAS====================*/
@@ -147,11 +127,9 @@
 }
 /*=================================================*/
 
-
-
 @font-face {
-  font-family: 'Futura PT Bold';
-  src: url('../Futura/FuturaPTBold.otf') format('truetype');
+  font-family: "Futura PT Bold";
+  src: url("../Futura/FuturaPTBold.otf") format("truetype");
   /* Otras fuentes compatibles */
 }
 
