@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Carousel() {
   return (
     <div className="container-fluid" style={{ background: "#7D143B" }}>

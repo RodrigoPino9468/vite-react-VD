@@ -108,3 +108,39 @@ import Footer from "./Components/Footer";
               Contacto
             </a>
           </li>
+
+
+
+
+
+
+
+
+// Paginas
+// import Inicio from "./pages/Inicio";
+// import QuienesSomos from "./pages/QuienesSomos";
+// import Servicios from "./pages/Servicios";
+// import Programas from "./pages/Programas";
+// import Noticias from "./pages/Noticias";
+// import Donaciones from "./pages/Donaciones";
+// import Contacto from "./pages/Contacto";
+// import NotFound from "./components/Error404";
+
+
+
+
+
+
+
+              // <BrowserRouter>
+    //   <Routes>
+    //     <Route path="/" element={<Inicio />} />
+    //     <Route path="/quienes-somos" element={<QuienesSomos />} />
+    //     <Route path="/servicios" element={<Servicios />} />
+    //     <Route path="/programas" element={<Programas />} />
+    //     <Route path="/noticias" element={<Noticias />} />
+    //     <Route path="/donaciones" element={<Donaciones />} />
+    //     <Route path="/contacto" element={<Contacto />} />
+    //     <Route path="*" element={<NotFound />} />
+    //   </Routes>
+    // </BrowserRouter>

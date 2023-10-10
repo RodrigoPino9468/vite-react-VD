@@ -1,8 +1,5 @@
-// modulos
 import { Link } from "react-router-dom";
-import React from "react";
 
-// Iconos
 import { BsInstagram } from "react-icons/bs";
 import { BsFacebook } from "react-icons/bs";
 import { AiFillLinkedin } from "react-icons/ai";

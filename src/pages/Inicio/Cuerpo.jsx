@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Cuerpo() {
   return (
     <div className="container-fluid">

@@ -1,10 +1,9 @@
-import React from "react";
-import datos from "../../public/Mocking/Data";
+import datos from "../../../public/Mocking/Data";
 import Cards from "./Cards";
 
 export default function CuerpoQuinesSomos() {
   return (
-    <div className="Container-fluid">
+    <div className="container-fluid">
       <div className="row" style={{ background: "#7D143B", color: "white" }}>
         <div className="col-md-6 col-sm-12">
           <div className="d-flex justify-content-center align-items-center p-5">
