@@ -18,13 +18,11 @@ export default function Navbar() {
         <li className="nav-item">
           <a className="nav-link" href={import.meta.env.VITE_FVIC_INSTAGRAM}>
             <BsInstagram style={{ color: "black" }} size={30}></BsInstagram>
-            <i className="bi bi-facebook"></i>
           </a>
         </li>
         <li className="nav-item">
           <a className="nav-link" href={import.meta.env.VITE_FVIC_FACEBOOK}>
             <BsFacebook style={{ color: "black" }} size={30}></BsFacebook>
-            <i className="fab fa-twitter"></i>
           </a>
         </li>
         <li className="nav-item">
@@ -35,7 +33,6 @@ export default function Navbar() {
         <li className="nav-item">
           <a className="nav-link" href={import.meta.env.VITE_FVIC_LINKEDIN}>
             <AiFillLinkedin style={{ color: "black" }} size={30}></AiFillLinkedin>
-            <i className="fab fa-linkedin"></i>
           </a>
         </li>
       </ul>

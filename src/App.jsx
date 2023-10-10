@@ -10,6 +10,7 @@ import Programas from "./pages/Programas";
 import Noticias from "./pages/Noticias";
 import Donaciones from "./pages/Donaciones";
 import Contacto from "./pages/Contacto";
+import NotFound from "./pages/Error404";
 
 // Estilos
 import "./assets/App.css";
@@ -25,6 +26,7 @@ export default function App() {
         <Route path="/noticias" element={<Noticias />} />
         <Route path="/donaciones" element={<Donaciones />} />
         <Route path="/contacto" element={<Contacto />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );
