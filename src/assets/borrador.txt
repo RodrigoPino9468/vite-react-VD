@@ -77,3 +77,34 @@ import Footer from "./Components/Footer";
           <button class="btn btn-outline-success" type="submit">Search</button>
         </div> */
 }
+
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)">
+              Servicios
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)">
+              Programas
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)">
+              Noticias
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)">
+              Cursos
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)">
+              Donaciones
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)">
+              Contacto
+            </a>
+          </li>

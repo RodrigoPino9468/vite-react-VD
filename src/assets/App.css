@@ -129,7 +129,7 @@
 
 @font-face {
   font-family: "Futura PT Bold";
-  src: url("../Futura/FuturaPTBold.otf") format("truetype");
+  src: url("../font/FuturaPTBold.otf") format("truetype");
   /* Otras fuentes compatibles */
 }
 
