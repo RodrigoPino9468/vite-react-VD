@@ -1,3 +1,9 @@
-export default function Servicios() {
-  return <div>Servicios</div>;
+import CuerpoServicios from "./CuerpoServicios";
+
+export default function QuienesSomos() {
+  return (
+    <>
+      <CuerpoServicios />
+    </>
+  );
 }

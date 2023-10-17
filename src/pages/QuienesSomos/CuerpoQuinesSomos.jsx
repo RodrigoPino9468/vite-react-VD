@@ -1,4 +1,4 @@
-import datos from "../../../public/Mocking/Data";
+import { ColaboradoresData } from "../../data/datos";
 import Cards from "./Cards";
 
 export default function CuerpoQuinesSomos() {
@@ -47,7 +47,7 @@ export default function CuerpoQuinesSomos() {
         <div className="container-fluid col-12 Fuente-Titulos d-flex flex-column justify-content-center align-items-center" style={{ background: "#EC6272" }}>
           Directorio
         </div>
-        {datos.data.getColaboradores.map((obj, index) => {
+        {ColaboradoresData.map((obj, index) => {
           return <Cards key={index} Foto={obj.Foto} Nombre={obj.Nombre} Descripcion={obj.Descripcion} Cargo={obj.Cargo}></Cards>;
         })}
       </div>

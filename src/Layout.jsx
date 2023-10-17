@@ -1,13 +1,15 @@
+import Header from "./components/Header";
 import Navbar from "./components/Navbar";
-import MainMenu from "./components/MainMenu";
 import Footer from "./components/Footer";
 import { Outlet } from "react-router-dom";
 
 export default function Layout() {
   return (
-    <main>
-      <Navbar />
-      <MainMenu />
+    <main className="">
+      <div className="gradiente-header-nav">
+        <Header />
+        <Navbar />
+      </div>
       <Outlet />
       <Footer />
     </main>

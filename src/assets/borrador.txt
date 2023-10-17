@@ -112,7 +112,17 @@ import Footer from "./Components/Footer";
 
 
 
-
+      {characterData && (
+        <div>
+          <h2>Personajes</h2>
+          {characterData.map((character) => (
+            <ul key={character.id}>
+              <li>{character.name}</li>
+              <img src={character.image} alt={character.species} />
+            </ul>
+          ))}
+        </div>
+      )}
 
 
 
@@ -128,7 +138,85 @@ import Footer from "./Components/Footer";
 
 
 
+{
+  /* 
 
+
+        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title>
+          <rect width="100%" height="100%" fill="#55595c"></rect>
+          <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+            Thumbnail
+          </text>
+        </svg>
+
+
+
+
+      {/* <div className="container-fluid">
+        <h1 className="Fuente-Titulo d-flex justify-content-center align-items-center">Noticias</h1>
+      </div>
+
+      <section className="container-fluid">
+        {characterData && (
+          <div>
+            {characterData.map((element, index) => (
+              <Noticia key={index} Fecha={element.created} Titulo={element.name} Texto={element.url} Alt={element.type} ImgUrl={element.image} />
+            ))}
+          </div>
+        )}
+      </section>
+
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#">
+              1
+            </a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#">
+              2
+            </a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#">
+              3
+            </a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav> */}
+
+
+
+
+
+
+
+
+
+  <div className="card">
+    <img src={ImgUrl} className="card-img-top" alt={Alt} />
+    <div className="card-body">
+      <p className="card-text">
+        <small className="text-muted">{Fecha}</small>
+      </p>
+      <h5 className="card-title">{Titulo}</h5>
+      <p className="card-text">{Texto}</p>
+    </div>
+  </div>; 
+*/
+}
 
 
 
@@ -144,3 +232,290 @@ import Footer from "./Components/Footer";
     //     <Route path="*" element={<NotFound />} />
     //   </Routes>
     // </BrowserRouter>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <nav className="navbar navbar-expand-sm Fuente">
+      <Link to="/">
+        <img src="/img/logos-fvic/Logo-Vic.png" className="p-3" alt="logo fundacion" width="200px"></img>
+      </Link>
+      <ul className="navbar-nav mx-auto">
+        <li className="nav-item">
+          <a className="nav-link" href={import.meta.env.VITE_FVIC_INSTAGRAM}>
+            <BsInstagram style={{ color: "black" }} size={30}></BsInstagram>
+          </a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href={import.meta.env.VITE_FVIC_FACEBOOK}>
+            <BsFacebook style={{ color: "black" }} size={30}></BsFacebook>
+          </a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href={import.meta.env.VITE_FVIC_YOUTUBE}>
+            <AiFillYoutube style={{ color: "black" }} size={30}></AiFillYoutube>
+          </a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href={import.meta.env.VITE_FVIC_LINKEDIN}>
+            <AiFillLinkedin style={{ color: "black" }} size={30}></AiFillLinkedin>
+          </a>
+        </li>
+      </ul>
+      <form className="d-flex">
+        <a className="btn Fuente-Texto Boton-Redondeado" style={{ background: "#B73B58", color: "white" }} type="button" href={import.meta.env.VITE_MOODLE_URL}>
+          Login/Moodle
+        </a>
+      </form>
+    </nav>
+
+
+
+
+
+
+
+<div class="container">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      <div class="col-md-3 mb-2 mb-md-0">
+        <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+          <svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+      </div>
+
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+        <li><a href="#" class="nav-link px-2">Features</a></li>
+        <li><a href="#" class="nav-link px-2">Pricing</a></li>
+        <li><a href="#" class="nav-link px-2">FAQs</a></li>
+        <li><a href="#" class="nav-link px-2">About</a></li>
+      </ul>
+
+      <div class="col-md-3 text-end">
+        <button type="button" class="btn btn-outline-primary me-2">Login</button>
+        <button type="button" class="btn btn-primary">Sign-up</button>
+      </div>
+    </header>
+  </div>
+
+
+
+
+
+
+
+    <header class="py-3 mb-4 border-bottom">
+    <div class="container d-flex flex-wrap justify-content-center">
+      <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        <span class="fs-4">Double header</span>
+      </a>
+      <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search">
+        <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+      </form>
+    </div>
+  </header>
+
+
+
+
+      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNavbar">
+        <GiHamburgerMenu className="navbar-toggler-icon" style={{ color: "black" }}></GiHamburgerMenu>
+      </button>
+      <div className="collapse navbar-collapse justify-content-center" id="topNavbar">
+        <ul className="navbar-nav mx-auto">
+          <li className="nav-item">
+            <Link to="/quienes-somos" className="nav-link">
+              ¿Quiénes somos?
+            </Link>
+          </li>
+
+          <li className="nav-item">
+            <Link to="/servicios" className="nav-link">
+              Servicios
+            </Link>
+          </li>
+
+          <li className="nav-item">
+            <Link to="/programas" className="nav-link">
+              Programas
+            </Link>
+          </li>
+
+          <li className="nav-item">
+            <Link to="/noticias" className="nav-link">
+              Noticias
+            </Link>
+          </li>
+
+          <li className="nav-item">
+            <Link to="/donaciones" className="nav-link">
+              Donaciones
+            </Link>
+          </li>
+
+          <li className="nav-item">
+            <Link to="/contacto" className="nav-link">
+              Contacto
+            </Link>
+          </li>
+        </ul>
+      </div>
+
+
+
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown link
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Heroes
+
+
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="https://getbootstrap.com/docs/5.3/examples/heroes/bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy" />
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Responsive left-aligned hero with image</h1>
+            <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
+                Primary
+              </button>
+              <button type="button" class="btn btn-outline-secondary btn-lg px-4">
+                Default
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      let data = {
+    data: {
+      getColaboradores: [
+        { id: 1, Foto: "../img/colaboradores/Boris Araos.jpg", Nombre: "Boris Araos", Cargo:'Presidente directorio', Descripcion: "Comunicador Social, activista por los derechos de las personas con discapacidad y comerciante en la comuna de Santiago. Ex integrante de la Comisión Asesora Presidencial sobre Inclusión Social de Personas con Discapacidad."},
+        { id: 2, Foto: "../img/colaboradores/MPD.jpg", Nombre: "María Paz Domínguez", Cargo:'Directora', Descripcion: "Ingeniera comercial de la Universidad Católica de Chile, Magíster en Educación y Gerencia Pública en Universidad de Harvard. Consultora en educación y liderazgo en Compás Pedagógico y docente adjunta en Universidad del Desarrollo."},
+        { id: 3, Foto: "../img/colaboradores/JG.jpg", Nombre: "Javiera Garrido", Cargo:'Directora', Descripcion: "Kinesióloga de la Universidad de Chile, con diploma en Gerencia Social y Políticas en Discapacidad OEA – FLACSO y diploma en Kinesiología Integrativa en el Instituto Pranakine. Profesora de Yoga formada en Rishikul Yogshala School, India."},
+        { id: 4, Foto: "../img/colaboradores/LL.jpg", Nombre: "Loreto López", Cargo:'Directora', Descripcion: "Arquitecta de la Universidad Tecnológica Metropolitana – UTEM, con diplomado en innovación para la inclusión en Pontificia Universidad Católica de Chile. Directora de Accesibilidad y Diseño Universal en Nouveau Arquitectura."},
+        { id: 5, Foto: "../img/colaboradores/JL.jpg", Nombre: "Jimena Luna", Cargo:'Directora ejecutiva', Descripcion: "Ingeniera Civil Industrial de la Universidad de la Frontera, Diplomado de Gerencia Social y Políticas de Discapacidad OEA,  Diploma en Innovación Política en Asuntos del Sur. Experiencia en servicio público y asesoría en discapacidad. Coordinadora de Proyectos en CEDETI UC."},
+        { id: 6, Foto: "../img/colaboradores/EP.jpg", Nombre: "Esteban Poblete", Cargo:'Asesor de innovación', Descripcion: "Ingeniero Civil Químico de la Universidad de Chile. Con experiencia en coordinación de innovación y proyectos sociales, habiendo colaborado en SENADIS, consultora 2811 y fue voluntario en una ONG en Kenia, actualmente en la U. de Chile."},
+        { id: 7, Foto: "../img/colaboradores/GZ.jpg", Nombre: "Gustavo Zambra", Cargo:'Asesor de accecibilidad', Descripcion: "Arquitecto de la Universidad de Viña del Mar (UVM), especialista en normativa urbanística, accesibilidad universal. Arquitecto Director de Nouveau Servicios de Arquitectura. Experiencia proyectos para entidades privadas y públicas. Fotógrafo de arquitectura y paisaje."},
+        { id: 8, Foto: "../img/colaboradores/CA.jpg", Nombre: "Carolina Aguilera", Cargo:'Asesora de accesibilidad a la información', Descripcion: "Periodista de la Universidad de Viña del Mar , Magíster en Comunicación Digital U. Mayor y Diplomada en AI/UX y en Comunicación y Derechos Humanos U. Alberto Hurtado. Experiencia en  Accesibilidad a la Información y Comunicaciones y Accesibilidad Web."},
+    ],
+
+    getServicios: [
+        { id: 1, Foto: "../img/servicios/AC.jpg", NombreServicio: "Asesoría y consultoría", DescripcionServicio: "En inclusión social y laboral de personas con discapacidad, accesibilidad universal y tecnologías de asistencia."},
+        { id: 2, Foto: "../img/servicios/CA.jpg", NombreServicio: "Capacitaciones", DescripcionServicio: "En ámbitos de vida independiente, accesibilidad, tecnologías de asistencia, salud, educación, trabajo y empleo, cultura y deporte"},
+        { id: 3, Foto: "../img/servicios/DD.jpg", NombreServicio: "Difusión y divulgación", DescripcionServicio: "Sobre los derechos de las personas con discapacidad, especialmente respecto a su autonomía y a vivir una vida independiente."},
+        { id: 4, Foto: "../img/servicios/DE.jpg", NombreServicio: "Desarrollo", DescripcionServicio: "Bienes, productos o servicios que resuelvan la necesidad de autonomía y vida independiente de personas con discapacidad."},
+        { id: 5, Foto: "../img/servicios/IE.jpg", NombreServicio: "Investigación y estudios", DescripcionServicio: "En relación a temáticas relacionadas a la inclusión social, autonomía y vida independiente de personas con discapacidad."},
+        { id: 6, Foto: "../img/servicios/OU.jpg", NombreServicio: "Orientación usuarios/as", DescripcionServicio: "Fortalecer conocimientos y habilidades de personas con discapacidad que permita aportar en el desarrollo de su autonomía."},
+    ],
+
+    getProgramas: [
+        { id: 1, Foto: "../img/programas/PEI.jpg", NombrePrograma: "Programa emprendimientos inclusivos", DescripcionPrograma: "Difusión de emprendimientos de venta de productos o prestación de servicios entregados por personas con discapacidad, sus familias u organizaciones.", Informacion:"¿De qué trata?: Buscamos orientar y asesorar a personas con discapacidad, a lograr una vida independiente de manera integral. Algunas de las áreas a abordar son las siguientes: \n"
+        + "Orientación para la autonomía: Evaluar de manera personalizada la situación de cada persona, elaborar un plan de vida independiente y colaborar en el logro de los objetivos individuales. \n"
+        + "Asistencia personal: Orientar sobre todo el proceso que permita contar con asistencia personal, si es que ésta es necesaria para la persona en situación de discapacidad.\n "
+        + "Accesibilidad y movilidad: Adaptar y accesibilizar las viviendas y aprender a moverse en la ciudad, en el uso del transporte público y privado, y conocer los servicios inclusivos disponibles.\n "
+        + "Orientación familiar: Colaborar con el entorno familiar, que permita comprender los conceptos de autonomía personal y cambiar el paradigma de la sobreprotección."},
+        { id: 2, Foto: "../img/programas/PMD.jpg", NombrePrograma: "Programa mujeres con discapacidad", DescripcionPrograma: "Permite apoyar a mujeres con discapacidad en diversas áreas, como salud sexual y reproductiva, desarrollo personal y profesional, autonomía, entre otros."},
+        { id: 3, Foto: "../img/programas/PV.jpg", NombrePrograma: "Programa vida", DescripcionPrograma: "Promoción de la Vida Independiente y Desarrollo de la Autonomía, destinado a personas con discapacidad."},
+    ],
+
+    },
+  };

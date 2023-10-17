@@ -1,3 +1,10 @@
+import CuerpoProgramas from "./CuerpoProgramas";
+
 export default function Programas() {
-  return <>Programas</>;
+  return (
+    <>
+      <CuerpoProgramas></CuerpoProgramas>
+    </>
+  );
+
 }

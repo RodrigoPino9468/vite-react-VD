@@ -11,7 +11,8 @@ import Programas from "./pages/Programas/index";
 import Donaciones from "./pages/Donaciones/index";
 import QuienesSomos from "./pages/QuienesSomos/index";
 
-import "./assets/App.css";
+// import "./assets/App.css";
+import "./assets/main.css"
 
 export default function App() {
   return (

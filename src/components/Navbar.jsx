@@ -1,44 +1,56 @@
 import { Link } from "react-router-dom";
-
-import { BsInstagram } from "react-icons/bs";
-import { BsFacebook } from "react-icons/bs";
-import { AiFillLinkedin } from "react-icons/ai";
-import { AiFillYoutube } from "react-icons/ai";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 export default function Navbar() {
   return (
-    <nav className="navbar navbar-expand-sm Fuente">
-      <Link to="/">
-        <img src="/img/logos-fvic/Logo-Vic.png" className="p-3" alt="logo fundacion" width="200px"></img>
-      </Link>
-      <ul className="navbar-nav mx-auto">
-        <li className="nav-item">
-          <a className="nav-link" href={import.meta.env.VITE_FVIC_INSTAGRAM}>
-            <BsInstagram style={{ color: "black" }} size={30}></BsInstagram>
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href={import.meta.env.VITE_FVIC_FACEBOOK}>
-            <BsFacebook style={{ color: "black" }} size={30}></BsFacebook>
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href={import.meta.env.VITE_FVIC_YOUTUBE}>
-            <AiFillYoutube style={{ color: "black" }} size={30}></AiFillYoutube>
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href={import.meta.env.VITE_FVIC_LINKEDIN}>
-            <AiFillLinkedin style={{ color: "black" }} size={30}></AiFillLinkedin>
-          </a>
-        </li>
-      </ul>
-      <form className="d-flex">
-        {/* <input className="form-control me-2" type="text" placeholder="Search"> */}
-        <a className="btn Fuente-Texto Boton-Redondeado" style={{ background: "#B73B58", color: "white" }} type="button" href={import.meta.env.VITE_MOODLE_URL}>
-          Login/Moodle
-        </a>
-      </form>
+    <nav className="navbar navbar-expand-md justify-content-center bg-body-tertiary p-0 shadow rounded">
+      <div className="container-fluid navbar-color px-4 py-2 px-sm-3">
+        <Link className="navbar-brand m-0 p-1">
+          <img src="/icono.png" alt="" style={{ height: "32px", width: "32px" }} />
+        </Link>
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <GiHamburgerMenu className="navbar-toggler-icon" size={30} />
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul className="navbar-nav mx-auto">
+            <li className="nav-item">
+              <Link to="/quienes-somos" className="nav-link">
+                ¿Quiénes somos?
+              </Link>
+            </li>
+
+            <li className="nav-item">
+              <Link to="/servicios" className="nav-link">
+                Servicios
+              </Link>
+            </li>
+
+            <li className="nav-item">
+              <Link to="/programas" className="nav-link">
+                Programas
+              </Link>
+            </li>
+
+            <li className="nav-item">
+              <Link to="/noticias" className="nav-link">
+                Noticias
+              </Link>
+            </li>
+
+            <li className="nav-item">
+              <Link to="/donaciones" className="nav-link">
+                Donaciones
+              </Link>
+            </li>
+
+            <li className="nav-item">
+              <Link to="/contacto" className="nav-link">
+                Contacto
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   );
 }
