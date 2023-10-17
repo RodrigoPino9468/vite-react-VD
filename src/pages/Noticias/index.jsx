@@ -24,7 +24,7 @@ export default function Noticias() {
       <div className="container-fluid">
         <h1 className="d-flex py-3 m-0 justify-content-center">Noticias</h1>
       </div>
-      <div className="album py-3 bg-body-tertiary">
+      <div className="py-3">
         {/* <Filtrador /> */}
         <div className="container">
           <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xxl-4 g-3">

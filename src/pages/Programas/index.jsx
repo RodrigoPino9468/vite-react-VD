@@ -6,5 +6,4 @@ export default function Programas() {
       <CuerpoProgramas></CuerpoProgramas>
     </>
   );
-
 }

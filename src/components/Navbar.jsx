@@ -6,7 +6,7 @@ export default function Navbar() {
     <nav className="navbar navbar-expand-md justify-content-center bg-body-tertiary p-0 shadow rounded">
       <div className="container-fluid navbar-color px-4 py-2 px-sm-3">
         <Link className="navbar-brand m-0 p-1">
-          <img src="/icono.png" alt="" style={{ height: "32px", width: "32px" }} />
+          <img src="/icons/logo.png" alt="" style={{ height: "32px", width: "32px" }} />
         </Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <GiHamburgerMenu className="navbar-toggler-icon" size={30} />

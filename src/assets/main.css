@@ -1,8 +1,12 @@
 :root {
-  --color-c: rgb(229, 113, 114);
-  --color-m: rgb(178, 53, 90);
-  --color-y: rgb(115, 37, 109);
-  --color-k: rgb(70, 36, 94);
+  --color-red-c: rgb(229, 113, 114);
+  --color-red-m: rgb(178, 53, 90);
+  --color-red-y: rgb(115, 37, 109);
+  --color-red-k: rgb(70, 36, 94);
+
+  --color-vic-c: rgb(236, 98, 114);
+  --color-vic-m: rgb(183, 59, 88);
+  --color-vic-y: rgb(125, 20, 59);
 }
 
 @font-face {
@@ -20,7 +24,7 @@ body {
 }
 
 .navbar-color {
-  background-color: var(--color-m);
+  background-color: var(--color-vic-m);
 }
 
 .nav-link {
