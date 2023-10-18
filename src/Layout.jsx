@@ -5,13 +5,11 @@ import { Outlet } from "react-router-dom";
 
 export default function Layout() {
   return (
-    <main className="">
-      <div className="gradiente-header-nav">
-        <Header />
-        <Navbar />
-      </div>
+    <>
+      <Header />
+      <Navbar />
       <Outlet />
       <Footer />
-    </main>
+    </>
   );
 }

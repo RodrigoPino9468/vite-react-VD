@@ -1,7 +1,4 @@
-import { BsInstagram } from "react-icons/bs";
-import { BsFacebook } from "react-icons/bs";
-import { AiFillLinkedin } from "react-icons/ai";
-import { AiFillYoutube } from "react-icons/ai";
+import { BsInstagram, BsFacebook, BsLinkedin, BsYoutube } from "react-icons/bs";
 
 export default function Footer() {
   return (
@@ -21,7 +18,7 @@ export default function Footer() {
 
         <div className="col-md-4 col-sm-12">
           <div className="d-flex justify-content-center align-items-center">
-            <img src="/img/logos-fvic/Logo-Vic.png" className="img-fluid" alt="logo fundacion"></img>
+            <img src="/img/logos/fvic_colores.png" className="img-fluid" alt="logo fundacion"></img>
           </div>
         </div>
 
@@ -44,22 +41,22 @@ export default function Footer() {
           <ul className="list-inline">
             <li className="list-inline-item">
               <a className="nav-link" href={import.meta.env.VITE_FVIC_INSTAGRAM}>
-                <BsInstagram style={{ color: "black" }} size={15}></BsInstagram>
+                <BsInstagram style={{ color: "black" }} size={15}/>
               </a>
             </li>
             <li className="list-inline-item">
               <a className="nav-link" href={import.meta.env.VITE_FVIC_FACEBOOK}>
-                <BsFacebook style={{ color: "black" }} size={15}></BsFacebook>
+                <BsFacebook style={{ color: "black" }} size={15}/>
               </a>
             </li>
             <li className="list-inline-item">
               <a className="nav-link" href={import.meta.env.VITE_FVIC_YOUTUBE}>
-                <AiFillYoutube style={{ color: "black" }} size={15}></AiFillYoutube>
+                <BsYoutube style={{ color: "black" }} size={15}/>
               </a>
             </li>
             <li className="list-inline-item">
               <a className="nav-link" href={import.meta.env.VITE_FVIC_LINKEDIN}>
-                <AiFillLinkedin style={{ color: "black" }} size={15}></AiFillLinkedin>
+                <BsLinkedin style={{ color: "black" }} size={15}/>
               </a>
             </li>
           </ul>

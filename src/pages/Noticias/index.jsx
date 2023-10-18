@@ -16,16 +16,14 @@ export default function Noticias() {
       }
     };
     fetchData();
+    console.log(characterData);
   }, []);
-
-  console.log(characterData);
   return (
-    <>
+    <main>
       <div className="container-fluid">
         <h1 className="d-flex py-3 m-0 justify-content-center">Noticias</h1>
       </div>
       <div className="py-3">
-        {/* <Filtrador /> */}
         <div className="container">
           <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xxl-4 g-3">
             {characterData && (
@@ -67,6 +65,6 @@ export default function Noticias() {
           </li>
         </ul>
       </nav>
-    </>
+    </main>
   );
 }

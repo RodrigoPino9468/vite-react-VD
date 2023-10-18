@@ -1,13 +1,14 @@
 import { ProgramasData } from "../../data/datos";
 
-import React, { useState } from "react";
+import { useState } from "react";
 
 export default function CuerpoServicios() {
   const [programaSeleccionado, setProgramaSeleccionado] = useState(null);
 
   const mostrarDetalles = (programa) => {
     if (programaSeleccionado?.id === programa.id) {
-      setProgramaSeleccionado(null); // Si se hace clic en el mismo programa, cierra los detalles.
+      // Si se hace clic en el mismo programa, cierra los detalles.
+      setProgramaSeleccionado(null);
     } else {
       setProgramaSeleccionado(programa);
     }

@@ -1,10 +1,9 @@
 import { ServiciosData } from "../../data/datos";
-import ModalServicios from "./ModalServicios";
 import CardServicios from "./CardServicios";
 
 export default function CuerpoServicios() {
   return (
-    <div className="container-fluid oscuro">
+    <div className="container-fluid">
       <div className="row">
         <div className="container-fluid col-12 Fuente-Titulos d-flex flex-column justify-content-center align-items-center" style={{ color: "white" }}>
           Servicios

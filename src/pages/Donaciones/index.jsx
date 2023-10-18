@@ -1,3 +1,3 @@
 export default function Donaciones() {
-  return <div>Donaciones</div>;
+  return <main>Donaciones</main>;
 }
