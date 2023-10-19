@@ -26,22 +26,22 @@ export default function Contacto() {
         </aside>
         <section className="p-3 col-12 col-md-6">
           <form action="#">
-            <div class="row">
-              <div class="col-6 mb-3">
-                <input type="text" class="form-control" placeholder="Nombre" />
+            <div className="row">
+              <div className="col-6 mb-3">
+                <input type="text" className="form-control" placeholder="Nombre" />
               </div>
-              <div class="col-6 mb-3">
-                <input type="email" class="form-control" placeholder="Correo electronico" />
+              <div className="col-6 mb-3">
+                <input type="email" className="form-control" placeholder="Correo electronico" />
               </div>
-              <div class="col-12 mb-3">
-                <input type="text" class="form-control" placeholder="Asunto" />
+              <div className="col-12 mb-3">
+                <input type="text" className="form-control" placeholder="Asunto" />
               </div>
-              <div class="col-12 mb-3">
-                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="¡Escriba su mensaje que pronto estaremos comunicandonos con usted!"></textarea>
+              <div className="col-12 mb-3">
+                <textarea name="" id="" cols="30" rows="7" className="form-control" placeholder="¡Escriba su mensaje que pronto estaremos comunicandonos con usted!"></textarea>
               </div>
 
-              <div class="col-12 d-flex justify-content-center">
-                <input type="submit" value="Enviar mensaje" class="btn btn-primary" />
+              <div className="col-12 d-flex justify-content-center">
+                <input type="submit" value="Enviar mensaje" className="btn btn-primary" />
               </div>
             </div>
           </form>
