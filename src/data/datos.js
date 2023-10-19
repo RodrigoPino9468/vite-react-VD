@@ -22,12 +22,12 @@ export const CarouselData = [
 ];
 
 export const ServiciosData = [
-  { id: 1, Foto: "/img/servicios/AC.jpg", NombreServicio: "Asesoría y consultoría", DescripcionServicio: "En inclusión social y laboral de personas con discapacidad, accesibilidad universal y tecnologías de asistencia." },
-  { id: 2, Foto: "/img/servicios/CA.jpg", NombreServicio: "Capacitaciones", DescripcionServicio: "En ámbitos de vida independiente, accesibilidad, tecnologías de asistencia, salud, educación, trabajo y empleo, cultura y deporte" },
-  { id: 3, Foto: "/img/servicios/DD.jpg", NombreServicio: "Difusión y divulgación", DescripcionServicio: "Sobre los derechos de las personas con discapacidad, especialmente respecto a su autonomía y a vivir una vida independiente." },
-  { id: 4, Foto: "/img/servicios/DE.jpg", NombreServicio: "Desarrollo", DescripcionServicio: "Bienes, productos o servicios que resuelvan la necesidad de autonomía y vida independiente de personas con discapacidad." },
-  { id: 5, Foto: "/img/servicios/IE.jpg", NombreServicio: "Investigación y estudios", DescripcionServicio: "En relación a temáticas relacionadas a la inclusión social, autonomía y vida independiente de personas con discapacidad." },
-  { id: 6, Foto: "/img/servicios/OU.jpg", NombreServicio: "Orientación usuarios/as", DescripcionServicio: "Fortalecer conocimientos y habilidades de personas con discapacidad que permita aportar en el desarrollo de su autonomía." },
+  { Foto: "/img/servicios/AC.jpg", Nombre: "Asesoría y consultoría", Descripcion: "En inclusión social y laboral de personas con discapacidad, accesibilidad universal y tecnologías de asistencia." },
+  { Foto: "/img/servicios/CA.jpg", Nombre: "Capacitaciones", Descripcion: "En ámbitos de vida independiente, accesibilidad, tecnologías de asistencia, salud, educación, trabajo y empleo, cultura y deporte" },
+  { Foto: "/img/servicios/DD.jpg", Nombre: "Difusión y divulgación", Descripcion: "Sobre los derechos de las personas con discapacidad, especialmente respecto a su autonomía y a vivir una vida independiente." },
+  { Foto: "/img/servicios/DE.jpg", Nombre: "Desarrollo", Descripcion: "Bienes, productos o servicios que resuelvan la necesidad de autonomía y vida independiente de personas con discapacidad." },
+  { Foto: "/img/servicios/IE.jpg", Nombre: "Investigación y estudios", Descripcion: "En relación a temáticas relacionadas a la inclusión social, autonomía y vida independiente de personas con discapacidad." },
+  { Foto: "/img/servicios/OU.jpg", Nombre: "Orientación usuarios/as", Descripcion: "Fortalecer conocimientos y habilidades de personas con discapacidad que permita aportar en el desarrollo de su autonomía." },
 ];
 
 export const ProgramasData = [
@@ -56,3 +56,14 @@ export const ProgramasData = [
       "¿De qué trata?: Buscamos orientar y asesorar a personas con discapacidad, a lograr una vida independiente de manera integral. Algunas de las áreas a abordar son las siguientes: \nOrientación para la autonomía: Evaluar de manera personalizada la situación de cada persona, elaborar un plan de vida independiente y colaborar en el logro de los objetivos individuales. \nAsistencia personal: Orientar sobre todo el proceso que permita contar con asistencia personal, si es que ésta es necesaria para la persona en situación de discapacidad.\nAccesibilidad y movilidad: Adaptar y accesibilizar las viviendas y aprender a moverse en la ciudad, en el uso del transporte público y privado, y conocer los servicios inclusivos disponibles.\nOrientación familiar: Colaborar con el entorno familiar, que permita comprender los conceptos de autonomía personal y cambiar el paradigma de la sobreprotección.",
   },
 ];
+
+export const QuienesSomosData = {
+  cita_principal: {
+    texto: "La FVI reconoce que cada persona tiene habilidades únicas y potencial para contribuir en el campo laboral,independientemente de su discapacidad. Su enfoque se basa en el principio de la vida independiente, que busca empoderar a las personas con discapacidades para que tomen decisiones y controlen su propia vida, incluyendo su participación en el mundo laboral",
+    autor: "ChatGPT",
+    cargo: "transformer conocido",
+    fecha: "2023",
+  },
+  mision: "Desarrollar estrategias, programas y proyectos que permitan a las personas con discapacidad y personas mayores, desenvolverse de manera autónoma y alcanzar una vida independiente en los diversos ámbitos del quehacer humano.",
+  vision: "Nuestra visión es construir un futuro inclusivo donde las personas con discapacidades tengan igualdad de oportunidades en el campo laboral. Queremos eliminar las barreras y estigmas, promoviendo entornos de trabajo accesibles y adaptados. Buscamos que las habilidades y talentos únicos de las personas con discapacidades sean reconocidos y valorados, inspirando un cambio duradero en la sociedad hacia la inclusión y diversidad laboral.",
+};

@@ -236,15 +236,73 @@ import Footer from "./Components/Footer";
 
 
 
+<div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+<div class="col">
+    <div class="card h-100">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
 
 
 
+        <div className="modal" id="myModal">
+          <div className="modal-dialog modal-dialog-centered">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h4 className="modal-title">{props.Nombre}</h4>
+                <button type="button" className="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+              <div className="modal-body">{props.Descripcion}</div>
+              <div className="modal-footer">
+                <button type="button" className="btn btn-danger" data-bs-dismiss="modal">
+                  Cerrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
 
 
 
+    <div className="col-lg-4 col-md-6 col-sm-12">
+      <div className="card card-servicio claro card-servicio">
+        <div className="modal" id="myModal">
+          <div className="modal-dialog modal-dialog-centered">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h4 className="modal-title">{props.Nombre}</h4>
+                <button type="button" className="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+              <div className="modal-body">{props.Descripcion}</div>
+              <div className="modal-footer">
+                <button type="button" className="btn btn-danger" data-bs-dismiss="modal">
+                  Cerrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
 
-
-
+        <img className="card-img-top img-servicio" src={props.Foto} alt="Card image"></img>
+        <div className="card-body">
+          <h4 className="card-title">{props.Nombre}</h4>
+          <a className="btn btn-primary Boton-Redondeado " data-bs-toggle="modal" data-bs-target="#myModal">
+            Mas informacion
+          </a>
+        </div>
+      </div>
+    </div>
 
 
 
@@ -426,7 +484,43 @@ import Footer from "./Components/Footer";
 
 
 
+      <footer class="container-fluid">
+        <div class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <p class="col-md-4 mb-0 text-body-secondary">© 2023 Company, Inc</p>
 
+          <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <img src="/icons/logo.png" width="32" height="32" alt="" />
+          </a>
+
+          <ul class="nav col-md-4 justify-content-end ">
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-body-secondary">
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-body-secondary">
+                Features
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-body-secondary">
+                Pricing
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-body-secondary">
+                FAQs
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-body-secondary">
+                About
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
 
 
 
@@ -519,3 +613,7 @@ Heroes
 
     },
   };
+
+
+
+

@@ -23,6 +23,10 @@ body {
   font-family: "Futura PT Bold", sans-serif;
 }
 
+footer {
+  background-color: var(--color-vic-m);
+}
+
 .navbar-color {
   background-color: var(--color-vic-m);
 }

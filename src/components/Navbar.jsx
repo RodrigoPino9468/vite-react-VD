@@ -1,52 +1,52 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 export default function Navbar() {
   return (
-    <nav className="navbar navbar-expand-md justify-content-center bg-body-tertiary p-0 shadow rounded">
+    <nav className="sticky-top navbar navbar-expand-md justify-content-center p-0">
       <div className="container-fluid navbar-color px-4 py-2 px-sm-3">
-        <Link className="navbar-brand m-0 p-1">
+        <NavLink className="navbar-brand m-0 p-1">
           <img src="/icons/logo.png" alt="" style={{ height: "32px", width: "32px" }} />
-        </Link>
+        </NavLink>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <GiHamburgerMenu className="navbar-toggler-icon" size={30} />
         </button>
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav mx-auto">
             <li className="nav-item">
-              <Link to="/quienes-somos" className="nav-link">
+              <NavLink to="/quienes-somos" className="nav-link">
                 ¿Quiénes somos?
-              </Link>
+              </NavLink>
             </li>
 
             <li className="nav-item">
-              <Link to="/servicios" className="nav-link">
+              <NavLink to="/servicios" className="nav-link">
                 Servicios
-              </Link>
+              </NavLink>
             </li>
 
             <li className="nav-item">
-              <Link to="/programas" className="nav-link">
+              <NavLink to="/programas" className="nav-link">
                 Programas
-              </Link>
+              </NavLink>
             </li>
 
             <li className="nav-item">
-              <Link to="/noticias" className="nav-link">
+              <NavLink to="/noticias" className="nav-link">
                 Noticias
-              </Link>
+              </NavLink>
             </li>
 
             <li className="nav-item">
-              <Link to="/donaciones" className="nav-link">
+              <NavLink to="/donaciones" className="nav-link">
                 Donaciones
-              </Link>
+              </NavLink>
             </li>
 
             <li className="nav-item">
-              <Link to="/contacto" className="nav-link">
+              <NavLink to="/contacto" className="nav-link">
                 Contacto
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>

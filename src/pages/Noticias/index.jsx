@@ -16,7 +16,6 @@ export default function Noticias() {
       }
     };
     fetchData();
-    console.log(characterData);
   }, []);
   return (
     <main>
