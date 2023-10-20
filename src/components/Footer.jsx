@@ -24,8 +24,12 @@ export default function Footer() {
                 </NavLink>
               </li>
               <li className="nav-item">
+                <NavLink to="/recursos" className="nav-link">
+                  Recursos
+                </NavLink>
+              </li>
+              <li className="nav-item">
                 <NavLink to="/noticias" className="nav-link">
-                  {" "}
                   Noticias
                 </NavLink>
               </li>

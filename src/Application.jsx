@@ -27,18 +27,16 @@ const Application = () => {
         <Route index element={<Inicio />} />
         <Route path="quienes-somos" element={<QuienesSomos />} />
         <Route path="contacto" element={<Contacto />} />
-        <Route path="programas" element={<Programas />}> 
-          <Route path=":IdPrograma" element={<h1>Hola, soy /programas/ID</h1>} />
-        </Route>
+        <Route path="programas" element={<Programas />}></Route>
+        <Route path="recursos" element={<h1>Recursos</h1>} />
         <Route path="donaciones" element={<Donaciones />} />
         <Route path="servicios" element={<Servicios />} />
         <Route path="noticias" element={<Noticias />} />
         <Route path="*" element={<NotFound404 />} />
       </Route>
-
     </Routes>
   );
-}
+};
 
 // Renderizado en el DOM
 ReactDOM.createRoot(document.getElementById("root")).render(
