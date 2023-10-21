@@ -686,3 +686,27 @@ Heroes
         })}
       </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <ul key={indexArticulo}>
+              <li>{titulo}</li>
+              <li>{publicado}</li>
+              <li>{url}</li>
+            </ul>

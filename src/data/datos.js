@@ -1,12 +1,12 @@
 export const ColaboradoresData = [
-  { Foto: "/img/colaboradores/Boris Araos.jpg", Nombre: "Boris Araos", Cargo: "Presidente directorio", Descripcion: "Comunicador Social, activista por los derechos de las personas con discapacidad y comerciante en la comuna de Santiago. Ex integrante de la Comisión Asesora Presidencial sobre Inclusión Social de Personas con Discapacidad." },
-  { Foto: "/img/colaboradores/MPD.jpg", Nombre: "María Paz Domínguez", Cargo: "Directora", Descripcion: "Ingeniera comercial de la Universidad Católica de Chile, Magíster en Educación y Gerencia Pública en Universidad de Harvard. Consultora en educación y liderazgo en Compás Pedagógico y docente adjunta en Universidad del Desarrollo." },
-  { Foto: "/img/colaboradores/JG.jpg", Nombre: "Javiera Garrido", Cargo: "Directora", Descripcion: "Kinesióloga de la Universidad de Chile, con diploma en Gerencia Social y Políticas en Discapacidad OEA – FLACSO y diploma en Kinesiología Integrativa en el Instituto Pranakine. Profesora de Yoga formada en Rishikul Yogshala School, India." },
-  { Foto: "/img/colaboradores/LL.jpg", Nombre: "Loreto López", Cargo: "Directora", Descripcion: "Arquitecta de la Universidad Tecnológica Metropolitana – UTEM, con diplomado en innovación para la inclusión en Pontificia Universidad Católica de Chile. Directora de Accesibilidad y Diseño Universal en Nouveau Arquitectura." },
-  { Foto: "/img/colaboradores/JL.jpg", Nombre: "Jimena Luna", Cargo: "Directora ejecutiva", Descripcion: "Ingeniera Civil Industrial de la Universidad de la Frontera, Diplomado de Gerencia Social y Políticas de Discapacidad OEA,  Diploma en Innovación Política en Asuntos del Sur. Experiencia en servicio público y asesoría en discapacidad. Coordinadora de Proyectos en CEDETI UC." },
-  { Foto: "/img/colaboradores/EP.jpg", Nombre: "Esteban Poblete", Cargo: "Asesor de innovación", Descripcion: "Ingeniero Civil Químico de la Universidad de Chile. Con experiencia en coordinación de innovación y proyectos sociales, habiendo colaborado en SENADIS, consultora 2811 y fue voluntario en una ONG en Kenia, actualmente en la U. de Chile." },
-  { Foto: "/img/colaboradores/GZ.jpg", Nombre: "Gustavo Zambra", Cargo: "Asesor de accecibilidad", Descripcion: "Arquitecto de la Universidad de Viña del Mar (UVM), especialista en normativa urbanística, accesibilidad universal. Arquitecto Director de Nouveau Servicios de Arquitectura. Experiencia proyectos para entidades privadas y públicas. Fotógrafo de arquitectura y paisaje." },
-  { Foto: "/img/colaboradores/CA.jpg", Nombre: "Carolina Aguilera", Cargo: "Asesora de accesibilidad a la información", Descripcion: "Periodista de la Universidad de Viña del Mar , Magíster en Comunicación Digital U. Mayor y Diplomada en AI/UX y en Comunicación y Derechos Humanos U. Alberto Hurtado. Experiencia en  Accesibilidad a la Información y Comunicaciones y Accesibilidad Web." },
+  { nombre: "Boris Araos", cargo: "Presidente directorio", descripcion: "Comunicador Social, activista por los derechos de las personas con discapacidad y comerciante en la comuna de Santiago. Ex integrante de la Comisión Asesora Presidencial sobre Inclusión Social de Personas con Discapacidad.", fotografia: "/img/colaboradores/boris_araos.jpg", linkedin: null },
+  { nombre: "María Paz Domínguez", cargo: "Directora", descripcion: "Ingeniera comercial de la Universidad Católica de Chile, Magíster en Educación y Gerencia Pública en Universidad de Harvard. Consultora en educación y liderazgo en Compás Pedagógico y docente adjunta en Universidad del Desarrollo.", fotografia: "/img/colaboradores/maria_dominguez.jpg", linkedin: "https://www.linkedin.com/in/mar%C3%ADa-paz-dom%C3%ADnguez-95b6615/" },
+  { nombre: "Javiera Garrido", cargo: "Directora", descripcion: "Kinesióloga de la Universidad de Chile, con diploma en Gerencia Social y Políticas en Discapacidad OEA – FLACSO y diploma en Kinesiología Integrativa en el Instituto Pranakine. Profesora de Yoga formada en Rishikul Yogshala School, India.", fotografia: "/img/colaboradores/javiera_garrido.jpg", linkedin: "https://www.linkedin.com/in/javiera-garrido-astudillo-812aaa115/" },
+  { nombre: "Loreto López", cargo: "Directora", descripcion: "Arquitecta de la Universidad Tecnológica Metropolitana – UTEM, con diplomado en innovación para la inclusión en Pontificia Universidad Católica de Chile. Directora de Accesibilidad y Diseño Universal en Nouveau Arquitectura.", fotografia: "/img/colaboradores/loreto_lopez.jpg", linkedin: "https://www.linkedin.com/in/loreto-lopezmunoz/" },
+  { nombre: "Jimena Luna", cargo: "Directora ejecutiva", descripcion: "Ingeniera Civil Industrial de la Universidad de la Frontera, Diplomado de Gerencia Social y Políticas de Discapacidad OEA,  Diploma en Innovación Política en Asuntos del Sur. Experiencia en servicio público y asesoría en discapacidad. Coordinadora de Proyectos en CEDETI UC.", fotografia: "/img/colaboradores/jimena_luna.jpg", linkedin: "https://www.linkedin.com/in/jlunabenavides/" },
+  { nombre: "Esteban Poblete", cargo: "Asesor de innovación", descripcion: "Ingeniero Civil Químico de la Universidad de Chile. Con experiencia en coordinación de innovación y proyectos sociales, habiendo colaborado en SENADIS, consultora 2811 y fue voluntario en una ONG en Kenia, actualmente en la U. de Chile.", fotografia: "/img/colaboradores/esteban_poblete.jpg", linkedin: "https://www.linkedin.com/in/esteban-poblete-olivares-5a717228/" },
+  { nombre: "Gustavo Zambra", cargo: "Asesor de accecibilidad", descripcion: "Arquitecto de la Universidad de Viña del Mar (UVM), especialista en normativa urbanística, accesibilidad universal. Arquitecto Director de Nouveau Servicios de Arquitectura. Experiencia proyectos para entidades privadas y públicas. Fotógrafo de arquitectura y paisaje.", fotografia: "/img/colaboradores/gustavo_zambra.jpg", linkedin: "https://www.linkedin.com/in/gustavo-zambra/" },
+  { nombre: "Carolina Aguilera", cargo: "Asesora de accesibilidad a la información", descripcion: "Periodista de la Universidad de Viña del Mar , Magíster en Comunicación Digital U. Mayor y Diplomada en AI/UX y en Comunicación y Derechos Humanos U. Alberto Hurtado. Experiencia en  Accesibilidad a la Información y Comunicaciones y Accesibilidad Web.", fotografia: "/img/colaboradores/carolina_aguilera.jpg", linkedin: "https://www.linkedin.com/in/katiecashman/" },
 ];
 
 export const SegmentosData = [
@@ -22,12 +22,12 @@ export const CarouselData = [
 ];
 
 export const ServiciosData = [
-  { Foto: "/img/servicios/AC.jpg", Nombre: "Asesoría y consultoría", Descripcion: "En inclusión social y laboral de personas con discapacidad, accesibilidad universal y tecnologías de asistencia." },
-  { Foto: "/img/servicios/CA.jpg", Nombre: "Capacitaciones", Descripcion: "En ámbitos de vida independiente, accesibilidad, tecnologías de asistencia, salud, educación, trabajo y empleo, cultura y deporte" },
-  { Foto: "/img/servicios/DD.jpg", Nombre: "Difusión y divulgación", Descripcion: "Sobre los derechos de las personas con discapacidad, especialmente respecto a su autonomía y a vivir una vida independiente." },
-  { Foto: "/img/servicios/DE.jpg", Nombre: "Desarrollo", Descripcion: "Bienes, productos o servicios que resuelvan la necesidad de autonomía y vida independiente de personas con discapacidad." },
-  { Foto: "/img/servicios/IE.jpg", Nombre: "Investigación y estudios", Descripcion: "En relación a temáticas relacionadas a la inclusión social, autonomía y vida independiente de personas con discapacidad." },
-  { Foto: "/img/servicios/OU.jpg", Nombre: "Orientación usuarios/as", Descripcion: "Fortalecer conocimientos y habilidades de personas con discapacidad que permita aportar en el desarrollo de su autonomía." },
+  { id: 1, fotografia: "/img/servicios/AC.jpg", nombre: "Asesoría y consultoría", descripcion: "En inclusión social y laboral de personas con discapacidad, accesibilidad universal y tecnologías de asistencia." },
+  { id: 2, fotografia: "/img/servicios/CA.jpg", nombre: "Capacitaciones", descripcion: "En ámbitos de vida independiente, accesibilidad, tecnologías de asistencia, salud, educación, trabajo y empleo, cultura y deporte" },
+  { id: 3, fotografia: "/img/servicios/DD.jpg", nombre: "Difusión y divulgación", descripcion: "Sobre los derechos de las personas con discapacidad, especialmente respecto a su autonomía y a vivir una vida independiente." },
+  { id: 4, fotografia: "/img/servicios/DE.jpg", nombre: "Desarrollo", descripcion: "Bienes, productos o servicios que resuelvan la necesidad de autonomía y vida independiente de personas con discapacidad." },
+  { id: 5, fotografia: "/img/servicios/IE.jpg", nombre: "Investigación y estudios", descripcion: "En relación a temáticas relacionadas a la inclusión social, autonomía y vida independiente de personas con discapacidad." },
+  { id: 6, fotografia: "/img/servicios/OU.jpg", nombre: "Orientación usuarios/as", descripcion: "Fortalecer conocimientos y habilidades de personas con discapacidad que permita aportar en el desarrollo de su autonomía." },
 ];
 
 export const ProgramasData = [
@@ -59,7 +59,7 @@ export const ProgramasData = [
 
 export const QuienesSomosData = {
   cita_principal: {
-    texto: "La FVI reconoce que cada persona tiene habilidades únicas y potencial para contribuir en el campo laboral,independientemente de su discapacidad. Su enfoque se basa en el principio de la vida independiente, que busca empoderar a las personas con discapacidades para que tomen decisiones y controlen su propia vida, incluyendo su participación en el mundo laboral",
+    texto: "Fundación Vida Independiente Chile es una organización sin fines de lucro, con alcance a nivel nacional, cuyos usuarios son personas con discapacidad y personas mayores. Nuestro propósito es la promoción del derecho de sus usuarios a vivir de forma autónoma e independiente y a ser incluidos socialmente, en los ámbitos culturales, recreacionales, comunitarios, deportivos, educacionales, laborales y de salud, con especial enfoque en mujeres y niñas con discapacidad",
     autor: "ChatGPT",
     cargo: "transformer conocido",
     fecha: "2023",
@@ -67,3 +67,36 @@ export const QuienesSomosData = {
   mision: "Desarrollar estrategias, programas y proyectos que permitan a las personas con discapacidad y personas mayores, desenvolverse de manera autónoma y alcanzar una vida independiente en los diversos ámbitos del quehacer humano.",
   vision: "Nuestra visión es construir un futuro inclusivo donde las personas con discapacidades tengan igualdad de oportunidades en el campo laboral. Queremos eliminar las barreras y estigmas, promoviendo entornos de trabajo accesibles y adaptados. Buscamos que las habilidades y talentos únicos de las personas con discapacidades sean reconocidos y valorados, inspirando un cambio duradero en la sociedad hacia la inclusión y diversidad laboral.",
 };
+
+export const RecursosData = [
+  {
+    categoria: "Instrumentos sobre los derechos de las personas con discapacidad",
+    articulos: [
+      { titulo: "Declaración Internacional de los Derechos Humanos", publicado: "Organización de las Naciones Unidas", url: "https://www.un.org/es/about-us/universal-declaration-of-human-rights" },
+      { titulo: "Convención Interamericana para la eliminación de todas las formas de discriminación contras las Personas con Discapacidad", publicado: "Organización de Estados Americanos", url: "https://www.oas.org/juridico/spanish/tratados/a-65.html" },
+      { titulo: "Convención Internacional sobre los Derechos de las personas con discapacidad", publicado: "Organización de las Naciones Unidas", url: "https://www.un.org/esa/socdev/enable/documents/tccconvs.pdf" },
+      { titulo: "Ley N°20.422 que establece Normas sobre Igualdad de Oportunidades e Inclusión Social de las Personas con Discapacidad", publicado: "Estado de Chile", url: "https://www.bcn.cl/leychile/navegar?idNorma=1010903" },
+    ],
+  },
+  {
+    categoria: "Autonomía y vida independiente",
+    articulos: [
+      { titulo: "Observación general núm. 5 (2017) sobre el derecho a vivir de forma independiente y a ser incluido en la comunidad", publicado: "Comité sobre los Derechos de las Personas con Discapacidad", url: "https://fundacionvidaindependiente.cl/wp-content/uploads/2023/06/Observacion-5-Comite-Convencion-PcD-G1732890.pdf" },
+      { titulo: "Directrices sobre la desinstitucionalización, incluso en situaciones de emergencia", publicado: "Comité sobre los Derechos de las Personas con Discapacidad", url: "https://fundacionvidaindependiente.cl/wp-content/uploads/2023/06/Directrices-sobre-la-desinstitucionalizacion-incluso-en-situaciones-de-emergencia.pdf" },
+    ],
+  },
+  {
+    categoria: "Servicios de apoyo",
+    articulos: [
+      { titulo: "Documento Asistencia personal y servicios de apoyo", publicado: "Fundación Vida Independiente Chile", url: "https://fundacionvidaindependiente.cl/wp-content/uploads/2023/06/Directrices-sobre-la-desinstitucionalizacion-incluso-en-situaciones-de-emergencia.pdf" },
+      { titulo: "Cápsula Asistencia personal y servicios de apoyo", publicado: "Fundación Vida Independiente Chile", url: "https://fundacionvidaindependiente.cl/wp-content/uploads/2023/06/Directrices-sobre-la-desinstitucionalizacion-incluso-en-situaciones-de-emergencia.pdf" },
+    ],
+  },
+  {
+    categoria: "Accesibilidad y movilidad",
+    articulos: [
+      { titulo: "Documento Accesibilidad en el entorno para la vida independiente", publicado: "Fundación Vida Independiente Chile", url: "https://fundacionvidaindependiente.cl/wp-content/uploads/2023/06/Directrices-sobre-la-desinstitucionalizacion-incluso-en-situaciones-de-emergencia.pdf" },
+      { titulo: "Cápsula Accesibilidad en el entorno para la vida independiente", publicado: "Fundación Vida Independiente Chile", url: "https://fundacionvidaindependiente.cl/wp-content/uploads/2023/06/Directrices-sobre-la-desinstitucionalizacion-incluso-en-situaciones-de-emergencia.pdf" },
+    ],
+  },
+];

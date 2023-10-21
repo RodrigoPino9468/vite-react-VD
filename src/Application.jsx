@@ -8,6 +8,7 @@ import Layout from "./components/Layout";
 import NotFound404 from "./components/Error404";
 
 // Paginas
+import Recursos from "./pages/Recursos/index";
 import Inicio from "./pages/Inicio/index";
 import Noticias from "./pages/Noticias/index";
 import Contacto from "./pages/Contacto/index";
@@ -28,7 +29,7 @@ const Application = () => {
         <Route path="quienes-somos" element={<QuienesSomos />} />
         <Route path="contacto" element={<Contacto />} />
         <Route path="programas" element={<Programas />}></Route>
-        <Route path="recursos" element={<h1>Recursos</h1>} />
+        <Route path="recursos" element={<Recursos />} />
         <Route path="donaciones" element={<Donaciones />} />
         <Route path="servicios" element={<Servicios />} />
         <Route path="noticias" element={<Noticias />} />

@@ -1,11 +1,9 @@
-import {} from "react";
-
-export default function Servicio({ Foto, Nombre, Descripcion }) {
+export default function Servicio({ Id, Foto, Nombre, Descripcion }) {
   return (
     <div className="col">
       <div className="card shadow-sm h-100">
         <img className="card-img-top img-servicio" src={Foto} alt="Card image" />
-        <div className="modal" id={`${Nombre}-modal`}>
+        <div className="modal" id={`modal-id-${Id}`}>
           <div className="modal-dialog modal-dialog-centered">
             <div className="modal-content">
               <div className="modal-header">
@@ -21,9 +19,9 @@ export default function Servicio({ Foto, Nombre, Descripcion }) {
             </div>
           </div>
         </div>
-        <div className="card-body">
-          <h4 className="card-title">{Nombre}</h4>
-          <a className="btn btn-primary" data-bs-toggle="modal" data-bs-target={`#${Nombre}-modal`}>
+        <div className="card-body text-center">
+          <h3 className="card-title">{Nombre}</h3>
+          <a className="btn btn-primary" data-bs-toggle="modal" data-bs-target={`#modal-id-${Id}`}>
             Mas informacion
           </a>
         </div>
