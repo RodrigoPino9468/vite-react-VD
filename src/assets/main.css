@@ -38,11 +38,18 @@ footer {
 
 .nav-link {
   color: white;
+
+  &:hover {
+    color: var(--color-red-k);
+  }
+
+  &.active {
+    color: #000;
+  }
 }
 
 .gradiente-header-nav {
   background-image: linear-gradient(to top, #b2355a, #c45f73, #d5848f, #e4a9ad, #f0cdce);
-  /* background-image: linear-gradient(to bottom, #b2355a, #c26277, #cf8a95, #d9b0b6, #e0d7d8); */
 }
 
 .btn-rounded {

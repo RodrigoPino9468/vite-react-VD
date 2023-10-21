@@ -697,6 +697,83 @@ Heroes
 
 
 
+    <footer className="py-4 mt-4">
+      <div className="container">
+        <div className="row">
+          <div className="nav col-md-4 col-sm-12">
+            <ul className="navbar-nav flex-column justify-content-center align-items-center align-items-md-start">
+              <li className="nav-item">
+                <NavLink to="/quienes-somos" className="nav-link">
+                  ¿Quienes Somos?
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink to="/servicios" className="nav-link">
+                  Servicios
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink to="/programas" className="nav-link">
+                  Programas
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink to="/recursos" className="nav-link">
+                  Recursos
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink to="/noticias" className="nav-link">
+                  Noticias
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink to="/donaciones" className="nav-link">
+                  Donaciones
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink to="/contacto" className="nav-link">
+                  Contacto
+                </NavLink>
+              </li>
+            </ul>
+          </div>
+
+          <div className="col-md-4 col-sm-12">
+            <div className="d-flex justify-content-center align-items-center">
+              <img src="/img/logos/fvic_color_blanco.png" className="img-fluid" alt="logo fundacion" height={"30em"} width={"300em"} />
+            </div>
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="col-6 text-center Fuente-Derechos Footer">Todos los derechos reservados @ {new Date().getFullYear()}</div>
+          <div className="col-6 text-center">
+            <ul className="list-inline">
+              <li className="list-inline-item mx-2">
+                <Link className="nav-link" href={import.meta.env.VITE_FVIC_INSTAGRAM}>
+                  <BsInstagram style={{ color: "black" }} size={20} />
+                </Link>
+              </li>
+              <li className="list-inline-item mx-2">
+
+              </li>
+              <li className="list-inline-item mx-2">
+
+              </li>
+              <li className="list-inline-item mx-2">
+                <Link className="nav-link" href={import.meta.env.VITE_FVIC_LINKEDIN}>
+                  <BsLinkedin style={{ color: "black" }} size={20} />
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
 
 
 
