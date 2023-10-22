@@ -20,7 +20,7 @@ export default function Contacto() {
             <h6>
               Lunes a Viernes:
               <br />
-              11:00 - 23:00
+              14:00 - 14:05
             </h6>
           </article>
         </aside>

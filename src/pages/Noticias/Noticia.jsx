@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function CardNoticia({ Titulo, Texto, Fecha, ImgUrl, Alt, UrlNoticia }) {
+export default function Noticia({ Titulo, Texto, Fecha, ImgUrl, Alt, UrlNoticia }) {
   return (
     <div className="col">
       <div className="card shadow-sm h-100">

@@ -1,66 +1,100 @@
 import { useEffect, useState } from "react";
-import { fetchDataFromApi } from "../../data/api-rick-y-morty";
 
-import Noticia from "./CardNoticia";
+import Noticia from "./Noticia";
 import Filtrador from "./Filtrador";
 
 export default function Noticias() {
-  const [characterData, setCharacterData] = useState(null);
+  const [cargando, setCargando] = useState(true);
+  const [pagina, setPagina] = useState(1);
+  const [noticias, setNoticias] = useState({});
+  const [informacion, setInformacion] = useState({});
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Para que el desplazamiento sea suave (si es compatible)
+    });
+  };
+
   useEffect(() => {
-    const fetchData = async () => {
+    async function cargarNoticias() {
       try {
-        const { results } = await fetchDataFromApi();
-        setCharacterData(results);
+        const data = await fetch(
+          `https://rickandmortyapi.com/api/character/?page=${pagina}`
+        );
+        if (!data.ok) {
+          throw new Error("Error en la solicitud a la API");
+        }
+        const { info, results } = await data.json();
+        setNoticias(results);
+        setInformacion(info);
+        setCargando(false);
       } catch (error) {
-        console.log(error);
+        console.error("Error al cargar noticias:", error);
       }
-    };
-    fetchData();
-  }, []);
+    }
+    cargarNoticias();
+  }, [pagina]);
+
   return (
     <main>
       <div className="container-fluid">
         <h1 className="d-flex py-3 m-0 justify-content-center">Noticias</h1>
       </div>
+
       <div className="py-3">
         <div className="container">
           <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xxl-4 g-3">
-            {characterData && (
-              <>
-                {characterData.map((element, index) => (
-                  <Noticia key={index} Fecha={element.created} Titulo={element.name} Texto={element.url} Alt={element.type} ImgUrl={element.image} UrlNoticia={"/"} />
-                ))}
-              </>
+            {cargando ? (
+              <h1>Cargando datos...</h1>
+            ) : (
+              noticias &&
+              noticias.map((noticia, index) => (
+                <Noticia
+                  key={index}
+                  Fecha={noticia.created}
+                  Titulo={noticia.name}
+                  Texto={noticia.url}
+                  Alt={noticia.type}
+                  ImgUrl={noticia.image}
+                  UrlNoticia={"/"}
+                />
+              ))
             )}
           </div>
         </div>
       </div>
+
       <nav aria-label="Page navigation example">
-        <ul className="pagination justify-content-center">
-          <li className="page-item disabled">
-            <a className="page-link" href="#" aria-label="Previous">
+        <ul className="pagination pagination-lg justify-content-center">
+          <li className={informacion.prev ? "page-item" : "page-item disabled"}>
+            <button
+              className="page-link"
+              aria-label="Previous"
+              onClick={() => {
+                setPagina(pagina - 1);
+                scrollToTop();
+              }}
+            >
               <span aria-hidden="true">&laquo;</span>
-            </a>
+            </button>
           </li>
+
           <li className="page-item">
-            <a className="page-link" href="#">
-              1
-            </a>
+            <button className="page-link disabled">{pagina}</button>
           </li>
-          <li className="page-item">
-            <a className="page-link" href="#">
-              2
-            </a>
-          </li>
-          <li className="page-item">
-            <a className="page-link" href="#">
-              3
-            </a>
-          </li>
-          <li className="page-item">
-            <a className="page-link" href="#" aria-label="Next">
+
+          <li className={informacion.next ? "page-item" : "page-item disabled"}>
+            <button
+              className="page-link"
+              aria-label="Next"
+              onClick={() => {
+                setPagina(pagina + 1);
+                scrollToTop();
+              }}
+            >
               <span aria-hidden="true">&raquo;</span>
-            </a>
+            </button>
           </li>
         </ul>
       </nav>
