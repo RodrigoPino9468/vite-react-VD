@@ -1,3 +1,88 @@
+export default function Item({ Titulo, Texto, Alt, ImgUrl }) {
+  return (
+    <div className="col-md-4 mb-3">
+      <div className="card">
+        <img className="img-fluid" alt={Alt} src={ImgUrl} />
+        <div className="card-body">
+          <h4 className="card-title">{Titulo}</h4>
+          <p className="card-text">{Texto}</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+
+import Item from "./Item";
+import { CarouselData } from "../../data/datos";
+
+export default function Demo() {
+  return (
+    <section className="container-fluid" style={{ background: "#7D143B" }}>
+      <div className="row p-5">
+        <div className="col-12 p-0">
+          <div id="carouselExampleIndicators2" className="carousel slide" data-ride="carousel">
+            <div className="carousel-inner">
+              <div className="carousel-item active">
+                <div className="row p-5">
+                  {CarouselData.map((element, index) => (
+                    <Item key={index} Titulo={element.titulo} Texto={element.texto} ImgUrl={element.imgUrl} Alt={element.alt} />
+                  ))}
+                </div>
+              </div>
+
+              <div className="carousel-item">
+                <div className="row">
+                  {CarouselData.map((element, index) => (
+                    <Item key={index} Titulo={element.titulo} Texto={element.texto} ImgUrl={element.imgUrl} Alt={element.alt} />
+                  ))}
+                </div>
+              </div>
+
+              <div className="carousel-item">
+                <div className="row">
+                  {CarouselData.map((element, index) => (
+                    <Item key={index} Titulo={element.titulo} Texto={element.texto} ImgUrl={element.imgUrl} Alt={element.alt} />
+                  ))}
+                </div>
+              </div>
+            </div>
+            <button className="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+              <span className="carousel-control-prev-icon"></span>
+            </button>
+            <button className="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+              <span className="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     const fetchData = async () => {

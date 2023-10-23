@@ -22,7 +22,7 @@ export default function Servicio({ Id, Foto, Nombre, Descripcion }) {
         <div className="card-body text-center">
           <h3 className="card-title">{Nombre}</h3>
           <a className="btn btn-primary" data-bs-toggle="modal" data-bs-target={`#modal-id-${Id}`}>
-            Mas informacion
+            Más información
           </a>
         </div>
       </div>

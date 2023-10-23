@@ -4,10 +4,8 @@ import { Route, Routes } from "react-router-dom";
 import { ColaboradoresData, QuienesSomosData } from "../../data/datos";
 import Colaborador from "./Colaborador";
 
-// Rutas
-// "/quienes-somos/memorias" -> /quienes-somos/memorias/:id.pdf
 
-export default function QuienesSomos() {
+export default function Index() {
   return (
     <main className="container-fluid">
       {/* lema */}

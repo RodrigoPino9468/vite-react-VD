@@ -1,18 +1,14 @@
+import { ModulosInicioData } from "../../data/datos";
+
 import Carousel from "./Carousel";
-import Segmento from "./Segmento";
-import Demo from "./Demo";
-import { SegmentosData } from "../../data/datos";
+import Modulo from "./Modulo";
 
 export default function Inicio() {
   return (
-    <main>
-      <div className="container-fluid">
-        {SegmentosData.map((segmento, index) => {
-          return <Segmento key={index} Posicion={index % 2 === 0 ? "left" : "right"} UrlImg={segmento.urlimg} AltImg={segmento.alt} Titulo={segmento.titulo} Texto={segmento.texto} Botones={true} />;
-        })}
-      </div>
-
-      {/* <Demo /> */}
+    <main className="container-fluid">
+      {ModulosInicioData.map((modulo, index) => {
+        return <Modulo key={index} Posicion={index % 2 === 0 ? "left" : "right"} UrlImg={modulo.urlimg} AltImg={modulo.alt} Titulo={modulo.titulo} Texto={modulo.texto} BotonURL={modulo.enlace} />;
+      })}
       <Carousel />
     </main>
   );

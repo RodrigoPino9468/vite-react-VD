@@ -1,4 +1,4 @@
-export default function Contacto() {
+export default function Index() {
   return (
     <main className="container my-5 p-2">
       <div className="row mx-5 mx-sm-3">
@@ -39,7 +39,6 @@ export default function Contacto() {
               <div className="col-12 mb-3">
                 <textarea name="" id="" cols="30" rows="7" className="form-control" placeholder="¡Escriba su mensaje que pronto estaremos comunicandonos con usted!"></textarea>
               </div>
-
               <div className="col-12 d-flex justify-content-center">
                 <input type="submit" value="Enviar mensaje" className="btn btn-primary" />
               </div>

@@ -2,6 +2,5 @@ import React from "react";
 import { useParams } from "react-router-dom";
 
 export default function Programa() {
-  const { ProgramaId } = useParams();
-  return <h1>{ProgramaId}</h1>;
+  return <h1>HOLA</h1>
 }

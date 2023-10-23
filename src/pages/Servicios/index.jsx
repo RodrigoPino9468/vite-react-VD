@@ -1,7 +1,7 @@
 import Servicio from "./Servicio";
 import { ServiciosData } from "../../data/datos";
 
-export default function QuienesSomos() {
+export default function Index() {
   return (
     <main className="container">
       <div className="row my-4">
