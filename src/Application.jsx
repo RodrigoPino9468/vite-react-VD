@@ -1,7 +1,7 @@
 // Modulos
-import {} from "react";
+import { useEffect } from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate, useLocation } from "react-router-dom";
 
 // Componentes
 import Layout from "./components/Layout";
@@ -22,6 +22,13 @@ import "./assets/main.css";
 
 // Funcion de Rutas principal de la App
 export function Application() {
+  // Posiciona la vista al inicio de cada modulo de la pagina
+  const ruta = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    console.log(ruta);
+  }, [ruta]);
+
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
