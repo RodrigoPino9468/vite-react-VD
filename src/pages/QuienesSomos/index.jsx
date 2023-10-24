@@ -7,7 +7,7 @@ import Colaborador from "./Colaborador";
 
 export default function Index() {
   return (
-    <main className="container-fluid">
+    <main className="container-fluid mb-5 pb-5">
       {/* lema */}
       <section className="lema-fundacion row p-4 p-sm-5">
         <article id="imagenLema" className="col-md-7 order-md-2 p-sm-5">

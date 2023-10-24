@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Colaborador({ Foto, Nombre, Cargo, Descripcion, Linkedin }) {
   return (
     <div className="col">
-      <div className="card shadow-sm h-100" style={{backgroundColor: "#f1f2f6"}}>
+      <div className="card shadow-sm h-100" style={{ backgroundColor: "#f1f2f6" }}>
         <img src={Foto} className="card-img-top rounded-circle border border-4" alt={Nombre} />
         <div className="card-body d-flex flex-column justify-content-between">
           <p className="card-text">

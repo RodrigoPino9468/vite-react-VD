@@ -1,9 +1,9 @@
 import {} from "react";
 import { Route, Routes, Navigate} from "react-router-dom";
 
-import DonarOnline from './DonarOnline'
-import Transferencias from './Transferencias'
-import OpćionesDonaciones from "./OpcionesDonaciones";
+import DonarOnline from './D_DonarOnline'
+import Transferencias from './D_Transferencias'
+import OpćionesDonaciones from "./D_OpcionesDonaciones";
 
 export default function Index() {
   return (

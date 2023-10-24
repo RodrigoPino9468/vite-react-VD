@@ -26,7 +26,6 @@ export function Application() {
   const ruta = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);
-    console.log(ruta);
   }, [ruta]);
 
   return (

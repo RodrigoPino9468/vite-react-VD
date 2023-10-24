@@ -21,7 +21,7 @@ export default function Servicio({ Id, Foto, Nombre, Descripcion }) {
         </div>
         <div className="card-body text-center">
           <h3 className="card-title">{Nombre}</h3>
-          <a className="btn btn-primary" data-bs-toggle="modal" data-bs-target={`#modal-id-${Id}`}>
+          <a className="btn btn-sm btn-rounded" data-bs-toggle="modal" data-bs-target={`#modal-id-${Id}`}>
             Más información
           </a>
         </div>

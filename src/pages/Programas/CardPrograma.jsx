@@ -9,7 +9,7 @@ export default function CardPrograma({ UrlImg, Nombre, Descripcion, UrlInfo }) {
           <p className="card-text">{Descripcion}</p>
         </div>
         <div className="d-flex justify-content-center m-4">
-          <NavLink type="button" className="btn btn-sm btn-primary" to={UrlInfo}>
+          <NavLink type="button" className="btn btn-sm btn-rounded" to={UrlInfo}>
             Más información
           </NavLink>
         </div>

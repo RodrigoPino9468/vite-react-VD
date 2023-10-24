@@ -9,13 +9,7 @@ export default function ListaProgramas() {
       </section>
       <section className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         {ProgramasData.map((programa) => (
-          <CardPrograma
-            key={programa.id}
-            UrlInfo={programa.URL}
-            UrlImg={programa.Foto}
-            Nombre={programa.NombrePrograma}
-            Descripcion={programa.DescripcionPrograma}
-          />
+          <CardPrograma key={programa.id} UrlInfo={programa.URL} UrlImg={programa.Foto} Nombre={programa.NombrePrograma} Descripcion={programa.DescripcionPrograma} />
         ))}
       </section>
     </main>

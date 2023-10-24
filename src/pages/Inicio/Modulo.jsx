@@ -30,5 +30,3 @@ export default function Modulos({ Posicion, UrlImg, AltImg, Titulo, Texto, Boton
     </div>
   );
 }
-
-

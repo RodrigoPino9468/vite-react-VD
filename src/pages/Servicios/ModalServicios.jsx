@@ -1,4 +1,4 @@
-export default function ModalServicios({Nombre, Descripcion}) {
+export default function ModalServicios({ Nombre, Descripcion }) {
   return (
     <div class="modal" id="myModal">
       <div class="modal-dialog modal-dialog-centered">

@@ -13,7 +13,7 @@ export default function CardNoticia({ Titulo, Texto, Fecha, ImgUrl, Alt, UrlNoti
           <p className="card-text">{Texto}</p>
           <div className="d-flex justify-content-center align-items-center">
             <div className="btn-group">
-              <Link  to={UrlNoticia} ype="button" className="btn btn-sm btn-outline-danger">
+              <Link to={UrlNoticia} ype="button" className="btn btn-sm btn-outline-danger">
                 Leer noticia completa
               </Link>
             </div>

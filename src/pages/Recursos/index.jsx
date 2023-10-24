@@ -13,7 +13,7 @@ export default function Index() {
                 <div className="card-header">{publicado}</div>
                 <div className="card-body">
                   <h5 className="card-title">{titulo}</h5>
-                  <Link to={url} className="btn btn-sm btn-outline-danger">
+                  <Link to={url} target="_blank" className="btn btn-sm btn-outline-danger">
                     Leer documento
                   </Link>
                 </div>

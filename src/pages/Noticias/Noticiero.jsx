@@ -17,9 +17,7 @@ export default function Noticiero() {
   useEffect(() => {
     async function cargarNoticias() {
       try {
-        const data = await fetch(
-          `https://rickandmortyapi.com/api/character/?page=${pagina}`
-        );
+        const data = await fetch(`https://rickandmortyapi.com/api/character/?page=${pagina}`);
         if (!data.ok) {
           throw new Error("Error en la solicitud a la API");
         }
@@ -42,24 +40,7 @@ export default function Noticiero() {
 
       <div className="py-3">
         <div className="container">
-          <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xxl-4 g-3">
-            {cargando ? (
-              <h1>Cargando datos...</h1>
-            ) : (
-              noticias &&
-              noticias.map((noticia, index) => (
-                <CardNoticia
-                  key={index}
-                  Fecha={noticia.created}
-                  Titulo={noticia.name}
-                  Texto={noticia.url}
-                  Alt={noticia.type}
-                  ImgUrl={noticia.image}
-                  UrlNoticia={`${noticia.id}`}
-                />
-              ))
-            )}
-          </div>
+          <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xxl-4 g-3">{cargando ? <h1>Cargando datos...</h1> : noticias && noticias.map((noticia, index) => <CardNoticia key={index} Fecha={noticia.created} Titulo={noticia.name} Texto={noticia.url} Alt={noticia.type} ImgUrl={noticia.image} UrlNoticia={`${noticia.id}`} />)}</div>
         </div>
       </div>
 
@@ -72,8 +53,7 @@ export default function Noticiero() {
               onClick={() => {
                 setPagina(pagina - 1);
                 scrollToTop();
-              }}
-            >
+              }}>
               <span aria-hidden="true">&laquo;</span>
             </button>
           </li>
@@ -89,8 +69,7 @@ export default function Noticiero() {
               onClick={() => {
                 setPagina(pagina + 1);
                 scrollToTop();
-              }}
-            >
+              }}>
               <span aria-hidden="true">&raquo;</span>
             </button>
           </li>
