@@ -1,6 +1,9 @@
-import React from "react";
-import { useParams } from "react-router-dom";
+import {} from "react";
 
 export default function Programa() {
-  return <h1>HOLA</h1>
+  return (
+    <main className="container my-5">
+      <h1>HOLA</h1>
+    </main>
+  );
 }

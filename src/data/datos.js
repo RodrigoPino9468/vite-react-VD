@@ -35,6 +35,7 @@ export const ProgramasData = [
     id: 1,
     Foto: "/img/programas/PEI.jpg",
     NombrePrograma: "Programa emprendimientos inclusivos",
+    URL:"emprendimientos-inclusivos",
     DescripcionPrograma: "Difusión de emprendimientos de venta de productos o prestación de servicios entregados por personas con discapacidad, sus familias u organizaciones.",
     Informacion:
       "¿De qué trata?: Buscamos orientar y asesorar a personas con discapacidad, a lograr una vida independiente de manera integral. Algunas de las áreas a abordar son las siguientes: \nOrientación para la autonomía: Evaluar de manera personalizada la situación de cada persona, elaborar un plan de vida independiente y colaborar en el logro de los objetivos individuales. \nAsistencia personal: Orientar sobre todo el proceso que permita contar con asistencia personal, si es que ésta es necesaria para la persona en situación de discapacidad.\nAccesibilidad y movilidad: Adaptar y accesibilizar las viviendas y aprender a moverse en la ciudad, en el uso del transporte público y privado, y conocer los servicios inclusivos disponibles.\nOrientación familiar: Colaborar con el entorno familiar, que permita comprender los conceptos de autonomía personal y cambiar el paradigma de la sobreprotección.",
@@ -43,6 +44,7 @@ export const ProgramasData = [
     id: 2,
     Foto: "/img/programas/PMD.jpg",
     NombrePrograma: "Programa mujeres con discapacidad",
+    URL:"mujeres-con-discapacidad",
     DescripcionPrograma: "Permite apoyar a mujeres con discapacidad en diversas áreas, como salud sexual y reproductiva, desarrollo personal y profesional, autonomía, entre otros.",
     Informacion:
       "¿De qué trata?: Buscamos orientar y asesorar a personas con discapacidad, a lograr una vida independiente de manera integral. Algunas de las áreas a abordar son las siguientes: \nOrientación para la autonomía: Evaluar de manera personalizada la situación de cada persona, elaborar un plan de vida independiente y colaborar en el logro de los objetivos individuales. \nAsistencia personal: Orientar sobre todo el proceso que permita contar con asistencia personal, si es que ésta es necesaria para la persona en situación de discapacidad.\nAccesibilidad y movilidad: Adaptar y accesibilizar las viviendas y aprender a moverse en la ciudad, en el uso del transporte público y privado, y conocer los servicios inclusivos disponibles.\nOrientación familiar: Colaborar con el entorno familiar, que permita comprender los conceptos de autonomía personal y cambiar el paradigma de la sobreprotección.",
@@ -51,6 +53,7 @@ export const ProgramasData = [
     id: 3,
     Foto: "/img/programas/PV.jpg",
     NombrePrograma: "Programa vida",
+    URL:"vida",
     DescripcionPrograma: "Promoción de la Vida Independiente y Desarrollo de la Autonomía, destinado a personas con discapacidad.",
     Informacion:
       "¿De qué trata?: Buscamos orientar y asesorar a personas con discapacidad, a lograr una vida independiente de manera integral. Algunas de las áreas a abordar son las siguientes: \nOrientación para la autonomía: Evaluar de manera personalizada la situación de cada persona, elaborar un plan de vida independiente y colaborar en el logro de los objetivos individuales. \nAsistencia personal: Orientar sobre todo el proceso que permita contar con asistencia personal, si es que ésta es necesaria para la persona en situación de discapacidad.\nAccesibilidad y movilidad: Adaptar y accesibilizar las viviendas y aprender a moverse en la ciudad, en el uso del transporte público y privado, y conocer los servicios inclusivos disponibles.\nOrientación familiar: Colaborar con el entorno familiar, que permita comprender los conceptos de autonomía personal y cambiar el paradigma de la sobreprotección.",

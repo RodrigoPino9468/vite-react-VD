@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Colaborador({ Foto, Nombre, Cargo, Descripcion, Linkedin }) {
   return (
@@ -12,9 +12,9 @@ export default function Colaborador({ Foto, Nombre, Cargo, Descripcion, Linkedin
           <h4 className="card-title">{Nombre}</h4>
           <p className="card-text">{Descripcion}</p>
           {Linkedin && (
-            <NavLink to={Linkedin} className="btn btn-primary" target="_blank">
+            <Link to={Linkedin} className="btn btn-rounded" target="_blank">
               Linkedin
-            </NavLink>
+            </Link>
           )}
         </div>
       </div>

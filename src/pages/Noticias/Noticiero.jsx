@@ -10,7 +10,7 @@ export default function Noticiero() {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth", // Para que el desplazamiento sea suave (si es compatible)
+      behavior: "smooth",
     });
   };
 
@@ -35,7 +35,7 @@ export default function Noticiero() {
   }, [pagina]);
 
   return (
-    <main>
+    <main className="container-fluid my-5">
       <div className="container-fluid">
         <h1 className="d-flex py-3 m-0 justify-content-center">Noticias</h1>
       </div>
@@ -55,7 +55,7 @@ export default function Noticiero() {
                   Texto={noticia.url}
                   Alt={noticia.type}
                   ImgUrl={noticia.image}
-                  UrlNoticia={"/"}
+                  UrlNoticia={`${noticia.id}`}
                 />
               ))
             )}

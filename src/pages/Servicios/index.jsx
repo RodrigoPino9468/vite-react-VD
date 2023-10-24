@@ -3,7 +3,7 @@ import { ServiciosData } from "../../data/datos";
 
 export default function Index() {
   return (
-    <main className="container">
+    <main className="container my-5">
       <div className="row my-4">
         <h1 className="text-center">Servicios</h1>
       </div>

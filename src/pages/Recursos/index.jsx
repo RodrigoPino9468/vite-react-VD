@@ -3,7 +3,7 @@ import { RecursosData } from "../../data/datos";
 
 export default function Index() {
   return (
-    <main className="container">
+    <main className="container my-5">
       {RecursosData.map(({ categoria, articulos }, indexCategoria) => (
         <div key={indexCategoria} className="row my-5">
           <h1 className="text-center">{categoria}</h1>

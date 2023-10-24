@@ -1,6 +1,6 @@
 export default function Carousel() {
   return (
-    <div className="row" style={{ background: "#7D143B" }}>
+    <div className="row py-5" style={{ background: "#7D143B" }}>
       <p className="Fuente-carousel d-flex flex-column justify-content-center align-items-center" style={{ color: "white" }}>
         Noticias recientes
       </p>

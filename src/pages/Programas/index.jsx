@@ -1,5 +1,5 @@
 import {} from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 
 import ListaProgramas from "./ListaProgramas";
 import Programa from "./Programa";
@@ -11,6 +11,7 @@ export default function Index() {
       <Route path="vida" element={<Programa />} />
       <Route path="mujeres-con-discapacidad" element={<Programa />} />
       <Route path="emprendimientos-inclusivos" element={<Programa />} />
+      <Route path="*" element={<Navigate to="/not-found" />} />
     </Routes>
   );
 }

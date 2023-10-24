@@ -1,7 +1,7 @@
 // Modulos
 import {} from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 // Componentes
 import Layout from "./components/Layout";
@@ -21,29 +21,27 @@ import QuienesSomos from "./pages/QuienesSomos/index";
 import "./assets/main.css";
 
 // Funcion de Rutas principal de la App
-const Application = () => {
+export function Application() {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Inicio />} />
-
         {/* Sin subRutas */}
         <Route path="contacto" element={<Contacto />} />
         <Route path="recursos" element={<Recursos />} />
         <Route path="quienes-somos" element={<QuienesSomos />} />
-
+        <Route path="servicios" element={<Servicios />} />
         {/* Con subRutas */}
         <Route path="noticias/*" element={<Noticias />} />
-        <Route path="servicios/*" element={<Servicios />} />
         <Route path="programas/*" element={<Programas />} />
         <Route path="donaciones/*" element={<Donaciones />} />
-
-        {/* Pagina de error */}
-        <Route path="*" element={<NotFound404 />} />
       </Route>
+      {/* Pagina de error */}
+      <Route path="not-found" element={<NotFound404 />} />
+      <Route path="*" element={<Navigate to="/not-found" />} />
     </Routes>
   );
-};
+}
 
 // Renderizado en el DOM
 ReactDOM.createRoot(document.getElementById("root")).render(

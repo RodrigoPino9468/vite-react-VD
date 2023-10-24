@@ -1,5 +1,5 @@
 import {} from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Navigate} from "react-router-dom";
 
 import DonarOnline from './DonarOnline'
 import Transferencias from './Transferencias'
@@ -11,6 +11,7 @@ export default function Index() {
       <Route index element={<OpćionesDonaciones/>} />
       <Route path="transferencias" element={<Transferencias/>} />
       <Route path="donar-online" element={<DonarOnline/>} />
+      <Route path="*" element={<Navigate to="/not-found" />} />
     </Routes>
   );
 }
