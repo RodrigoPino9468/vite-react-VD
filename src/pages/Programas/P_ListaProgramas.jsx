@@ -1,4 +1,4 @@
-import CardPrograma from "./CardPrograma";
+import CardPrograma from "./SubComponents/CardPrograma";
 import { ProgramasData } from "../../data/datos";
 
 export default function ListaProgramas() {

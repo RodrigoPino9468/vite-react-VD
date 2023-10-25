@@ -1,8 +1,5 @@
-import CuerpoQuienesSomos from "./CuerpoQuinesSomos";
-import Emblema from "./Emblema";
-import { Route, Routes } from "react-router-dom";
 import { ColaboradoresData, QuienesSomosData } from "../../data/datos";
-import Colaborador from "./Colaborador";
+import Colaborador from "./SubComponents/Colaborador";
 
 
 export default function Index() {

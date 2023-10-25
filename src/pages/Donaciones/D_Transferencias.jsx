@@ -16,53 +16,53 @@ export default function Transferencias() {
       <div className="row g-5">
         {/* Datos de transferencia */}
         <div className="col-md-5 col-lg-4 order-md-last">
+
+          {/* Datos cuenta bancaria */}
           <h4 className="d-flex justify-content-between align-items-center mb-3">
-            <span className="text-primary">Your cart</span>
-            <span className="badge bg-primary rounded-pill">3</span>
+            <span className="text-dark">Cuenta bancaria de la fundación</span>
           </h4>
+
           <ul className="list-group mb-3">
             <li className="list-group-item d-flex justify-content-between lh-sm">
               <div>
-                <h6 className="my-0">Product name</h6>
-                <small className="text-body-secondary">Brief description</small>
+                <h6 className="my-0">Nombre</h6>
+                <small className="text-body-secondary">Fundación Vida Independiente Chile</small>
               </div>
-              <span className="text-body-secondary">$12</span>
             </li>
             <li className="list-group-item d-flex justify-content-between lh-sm">
               <div>
-                <h6 className="my-0">Second product</h6>
-                <small className="text-body-secondary">Brief description</small>
+                <h6 className="my-0">RUT</h6>
+                <small className="text-body-secondary">65.194.552-6</small>
               </div>
-              <span className="text-body-secondary">$8</span>
             </li>
             <li className="list-group-item d-flex justify-content-between lh-sm">
               <div>
-                <h6 className="my-0">Third item</h6>
-                <small className="text-body-secondary">Brief description</small>
+                <h6 className="my-0">Banco</h6>
+                <small className="text-body-secondary">Banco Estado</small>
               </div>
-              <span className="text-body-secondary">$5</span>
             </li>
-            <li className="list-group-item d-flex justify-content-between bg-body-tertiary">
-              <div className="text-success">
-                <h6 className="my-0">Promo code</h6>
-                <small>EXAMPLECODE</small>
+
+            <li className="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 className="my-0">Tipo de cuenta</h6>
+                <small className="text-body-secondary">Chequera Electrónica (Cuenta Vista)</small>
               </div>
-              <span className="text-success">−$5</span>
             </li>
-            <li className="list-group-item d-flex justify-content-between">
-              <span>Total (USD)</span>
-              <strong>$20</strong>
+
+            <li className="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 className="my-0">Número de cuenta</h6>
+                <small className="text-body-secondary">329-7-290782-0</small>
+              </div>
+            </li>
+
+            <li className="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 className="my-0">Correo electrónico</h6>
+                <small className="text-body-secondary">fundacionvichile@gmail.com</small>
+              </div>
             </li>
           </ul>
-
-          <form className="card p-2">
-            <div className="input-group">
-              <input type="text" className="form-control" placeholder="Promo code" />
-              <button type="submit" className="btn btn-secondary">
-                Redeem
-              </button>
-            </div>
-          </form>
         </div>
 
         {/* Formulario  */}

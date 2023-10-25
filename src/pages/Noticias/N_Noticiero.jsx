@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import CardNoticia from "./CardNoticia";
+import CardNoticia from "./SubComponents/CardNoticia";
 
 export default function Noticiero() {
   const [cargando, setCargando] = useState(true);

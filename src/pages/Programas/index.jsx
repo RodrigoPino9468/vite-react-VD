@@ -1,10 +1,10 @@
 import {} from "react";
 import { Route, Routes, Navigate } from "react-router-dom";
 
-import ListaProgramas from "./ListaProgramas";
-import EmprendimientoInclusivo from "./P_EmprendimientoInclusivo";
-import MujeresConDiscapacidad from "./P_MujeresConDiscapacidad";
 import Vida from "./P_Vida";
+import ListaProgramas from "./P_ListaProgramas";
+import MujeresConDiscapacidad from "./P_MujeresConDiscapacidad";
+import EmprendimientoInclusivo from "./P_EmprendimientoInclusivo";
 
 export default function Index() {
   return (

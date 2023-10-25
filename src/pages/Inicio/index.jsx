@@ -1,7 +1,7 @@
 import { ModulosInicioData } from "../../data/datos";
 
-import Carousel from "./Carousel";
-import Modulo from "./Modulo";
+import Carousel from "./SubComponents/Carousel";
+import Modulo from "./SubComponents/Modulo";
 
 export default function Inicio() {
   return (
