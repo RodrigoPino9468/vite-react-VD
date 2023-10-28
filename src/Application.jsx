@@ -1,7 +1,10 @@
 // Modulos
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route, Navigate, useLocation } from "react-router-dom";
+
+// Contexto para el tipo de vista que quiera ver los usuarios
+import { AccesibilidadProvider } from "./contexts/AccesibilidadContext";
 
 // Componentes
 import Layout from "./components/Layout";
@@ -50,8 +53,12 @@ export function Application() {
 }
 
 // Renderizado en el DOM
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <BrowserRouter>
-    <Application />
-  </BrowserRouter>
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(
+  <AccesibilidadProvider>
+    <BrowserRouter>
+      <Application />
+    </BrowserRouter>
+  </AccesibilidadProvider>
 );

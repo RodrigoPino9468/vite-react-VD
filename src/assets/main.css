@@ -1,19 +1,25 @@
 /* Variables globales */
 :root {
+  /* colores del RED*/
   --color-red-c: rgb(229, 113, 114);
   --color-red-m: rgb(178, 53, 90);
   --color-red-y: rgb(115, 37, 109);
   --color-red-k: rgb(70, 36, 94);
-
+  /* colores del VIC*/
   --color-vic-c: rgb(236, 98, 114);
   --color-vic-m: rgb(183, 59, 88);
   --color-vic-y: rgb(125, 20, 59);
 }
 
-/* Importando fuente de trabajo */
+/* Fuentes */
 @font-face {
   font-family: "Futura PT Bold";
   src: url("/font/FuturaPTBold.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Futura PT Book";
+  src: url("/font/FuturaPTBook.otf") format("truetype");
 }
 
 /* Etiquetas HTML5 */
@@ -27,8 +33,9 @@ body {
 }
 
 footer {
-  background-color: var(--color-vic-m);
+  /* background-color: var(--color-vic-m); */
 }
+
 
 textarea {
   resize: none;
@@ -37,6 +44,58 @@ textarea {
 /* IDs de elementos */
 
 /* Clases de elementos */
+
+.logo-fundacion-header {
+  height: 8rem;
+  width: 15rem;
+}
+
+.navbar-color {
+  background-color: var(--color-vic-m);
+}
+
+.nav-link {
+  color: white;
+
+  &:hover {
+    color: var(--color-red-k);
+  }
+
+  &.active {
+    color: #000;
+  }
+}
+
+.botones-enlaces {
+  background-color: var(--color-vic-m);
+  color: #fff;
+  border-radius: 50px;
+  padding: 10px 20px;
+  border: none;
+  &:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  &:active {
+    background-color: gray;
+  }
+}
+
+.redes-sociales-header {
+  color: #000;
+  &:hover {
+    color: var(--color-red-k);
+  }
+}
+
+.btn-lg {
+  font-size: 1.25rem;
+  padding: 15px 30px;
+}
+
+
+
+
 .gradiente-header-nav {
   background-image: linear-gradient(to top, #b2355a, #c45f73, #d5848f, #e4a9ad, #f0cdce);
 }
