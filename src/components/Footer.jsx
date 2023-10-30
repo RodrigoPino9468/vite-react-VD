@@ -1,7 +1,16 @@
 import { NavLink, Link } from "react-router-dom";
 import { BsInstagram, BsFacebook, BsLinkedin, BsYoutube } from "react-icons/bs";
 
+import { validarCorreos } from "./../utils/validarInputs";
+
 export default function Footer() {
+  const handleSubcripcion = (evento) => {
+    evento.preventDefault();
+    const correo = evento.currentTarget.elements.correoSubcripcion.value;
+    let res = validarCorreo(correo);
+    console.log(`${correo} -> ${res}`);
+  };
+
   return (
     <footer className="border">
       <div className="container p-3 p-md-5">
@@ -62,15 +71,15 @@ export default function Footer() {
           </section>
 
           <section className="col-12 col-md-5 offset-md-1 mb-3">
-            <form>
-              <h4>Suscríbete a nuestro boletín</h4>
+            <form onSubmit={handleSubcripcion} id="formularioSubcripcion">
+              <h4>Subcríbete a nuestro boletín</h4>
               <p>Al enviar su información, nos otorga permiso para enviarle un correo electrónico. Puedes darte de baja en cualquier momento.</p>
               <div className="d-flex flex-column flex-sm-row w-100 gap-2">
-                <label htmlFor="newsletter1" className="visually-hidden">
+                <label htmlFor="correoSubcripcion" className="visually-hidden">
                   Correo electrónico
                 </label>
-                <input id="newsletter1" type="text" className="form-control" placeholder="Ingrese su correo electrónico..." />
-                <button className="btn btn-primary" type="button">
+                <input id="correoSubcripcion" type="text" className="form-control" placeholder="Ingrese su correo electrónico..." autoComplete="off" />
+                <button className="btn btn-primary" type="submit">
                   Subcribirme
                 </button>
               </div>
