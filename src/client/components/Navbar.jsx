@@ -1,5 +1,5 @@
 import { useState, useEffect, useContext } from "react";
-import { AccesibilidadContext } from "../contexts/AccesibilidadContext";
+import { AccesibilidadContext } from "../../contexts/AccesibilidadContext";
 import { NavLink } from "react-router-dom";
 
 import { GiHamburgerMenu } from "react-icons/gi";
