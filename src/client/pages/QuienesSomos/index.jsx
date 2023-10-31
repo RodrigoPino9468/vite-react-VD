@@ -1,4 +1,4 @@
-import { ColaboradoresData, QuienesSomosData } from "../../data/datos";
+import { ColaboradoresData, QuienesSomosData } from "./../../../../data/datos";
 import Colaborador from "./SubComponents/Colaborador";
 
 

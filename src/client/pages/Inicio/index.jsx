@@ -1,4 +1,4 @@
-import { ModulosInicioData } from "../../data/datos";
+import { ModulosInicioData } from "./../../../../data/datos";
 
 import Carousel from "./SubComponents/Carousel";
 import Modulo from "./SubComponents/Modulo";

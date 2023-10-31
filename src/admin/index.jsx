@@ -1,6 +1,6 @@
 import {} from 'react'
 
-export default function index() {
+export default function Administradores() {
   return (
     <div>index</div>
   )

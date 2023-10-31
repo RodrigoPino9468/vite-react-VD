@@ -8,9 +8,5 @@ export function AccesibilidadProvider({ children }) {
     setModoDeVista(evento.target.value);
   };
 
-  return (
-    <AccesibilidadContext.Provider value={{ ModoDeVista, handleModoDeVista }}>
-      {children}
-    </AccesibilidadContext.Provider>
-  );
+  return <AccesibilidadContext.Provider value={{ ModoDeVista, handleModoDeVista }}>{children}</AccesibilidadContext.Provider>;
 }

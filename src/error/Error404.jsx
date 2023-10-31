@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { GoAlert } from "react-icons/go";
 
-
 export default function Eror404() {
   return (
     <main className="container text-center py-5">

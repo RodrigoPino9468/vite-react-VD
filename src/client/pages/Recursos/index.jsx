@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { RecursosData } from "../../data/datos";
+import { RecursosData } from "./../../../../data/datos";
 
 export default function Index() {
   return (
