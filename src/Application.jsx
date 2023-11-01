@@ -15,9 +15,9 @@ export default function Application() {
 
   return (
     <Routes>
-      <Route path="/*" element={<Clientes />} />
+      <Route path="/*"  element={<Clientes />} />
       <Route path="sistema-de-gestion/*" element={<Administradores />} />
-      <Route path="not-found" element={<NotFound404 />} />
+      <Route path="not-found" element={<NotFound404/>} />
       <Route path="*" element={<Navigate to="/not-found" />} />
     </Routes>
   );

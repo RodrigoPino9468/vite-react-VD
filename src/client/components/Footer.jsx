@@ -7,7 +7,7 @@ export default function Footer() {
   const handleSubcripcion = (evento) => {
     evento.preventDefault();
     const correo = evento.currentTarget.elements.correoSubcripcion.value;
-    let res = validarCorreo(correo);
+    let res = validarCorreos(correo);
     console.log(`${correo} -> ${res}`);
   };
 
@@ -23,12 +23,12 @@ export default function Footer() {
                 </NavLink>
               </li>
               <li className="nav-item mb-2">
-                <NavLink to={"/quienes-somos"} className="nav-link p-0 text-body-secondary">
+                <NavLink to={"quienes-somos"} className="nav-link p-0 text-body-secondary">
                   Quienes Somos
                 </NavLink>
               </li>
               <li className="nav-item mb-2">
-                <NavLink to={"/servicios"} className="nav-link p-0 text-body-secondary">
+                <NavLink to={"servicios"} className="nav-link p-0 text-body-secondary">
                   Servicios
                 </NavLink>
               </li>
@@ -38,17 +38,17 @@ export default function Footer() {
           <section className="col-4 col-md-2 mb-3">
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
-                <NavLink to={"/recursos"} className="nav-link p-0 text-body-secondary">
+                <NavLink to={"recursos"} className="nav-link p-0 text-body-secondary">
                   Recursos
                 </NavLink>
               </li>
               <li className="nav-item mb-2">
-                <NavLink to={"/noticias"} className="nav-link p-0 text-body-secondary">
+                <NavLink to={"noticias"} className="nav-link p-0 text-body-secondary">
                   Noticias
                 </NavLink>
               </li>
               <li className="nav-item mb-2">
-                <NavLink to={"/programas"} className="nav-link p-0 text-body-secondary">
+                <NavLink to={"programas"} className="nav-link p-0 text-body-secondary">
                   Programas
                 </NavLink>
               </li>
@@ -58,12 +58,12 @@ export default function Footer() {
           <section className="col-4 col-md-2 mb-3">
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
-                <NavLink to={"/donaciones"} className="nav-link p-0 text-body-secondary">
+                <NavLink to={"donaciones"} className="nav-link p-0 text-body-secondary">
                   Donaciones
                 </NavLink>
               </li>
               <li className="nav-item mb-2">
-                <NavLink to={"/contacto"} className="nav-link p-0 text-body-secondary">
+                <NavLink to={"contacto"} className="nav-link p-0 text-body-secondary">
                   Contacto
                 </NavLink>
               </li>

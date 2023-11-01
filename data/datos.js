@@ -10,9 +10,9 @@ export const ColaboradoresData = [
 ];
 
 export const ModulosInicioData = [
-  { urlimg: "/img/fotos/Foto-1.png", titulo: "Lema de la fundación", texto: `"Promover el derecho a vivir de forma autónoma e independiente, es aportar a la justicia social desde la inclusión".`, alt: "Logo fundacion", enlace: "/quienes-somos"},
-  { urlimg: "/img/fotos/Foto-2.png", titulo: "Servicios", texto: "Nuestra fundación ofrece los siguientes servicios enfocados en pomover la inclusiónn social de personas con discapacidad.", alt: "Logo fundacion", enlace: "/servicios"},
-  { urlimg: "/img/fotos/Foto-3.png", titulo: "Programas", texto: "Difusión de emprendimientos de venta de productos o prestación de servicios entregados por personas con discapacidad, sus familias u organizaciones.", alt: "Logo fundacion", enlace: "/programas"},
+  { urlimg: "/img/fotos/Foto-1.png", titulo: "Lema de la fundación", texto: `"Promover el derecho a vivir de forma autónoma e independiente, es aportar a la justicia social desde la inclusión".`, alt: "Logo fundacion", enlace: "quienes-somos"},
+  { urlimg: "/img/fotos/Foto-2.png", titulo: "Servicios", texto: "Nuestra fundación ofrece los siguientes servicios enfocados en pomover la inclusiónn social de personas con discapacidad.", alt: "Logo fundacion", enlace: "servicios"},
+  { urlimg: "/img/fotos/Foto-3.png", titulo: "Programas", texto: "Difusión de emprendimientos de venta de productos o prestación de servicios entregados por personas con discapacidad, sus familias u organizaciones.", alt: "Logo fundacion", enlace: "programas"},
 ];
 
 export const CarouselData = [

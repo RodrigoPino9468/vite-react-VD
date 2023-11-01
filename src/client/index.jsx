@@ -1,7 +1,7 @@
 import {} from "react";
 import { Route, Routes, Navigate } from "react-router-dom";
 
-import "../assets/main.css";
+import "../assets/client.css";
 import Layout from "./components/Layout";
 
 import Inicio from "./pages/Inicio";

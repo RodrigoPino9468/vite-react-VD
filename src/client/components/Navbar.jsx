@@ -1,4 +1,4 @@
-import { useState, useEffect, useContext } from "react";
+import { useEffect, useContext } from "react";
 import { AccesibilidadContext } from "../../contexts/AccesibilidadContext";
 import { NavLink } from "react-router-dom";
 
@@ -35,43 +35,43 @@ export default function Navbar() {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="/quienes-somos" className="nav-link">
+                <NavLink to="quienes-somos" className="nav-link">
                   ¿Quiénes somos?
                 </NavLink>
               </li>
 
               <li className="nav-item">
-                <NavLink to="/servicios" className="nav-link">
+                <NavLink to="servicios" className="nav-link">
                   Servicios
                 </NavLink>
               </li>
 
               <li className="nav-item">
-                <NavLink to="/programas" className="nav-link">
+                <NavLink to="programas" className="nav-link">
                   Programas
                 </NavLink>
               </li>
 
               <li className="nav-item">
-                <NavLink to="/recursos" className="nav-link">
+                <NavLink to="recursos" className="nav-link">
                   Recursos
                 </NavLink>
               </li>
 
               <li className="nav-item">
-                <NavLink to="/noticias" className="nav-link">
+                <NavLink to="noticias" className="nav-link">
                   Noticias
                 </NavLink>
               </li>
 
               <li className="nav-item">
-                <NavLink to="/donaciones" className="nav-link">
+                <NavLink to="donaciones" className="nav-link">
                   Donaciones
                 </NavLink>
               </li>
 
               <li className="nav-item">
-                <NavLink to="/contacto" className="nav-link">
+                <NavLink to="contacto" className="nav-link">
                   Contacto
                 </NavLink>
               </li>
