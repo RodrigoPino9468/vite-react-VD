@@ -6,7 +6,7 @@ export default function Login() {
     <main className="container m-auto p-4 p-sm-0">
       <div className="row justify-content-center">
         <section className="col-12 col-md-10 col-lg-8 col-xxl-6 p-sm-4 border rounded">
-          <div className="text-center px-5">
+          <div className="text-center px-0 px-sm-5">
             <img src="/img/logos/fvic_colores.png" width={"200rem"} height={"100rem"} alt="logo" />
             <h4 className="my-3">Sistema de gestión</h4>
           </div>
@@ -20,7 +20,7 @@ export default function Login() {
                 <span className="input-group-text" id="inputGroupPrepend2">
                   <RiShieldUserLine />
                 </span>
-                <input type="text" className="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required />
+                <input type="text" className="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required autoComplete="off" />
               </div>
             </div>
 
@@ -32,7 +32,7 @@ export default function Login() {
                 <span className="input-group-text" id="inputGroupPrepend2">
                   <RiLockPasswordLine />
                 </span>
-                <input type="password" className="form-control" id="validationDefaultPassword" aria-describedby="inputGroupPrepend2" required />
+                <input type="password" className="form-control" id="validationDefaultPassword" aria-describedby="inputGroupPrepend2" required autoComplete="off" />
               </div>
             </div>
 
