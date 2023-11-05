@@ -1,14 +1,13 @@
-import { useEffect, useContext } from "react";
-import { AccesibilidadContext } from "../../contexts/AccesibilidadContext";
+import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
-
 import { GiHamburgerMenu } from "react-icons/gi";
+import { useAccesibilidad } from "../../contexts/AccesibilidadContext";
 
 export default function Navbar() {
-  const { ModoDeVista, handleModoDeVista } = useContext(AccesibilidadContext);
+  const { ModoDeVista, handleModoDeVista } = useAccesibilidad();
 
   useEffect(() => {
-    console.log(ModoDeVista);
+    // console.log(ModoDeVista);
   }, [ModoDeVista]);
 
   return (

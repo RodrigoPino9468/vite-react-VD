@@ -1,5 +1,5 @@
 import CardPrograma from "./SubComponents/CardPrograma";
-import { ProgramasData } from "./../../../../data/datos";
+import { ProgramasData } from "../../../../data/datos";
 
 export default function ListaProgramas() {
   return (

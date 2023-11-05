@@ -16,22 +16,22 @@ export default function Header() {
       <section className="col-12 col-md-4">
         <ul className="nav d-flex justify-content-center">
           <li className="nav-item">
-            <NavLink className="nav-link" to={import.meta.env.VITE_FVIC_INSTAGRAM}>
+            <NavLink className="nav-link" target="_blank" to={import.meta.env.VITE_FVIC_INSTAGRAM}>
               <BsInstagram className="redes-sociales-header" size={30} />
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link" to={import.meta.env.VITE_FVIC_FACEBOOK}>
+            <NavLink className="nav-link" target="_blank" to={import.meta.env.VITE_FVIC_FACEBOOK}>
               <BsFacebook className="redes-sociales-header" size={30} />
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link" to={import.meta.env.VITE_FVIC_YOUTUBE}>
+            <NavLink className="nav-link" target="_blank" to={import.meta.env.VITE_FVIC_YOUTUBE}>
               <BsYoutube className="redes-sociales-header" size={30} />
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link" to={import.meta.env.VITE_FVIC_LINKEDIN}>
+            <NavLink className="nav-link" target="_blank" to={import.meta.env.VITE_FVIC_LINKEDIN}>
               <BsLinkedin className="redes-sociales-header" size={30} />
             </NavLink>
           </li>

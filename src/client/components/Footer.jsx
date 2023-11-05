@@ -1,14 +1,50 @@
+import { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { BsInstagram, BsFacebook, BsLinkedin, BsYoutube } from "react-icons/bs";
 
-import { validarCorreos } from "./../utils/validarInputs";
+import { Alertas, validarCorreos } from "../../utils/validarInputs";
 
 export default function Footer() {
-  const handleSubcripcion = (evento) => {
+  const [subcripcion, setSubcripcion] = useState({
+    correo: null,
+    validacion: null,
+  });
+
+  const handleChange = (evento) => {
+    const { value } = evento.target;
+    const { valido, invalido, vacio } = Alertas.correo;
+
+    setSubcripcion({
+      correo: value ? value : null,
+      validacion: validarCorreos(value),
+    });
+
+    if (subcripcion.validacion === true) {
+      console.log(valido);
+    } else if (subcripcion.validacion === false) {
+      console.log(invalido);
+    } else {
+      console.log(vacio);
+    }
+  };
+
+  const handleReset = () => {
+    const form = document.getElementById("formularioSubcripcion");
+    if (form) {
+      form.reset();
+    }
+    setSubcripcion({
+      correo: null,
+      validacion: null,
+    });
+  };
+
+  const handleSubmit = (evento) => {
     evento.preventDefault();
-    const correo = evento.currentTarget.elements.correoSubcripcion.value;
-    let res = validarCorreos(correo);
-    console.log(`${correo} -> ${res}`);
+    if (subcripcion.validacion) {
+      console.log(subcripcion);
+      handleReset();
+    }
   };
 
   return (
@@ -71,15 +107,15 @@ export default function Footer() {
           </section>
 
           <section className="col-12 col-md-5 offset-md-1 mb-3">
-            <form onSubmit={handleSubcripcion} id="formularioSubcripcion">
+            <form id="formularioSubcripcion" noValidate onSubmit={handleSubmit}>
               <h4>Subcríbete a nuestro boletín</h4>
               <p>Al enviar su información, nos otorga permiso para enviarle un correo electrónico. Puedes darte de baja en cualquier momento.</p>
               <div className="d-flex flex-column flex-sm-row w-100 gap-2">
-                <label htmlFor="correoSubcripcion" className="visually-hidden">
+                <label htmlFor="subcripcion" className="visually-hidden">
                   Correo electrónico
                 </label>
-                <input id="correoSubcripcion" type="text" className="form-control" placeholder="Ingrese su correo electrónico..." autoComplete="off" />
-                <button className="btn btn-primary" type="submit">
+                <input id="subcripcion" name="subcripcion" type="email" required className="form-control" placeholder="Ingrese su correo electrónico..." autoComplete="off" onChange={handleChange} />
+                <button className={`btn btn-${subcripcion.validacion === null ? "secondary" : subcripcion.validacion === false ? "danger" : "success"}`} type="submit">
                   Subcribirme
                 </button>
               </div>
@@ -96,22 +132,22 @@ export default function Footer() {
 
           <ul className="list-unstyled d-flex justify-content-center my-2 my-md-0">
             <li className="mx-2">
-              <Link className="link-body-emphasis" to={import.meta.env.VITE_FVIC_INSTAGRAM}>
+              <Link className="link-body-emphasis" target="_blank" to={import.meta.env.VITE_FVIC_INSTAGRAM}>
                 <BsInstagram style={{ color: "black" }} size={20} />
               </Link>
             </li>
             <li className="mx-2">
-              <Link className="link-body-emphasis" to={import.meta.env.VITE_FVIC_FACEBOOK}>
+              <Link className="link-body-emphasis" target="_blank" to={import.meta.env.VITE_FVIC_FACEBOOK}>
                 <BsFacebook style={{ color: "black" }} size={20} />
               </Link>
             </li>
             <li className="mx-2">
-              <Link className="link-body-emphasis" to={import.meta.env.VITE_FVIC_YOUTUBE}>
+              <Link className="link-body-emphasis" target="_blank" to={import.meta.env.VITE_FVIC_YOUTUBE}>
                 <BsYoutube style={{ color: "black" }} size={20} />
               </Link>
             </li>
             <li className="mx-2">
-              <Link className="link-body-emphasis" to={import.meta.env.VITE_FVIC_LINKEDIN}>
+              <Link className="link-body-emphasis" target="_blank" to={import.meta.env.VITE_FVIC_LINKEDIN}>
                 <BsLinkedin style={{ color: "black" }} size={20} />
               </Link>
             </li>

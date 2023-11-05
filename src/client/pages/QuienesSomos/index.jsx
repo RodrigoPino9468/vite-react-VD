@@ -1,6 +1,5 @@
-import { ColaboradoresData, QuienesSomosData } from "./../../../../data/datos";
+import { ColaboradoresData, QuienesSomosData } from "../../../../data/datos";
 import Colaborador from "./SubComponents/Colaborador";
-
 
 export default function Index() {
   return (
@@ -9,9 +8,7 @@ export default function Index() {
       <section className="lema-fundacion row p-4 p-sm-5">
         <article id="imagenLema" className="col-md-7 order-md-2 p-sm-5">
           <h6 className="text-start ">{QuienesSomosData.cita_principal.texto}</h6>
-          <h4 className="my-3">
-          Fundación Vida Independiente Chile, {new Date().getFullYear()}.
-          </h4>
+          <h4 className="my-3">Fundación Vida Independiente Chile, {new Date().getFullYear()}.</h4>
         </article>
         <article id="textoLema" className="col-md-5 order-md-1">
           <img src="/img/fotos/Foto-1-QuienesSomos.png" className="featurette-image img-fluid mx-auto h-100 rounded" alt="Texto conmemorativo para representar la fundación" />
@@ -43,7 +40,7 @@ export default function Index() {
         </div>
         <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xxl-4 g-3">
           {ColaboradoresData.map((colaborador, index) => (
-            <Colaborador key={index} Foto={colaborador.fotografia} Nombre={colaborador.nombre} Cargo={colaborador.cargo} Descripcion={colaborador.descripcion} Linkedin={colaborador.linkedin}/>
+            <Colaborador key={index} Foto={colaborador.fotografia} Nombre={colaborador.nombre} Cargo={colaborador.cargo} Descripcion={colaborador.descripcion} Linkedin={colaborador.linkedin} />
           ))}
         </div>
       </div>

@@ -24,7 +24,7 @@ export default function OpćionesDonaciones() {
         <div className="col-md-7 order-md-2">
           <h2 className="featurette-heading fw-normal lh-1">Plataforma DonarOnline.org</h2>
           <p className="lead">Sistema especializado en donaciones para organizaciones sin fines de lucro, es rápido y seguro. ¡Puedes donar desde cualquier parte del mundo! Clic para más información:</p>
-          <Link to="donar-online" type="button" className="btn btn-danger">
+          <Link to={import.meta.env.VITE_DONAR_ONLINE} target="_blank" type="button" className="btn btn-danger">
             Ingrese Aqui
           </Link>
         </div>

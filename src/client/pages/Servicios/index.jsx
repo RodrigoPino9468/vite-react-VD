@@ -1,5 +1,5 @@
 import Servicio from "./SubComponents/Servicio";
-import { ServiciosData } from "./../../../../data/datos";
+import { ServiciosData } from "../../../../data/datos";
 
 export default function Index() {
   return (
