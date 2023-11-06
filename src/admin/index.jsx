@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import { Route, Routes, Navigate } from "react-router-dom";
 
-import Login from "./views/Login";
-import Dashboard from "./views/Dashboard";
+import Login from "./components/Login";
+import Dashboard from "./components/Dashboard";
 import Navegacion from "./components/Navegacion";
 
 // import RutasProtegidas from "./components/RutasProtegidas";

@@ -1,15 +1,16 @@
 import {} from "react";
 import { Route, Routes, Navigate } from "react-router-dom";
 
-import LayoutAdmin from "../../components/LayoutAdmin";
+import LayoutAdmin from "./Layout";
 
-import Inicio from "./Inicio";
-import Mensajes from "./Mensajes";
-import Recursos from "./Recursos";
-import Noticias from "./Noticias";
-import Servicios from "./Servicios";
-import Programas from "./Programas";
-import Colaboradores from "./Colaboradores";
+import Inicio from "../views/Inicio";
+import Mensajes from "../views/Mensajes";
+import Recursos from "../views/Recursos";
+import Noticias from "../views/Noticias";
+import Servicios from "../views/Servicios";
+import Programas from "../views/Programas";
+import Colaboradores from "../views/Colaboradores";
+import Configuraciones from "../views/Configuraciones";
 
 export default function Dashboard() {
   return (
@@ -22,6 +23,7 @@ export default function Dashboard() {
         <Route path="servicios/*" element={<Servicios />} />
         <Route path="colaboradores/*" element={<Colaboradores />} />
         <Route path="mensajes-de-contacto/*" element={<Mensajes />} />
+        <Route path="configuraciones/*" element={<Configuraciones />} />
       </Route>
       {/* <Route path="*" element={<Navigate to="/sistema-de-gestion/dashboard" />} /> */}
     </Routes>

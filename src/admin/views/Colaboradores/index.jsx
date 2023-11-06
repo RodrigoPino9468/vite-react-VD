@@ -1,5 +1,5 @@
 import React from "react";
 
 export default function Colaboradores() {
-  return <div>Colaboradores</div>;
+  return <h1>hola</h1>;
 }

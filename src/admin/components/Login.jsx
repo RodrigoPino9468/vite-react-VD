@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Navigate, useNavigate } from "react-router-dom";
 import { RiLockPasswordLine, RiShieldUserLine } from "react-icons/ri";
-import { Alertas, validarContrasenas, validarCorreos } from "../../../utils/validarInputs";
+import { Alertas, validarContrasenas, validarCorreos } from "../../utils/validarInputs";
 
 export default function Login() {
   const navigate = useNavigate(); 
