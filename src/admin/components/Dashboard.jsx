@@ -4,7 +4,6 @@ import { Route, Routes, Navigate } from "react-router-dom";
 import LayoutAdmin from "./Layout";
 
 import Inicio from "../views/Inicio";
-import Mensajes from "../views/Mensajes";
 import Recursos from "../views/Recursos";
 import Noticias from "../views/Noticias";
 import Servicios from "../views/Servicios";
@@ -22,7 +21,6 @@ export default function Dashboard() {
         <Route path="programas/*" element={<Programas />} />
         <Route path="servicios/*" element={<Servicios />} />
         <Route path="colaboradores/*" element={<Colaboradores />} />
-        <Route path="mensajes-de-contacto/*" element={<Mensajes />} />
         <Route path="configuraciones/*" element={<Configuraciones />} />
       </Route>
       {/* <Route path="*" element={<Navigate to="/sistema-de-gestion/dashboard" />} /> */}

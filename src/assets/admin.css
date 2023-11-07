@@ -14,3 +14,11 @@
   background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
 }
 
+/* Ajusta los z-index del menú y el título del menú según tus necesidades */
+.sidebar {
+  z-index: 1000; /* Valor alto para el menú */
+}
+
+.offcanvas-title {
+  z-index: 1001; /* Valor aún más alto para el título del menú */
+}

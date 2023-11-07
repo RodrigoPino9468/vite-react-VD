@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-import { LuMailSearch, LuSettings } from "react-icons/lu";
+import { LuSettings } from "react-icons/lu";
 import { AiOutlineHome } from "react-icons/ai";
 import { BiBriefcaseAlt2, BiLogOut } from "react-icons/bi";
 import { HiOutlineNewspaper } from "react-icons/hi2";
@@ -9,14 +9,13 @@ import { FiUsers } from "react-icons/fi";
 import { SlDocs } from "react-icons/sl";
 
 export default function MenuAdmin() {
-
   const cerrarSesion = (evento) => {
     console.log("cerrar session");
   };
   // Menu
   return (
-    <aside className="sidebar border border-right bg-body-tertiary position-fixed p-0 min-vh-100 col-md-3 col-xl-2">
-      <div id="sidebarMenu" className="offcanvas-md offcanvas-end bg-body-tertiary" tabIndex="-1" aria-labelledby="sidebarMenuLabel">
+    <aside className="sidebar border border-right position-fixed p-0 h-100 col-md-3 col-xl-2">
+      <div id="sidebarMenu" className="offcanvas-md offcanvas-end" tabIndex="-1" aria-labelledby="sidebarMenuLabel">
         {/* Sidebar Header */}
         <section className="offcanvas-header mt-5">
           <h2 className="offcanvas-title" id="sidebarMenuLabel">
@@ -33,9 +32,12 @@ export default function MenuAdmin() {
               <NavLink
                 to={""}
                 end
-                className={({ isActive }) => (isActive ? "nav-link d-flex align-items-center gap-2 text-white border rounded bg-dark" : "nav-link d-flex align-items-center gap-2 text-dark")}
-                aria-current="page"
-              >
+                className={({ isActive }) =>
+                  isActive
+                    ? "nav-link d-flex align-items-center gap-2 text-white border rounded bg-dark"
+                    : "nav-link d-flex align-items-center gap-2 text-dark"
+                }
+                aria-current="page">
                 <AiOutlineHome className="bi" />
                 Dashboard
               </NavLink>
@@ -44,9 +46,12 @@ export default function MenuAdmin() {
             <li className="nav-item">
               <NavLink
                 to={"noticias"}
-                className={({ isActive }) => (isActive ? "nav-link d-flex align-items-center gap-2 text-white border rounded bg-dark" : "nav-link d-flex align-items-center gap-2 text-dark")}
-                aria-current="page"
-              >
+                className={({ isActive }) =>
+                  isActive
+                    ? "nav-link d-flex align-items-center gap-2 text-white border rounded bg-dark"
+                    : "nav-link d-flex align-items-center gap-2 text-dark"
+                }
+                aria-current="page">
                 <HiOutlineNewspaper className="bi" />
                 Noticias
               </NavLink>
@@ -55,9 +60,12 @@ export default function MenuAdmin() {
             <li className="nav-item">
               <NavLink
                 to={"recursos"}
-                className={({ isActive }) => (isActive ? "nav-link d-flex align-items-center gap-2 text-white border rounded bg-dark" : "nav-link d-flex align-items-center gap-2 text-dark")}
-                aria-current="page"
-              >
+                className={({ isActive }) =>
+                  isActive
+                    ? "nav-link d-flex align-items-center gap-2 text-white border rounded bg-dark"
+                    : "nav-link d-flex align-items-center gap-2 text-dark"
+                }
+                aria-current="page">
                 <SlDocs className="bi" />
                 Recursos
               </NavLink>
@@ -66,9 +74,12 @@ export default function MenuAdmin() {
             <li className="nav-item">
               <NavLink
                 to={"servicios"}
-                className={({ isActive }) => (isActive ? "nav-link d-flex align-items-center gap-2 text-white border rounded bg-dark" : "nav-link d-flex align-items-center gap-2 text-dark")}
-                aria-current="page"
-              >
+                className={({ isActive }) =>
+                  isActive
+                    ? "nav-link d-flex align-items-center gap-2 text-white border rounded bg-dark"
+                    : "nav-link d-flex align-items-center gap-2 text-dark"
+                }
+                aria-current="page">
                 <BiBriefcaseAlt2 className="bi" />
                 Servicios
               </NavLink>
@@ -76,21 +87,13 @@ export default function MenuAdmin() {
 
             <li className="nav-item">
               <NavLink
-                to={"mensajes-de-contacto"}
-                className={({ isActive }) => (isActive ? "nav-link d-flex align-items-center gap-2 text-white border rounded bg-dark" : "nav-link d-flex align-items-center gap-2 text-dark")}
-                aria-current="page"
-              >
-                <LuMailSearch className="bi" />
-                Mensajes
-              </NavLink>
-            </li>
-
-            <li className="nav-item">
-              <NavLink
                 to={"programas"}
-                className={({ isActive }) => (isActive ? "nav-link d-flex align-items-center gap-2 text-white border rounded bg-dark" : "nav-link d-flex align-items-center gap-2 text-dark")}
-                aria-current="page"
-              >
+                className={({ isActive }) =>
+                  isActive
+                    ? "nav-link d-flex align-items-center gap-2 text-white border rounded bg-dark"
+                    : "nav-link d-flex align-items-center gap-2 text-dark"
+                }
+                aria-current="page">
                 <LiaHandsHelpingSolid className="bi" />
                 Programas
               </NavLink>
@@ -99,9 +102,12 @@ export default function MenuAdmin() {
             <li className="nav-item">
               <NavLink
                 to={"colaboradores"}
-                className={({ isActive }) => (isActive ? "nav-link d-flex align-items-center gap-2 text-white border rounded bg-dark" : "nav-link d-flex align-items-center gap-2 text-dark")}
-                aria-current="page"
-              >
+                className={({ isActive }) =>
+                  isActive
+                    ? "nav-link d-flex align-items-center gap-2 text-white border rounded bg-dark"
+                    : "nav-link d-flex align-items-center gap-2 text-dark"
+                }
+                aria-current="page">
                 <FiUsers className="bi" />
                 Colaboradores
               </NavLink>
@@ -109,7 +115,9 @@ export default function MenuAdmin() {
           </ul>
 
           <hr className="my-3" />
-          <h6 className="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-2 mb-1 text-body-secondary text-uppercase">Opciones</h6>
+          <h6 className="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-2 mb-1 text-body-secondary text-uppercase">
+            Opciones
+          </h6>
 
           {/* Opciones */}
           <ul className="nav flex-column mb-auto">
@@ -117,8 +125,11 @@ export default function MenuAdmin() {
             <li className="nav-item">
               <NavLink
                 to={"configuraciones"}
-                className={({ isActive }) => (isActive ? "nav-link d-flex align-items-center gap-2 text-white border rounded bg-dark" : "nav-link d-flex align-items-center gap-2 text-dark")}
-              >
+                className={({ isActive }) =>
+                  isActive
+                    ? "nav-link d-flex align-items-center gap-2 text-white border rounded bg-dark"
+                    : "nav-link d-flex align-items-center gap-2 text-dark"
+                }>
                 <LuSettings className="bi" />
                 Configuraciones
               </NavLink>
