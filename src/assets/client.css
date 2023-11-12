@@ -32,11 +32,6 @@ body {
   font-family: "Futura PT Bold", sans-serif;
 }
 
-footer {
-  /* background-color: var(--color-vic-m); */
-}
-
-
 textarea {
   resize: none;
 }
@@ -92,9 +87,6 @@ textarea {
   font-size: 1.25rem;
   padding: 15px 30px;
 }
-
-
-
 
 .gradiente-header-nav {
   background-image: linear-gradient(to top, #b2355a, #c45f73, #d5848f, #e4a9ad, #f0cdce);

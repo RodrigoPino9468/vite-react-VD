@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom";
 
-import { LuSettings } from "react-icons/lu";
 import { AiOutlineHome } from "react-icons/ai";
 import { BiBriefcaseAlt2, BiLogOut } from "react-icons/bi";
 import { HiOutlineNewspaper } from "react-icons/hi2";
@@ -8,11 +7,11 @@ import { LiaHandsHelpingSolid } from "react-icons/lia";
 import { FiUsers } from "react-icons/fi";
 import { SlDocs } from "react-icons/sl";
 
-export default function MenuAdmin() {
-  const cerrarSesion = (evento) => {
-    console.log("cerrar session");
-  };
-  // Menu
+import { useAdministrador } from "../../contexts/AdministradorContext";
+
+export default function Menu() {
+  const { LogoutAuth } = useAdministrador();
+
   return (
     <aside className="sidebar border border-right position-fixed p-0 h-100 col-md-3 col-xl-2">
       <div id="sidebarMenu" className="offcanvas-md offcanvas-end" tabIndex="-1" aria-labelledby="sidebarMenuLabel">
@@ -121,22 +120,9 @@ export default function MenuAdmin() {
 
           {/* Opciones */}
           <ul className="nav flex-column mb-auto">
-            {/* Configuraciones */}
-            <li className="nav-item">
-              <NavLink
-                to={"configuraciones"}
-                className={({ isActive }) =>
-                  isActive
-                    ? "nav-link d-flex align-items-center gap-2 text-white border rounded bg-dark"
-                    : "nav-link d-flex align-items-center gap-2 text-dark"
-                }>
-                <LuSettings className="bi" />
-                Configuraciones
-              </NavLink>
-            </li>
             {/* Cerrar Sesion */}
             <li className="nav-item">
-              <button id="logOutButtomAdmin" className="btn nav-link d-flex align-items-center gap-2 text-dark" onClick={cerrarSesion}>
+              <button id="logOutButtomAdmin" className="btn d-flex align-items-center w-100 gap-2" onClick={LogoutAuth}>
                 <BiLogOut className="bi" />
                 Cerrar Sesion
               </button>

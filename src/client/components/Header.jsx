@@ -1,8 +1,14 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { BsInstagram, BsFacebook, BsLinkedin, BsYoutube } from "react-icons/bs";
 import { MdOutlineLibraryBooks } from "react-icons/md";
 
+import { GiBlackBook } from "react-icons/gi";
+import { AiOutlineDashboard } from "react-icons/ai";
+
+import { useAdministrador } from "../../contexts/AdministradorContext";
+
 export default function Header() {
+  const { adminCredenciales } = useAdministrador();
   return (
     <header className="d-flex flex-wrap align-items-end justify-content-center justify-content-md-between py-5">
       {/* Logo de la fundacion */}
@@ -40,11 +46,18 @@ export default function Header() {
 
       {/* Login del Moodle */}
       <section className="col-12 col-md-3">
-        <div className="d-flex justify-content-center mx-auto">
-          <NavLink className="btn btn-sm  btn-rounded px-4" to={import.meta.env.VITE_MOODLE_URL}>
-            <MdOutlineLibraryBooks />
-            Login
-          </NavLink>
+        <div className="d-flex justify-content-evenly mx-auto">
+          {adminCredenciales && (
+            <Link className="btn btn-sm  btn-rounded px-4" to={import.meta.env.VITE_FVIC_SISTEMA_DE_GESTION}>
+              <AiOutlineDashboard size={18} className="mb-1" />
+              Dashboard
+            </Link>
+          )}
+
+          <Link className="btn btn-sm  btn-rounded px-4" to={import.meta.env.VITE_FVIC_MOODLE}>
+            <GiBlackBook size={18} className="mb-1" />
+            Moodle
+          </Link>
         </div>
       </section>
     </header>

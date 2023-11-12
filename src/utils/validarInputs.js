@@ -2,8 +2,18 @@ export const validarCorreos = (Correo) => {
   if (Correo === null || Correo.trim() === "") {
     return null;
   }
-  const regexCorreo = new RegExp(/^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/i);
+  const regexCorreo = new RegExp(
+    /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/i
+  );
   return regexCorreo.test(Correo);
+};
+
+export const validarUsuarios = (Usuario) => {
+  if (Usuario === null || Usuario.trim === "") {
+    return false;
+  }
+  const regexUsuario = new RegExp(/^[a-zA-Z0-9_-]{3,16}$/);
+  return regexUsuario.test(Usuario);
 };
 
 export const validarNombres = (Nombre) => {
@@ -39,7 +49,7 @@ export const validarCantidades = (Cantidad) => {
 };
 
 export const Alertas = {
-  username : {
+  username: {
     vacio: "El campo Username no puede estar vacío",
     valido: "Username válido",
     invalido: "Username inválido",

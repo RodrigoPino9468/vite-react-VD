@@ -22,3 +22,15 @@
 .offcanvas-title {
   z-index: 1001; /* Valor aún más alto para el título del menú */
 }
+
+#logOutButtomAdmin {
+  &:hover {
+    background-color: rgb(179, 31, 26);
+    color: #fff;
+  }
+
+  &:focus {
+    background-color: rgb(229, 113, 114);
+    color: #000;
+  }
+}

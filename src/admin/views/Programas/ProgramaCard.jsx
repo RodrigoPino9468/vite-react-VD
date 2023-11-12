@@ -1,11 +1,7 @@
-import React from "react";
+import {} from "react";
+import { Link } from "react-router-dom";
 
 export default function ProgramaCard({ Id, Titulo, Descripcion, Texto, ImgUrl }) {
-  const handleClick = (evento) => {
-    const { name } = evento.target;
-    console.log(`${name} -> ${Id}`);
-  };
-
   return (
     <article className="container px-4 py-5">
       <div className="row flex-lg-row-reverse align-items-center justify-content-center g-5">
@@ -18,15 +14,15 @@ export default function ProgramaCard({ Id, Titulo, Descripcion, Texto, ImgUrl })
           <h2 className="display-5 fw-bold text-body-emphasis lh-1 mb-3">{Titulo}</h2>
           <p className="lead">{Descripcion}</p>
           <div className="d-grid gap-2 d-md-flex justify-content-md-start">
-            <button name="verDetalles" type="button" className="btn btn-outline-primary" onClick={handleClick}>
+            <Link name="ver" type="button" className="btn btn-outline-primary" to={`${Id}`}>
               Ver detalles
-            </button>
-            <button name="editar" type="button" className="btn btn-outline-success" onClick={handleClick}>
+            </Link>
+            <Link name="editar" type="button" className="btn btn-outline-success" to={`${Id}/editar`}>
               Editar
-            </button>
-            <button name="eliminar" type="button" className="btn btn-outline-danger" onClick={handleClick}>
+            </Link>
+            <Link name="eliminar" type="button" className="btn btn-outline-danger" to={`${Id}/eliminar`}>
               Eliminar
-            </button>
+            </Link>
           </div>
         </section>
       </div>
