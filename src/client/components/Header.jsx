@@ -1,8 +1,6 @@
 import { NavLink, Link } from "react-router-dom";
-import { BsInstagram, BsFacebook, BsLinkedin, BsYoutube } from "react-icons/bs";
-import { MdOutlineLibraryBooks } from "react-icons/md";
-
 import { GiBlackBook } from "react-icons/gi";
+import { BsInstagram, BsFacebook, BsLinkedin, BsYoutube } from "react-icons/bs";
 import { AiOutlineDashboard } from "react-icons/ai";
 
 import { useAdministrador } from "../../contexts/AdministradorContext";
@@ -48,13 +46,13 @@ export default function Header() {
       <section className="col-12 col-md-3">
         <div className="d-flex justify-content-evenly mx-auto">
           {adminCredenciales && (
-            <Link className="btn btn-sm  btn-rounded px-4" to={import.meta.env.VITE_FVIC_SISTEMA_DE_GESTION}>
+            <Link className="btn btn-sm btn-rounded px-4" to={import.meta.env.VITE_FVIC_SISTEMA_DE_GESTION}>
               <AiOutlineDashboard size={18} className="mb-1" />
               Dashboard
             </Link>
           )}
 
-          <Link className="btn btn-sm  btn-rounded px-4" to={import.meta.env.VITE_FVIC_MOODLE}>
+          <Link className="btn btn-sm btn-rounded px-4" to={import.meta.env.VITE_FVIC_MOODLE} target="_blank">
             <GiBlackBook size={18} className="mb-1" />
             Moodle
           </Link>

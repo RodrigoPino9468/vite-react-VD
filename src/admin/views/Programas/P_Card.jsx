@@ -9,10 +9,10 @@ export default function ProgramaCard({ Id, Titulo, Descripcion, Texto, ImgUrl })
         <section className="col-10 col-sm-8 col-lg-6">
           <img
             src={ImgUrl}
-            className="d-block mx-sm-auto img-fluid rounded"
-            alt="Bootstrap Themes"
             width="700"
             height="500"
+            alt="Bootstrap Themes"
+            className="d-block mx-sm-auto img-fluid rounded"
           />
         </section>
         {/* Descripcion */}
@@ -27,16 +27,14 @@ export default function ProgramaCard({ Id, Titulo, Descripcion, Texto, ImgUrl })
               name="editar"
               type="button"
               className="btn btn-outline-success"
-              to={`${Id}/editar`}
-            >
+              to={`${Id}/editar`}>
               Editar
             </Link>
             <Link
               name="eliminar"
               type="button"
               className="btn btn-outline-danger"
-              to={`${Id}/eliminar`}
-            >
+              to={`${Id}/eliminar`}>
               Eliminar
             </Link>
           </div>

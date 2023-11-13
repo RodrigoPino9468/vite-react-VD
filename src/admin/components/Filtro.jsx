@@ -1,7 +1,13 @@
-import {} from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
-export default function Filtro({ children, NewTitle, NewUrl="agregar" }) {
+export default function Filtro({ children, NewTitle, NewUrl = "agregar" }) {
+  const [busqueda, setBusqueda] = useState("");
+
+  const handleSubmit = (evento) => {
+    evento.preventDefault()
+  };
+
   return (
     <section className="container">
       <nav className="navbar navbar-expand-lg bg-dark rounded" data-bs-theme="dark">
@@ -19,8 +25,7 @@ export default function Filtro({ children, NewTitle, NewUrl="agregar" }) {
             data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+            aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
 
@@ -30,8 +35,13 @@ export default function Filtro({ children, NewTitle, NewUrl="agregar" }) {
               {children}
             </ul>
 
-            <form id="FiltroBusqueda" className="d-flex" role="search">
-              <input type="search" className="form-control me-2" placeholder="..." aria-label="Search" />
+            <form id="FiltroBusqueda" className="d-flex" role="search" onSubmit={handleSubmit}>
+              <input
+                type="search"
+                className="form-control me-2"
+                placeholder="..."
+                aria-label="Search"
+              />
               <button type="submit" className="btn btn-outline-success">
                 Buscar
               </button>

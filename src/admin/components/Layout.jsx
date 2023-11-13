@@ -12,7 +12,7 @@ export default function LayoutAdmin() {
           {/* MenuAdmin */}
           <Menu />
           {/* Views */}
-          <main id="dashboard_viewer" className="col-md-9 col-xl-10 ms-sm-auto p-4 overflow-y-scroll">
+          <main id="dashboard_viewer" className="col-md-9 col-xl-10 ms-sm-auto p-4">
             <Outlet />
           </main>
         </div>

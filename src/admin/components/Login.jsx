@@ -52,11 +52,19 @@ export default function Login() {
           <section className="col-12 col-md-10 col-lg-8 col-xxl-6 p-sm-4 border rounded">
             <div className="text-center px-0 px-sm-5">
               <Link to={"/"}>
-                <img src="/img/logos/fvic_colores.png" width={"200rem"} height={"100rem"} alt="logo" />
+                <img
+                  src="/img/logos/fvic_colores.png"
+                  width={"200rem"}
+                  height={"100rem"}
+                  alt="logo"
+                />
               </Link>
               <h3 className="my-3">Sistema de gestión</h3>
             </div>
-            <form id="formularioAdministrador" className="needs-validation row g-3" onSubmit={handleSubmit}>
+            <form
+              id="formularioAdministrador"
+              className="needs-validation row g-3"
+              onSubmit={handleSubmit}>
               <div className="col-12 px-sm-5">
                 <label htmlFor="username" className="form-label">
                   Usuario

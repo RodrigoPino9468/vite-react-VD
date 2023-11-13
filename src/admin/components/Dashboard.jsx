@@ -2,7 +2,6 @@ import {} from "react";
 import { Route, Routes, Navigate } from "react-router-dom";
 
 import LayoutAdmin from "./Layout";
-
 import Inicio from "../views/Inicio";
 import Recursos from "../views/Recursos";
 import Noticias from "../views/Noticias";

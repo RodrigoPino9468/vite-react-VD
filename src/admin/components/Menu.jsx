@@ -14,17 +14,28 @@ export default function Menu() {
 
   return (
     <aside className="sidebar border border-right position-fixed p-0 h-100 col-md-3 col-xl-2">
-      <div id="sidebarMenu" className="offcanvas-md offcanvas-end" tabIndex="-1" aria-labelledby="sidebarMenuLabel">
+      <div
+        id="sidebarMenu"
+        className="offcanvas-md offcanvas-end"
+        tabIndex="-1"
+        aria-labelledby="sidebarMenuLabel">
         {/* Sidebar Header */}
         <section className="offcanvas-header mt-5">
           <h2 className="offcanvas-title" id="sidebarMenuLabel">
             Fundacion Vida Independiente
           </h2>
-          <button type="button" className="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#sidebarMenu" aria-label="Close"></button>
+          <button
+            type="button"
+            className="btn-close"
+            data-bs-dismiss="offcanvas"
+            data-bs-target="#sidebarMenu"
+            aria-label="Close"></button>
         </section>
 
         {/* Sidebar Body */}
-        <section id="sidebarBody" className="offcanvas-body d-md-flex flex-column p-0 overflow-y-auto">
+        <section
+          id="sidebarBody"
+          className="offcanvas-body d-md-flex flex-column p-0 overflow-y-auto">
           {/* Elementos del menú */}
           <ul className="nav flex-column  ">
             <li className="nav-item">
@@ -122,7 +133,10 @@ export default function Menu() {
           <ul className="nav flex-column mb-auto">
             {/* Cerrar Sesion */}
             <li className="nav-item">
-              <button id="logOutButtomAdmin" className="btn d-flex align-items-center w-100 gap-2" onClick={LogoutAuth}>
+              <button
+                id="logOutButtomAdmin"
+                className="btn d-flex align-items-center w-100 gap-2"
+                onClick={LogoutAuth}>
                 <BiLogOut className="bi" />
                 Cerrar Sesion
               </button>

@@ -76,7 +76,8 @@ export const ModulosInicioData = [
   {
     urlimg: "/img/fotos/Foto-2.png",
     titulo: "Servicios",
-    texto: "Nuestra fundación ofrece los siguientes servicios enfocados en pomover la inclusiónn social de personas con discapacidad.",
+    texto:
+      "Nuestra fundación ofrece los siguientes servicios enfocados en pomover la inclusiónn social de personas con discapacidad.",
     alt: "Logo fundacion",
     enlace: "servicios",
   },
@@ -116,37 +117,43 @@ export const ServiciosData = [
     id: 1,
     fotografia: "/img/servicios/AC.jpg",
     nombre: "Asesoría y consultoría",
-    descripcion: "En inclusión social y laboral de personas con discapacidad, accesibilidad universal y tecnologías de asistencia.",
+    descripcion:
+      "En inclusión social y laboral de personas con discapacidad, accesibilidad universal y tecnologías de asistencia.",
   },
   {
     id: 2,
     fotografia: "/img/servicios/CA.jpg",
     nombre: "Capacitaciones",
-    descripcion: "En ámbitos de vida independiente, accesibilidad, tecnologías de asistencia, salud, educación, trabajo y empleo, cultura y deporte",
+    descripcion:
+      "En ámbitos de vida independiente, accesibilidad, tecnologías de asistencia, salud, educación, trabajo y empleo, cultura y deporte",
   },
   {
     id: 3,
     fotografia: "/img/servicios/DD.jpg",
     nombre: "Difusión y divulgación",
-    descripcion: "Sobre los derechos de las personas con discapacidad, especialmente respecto a su autonomía y a vivir una vida independiente.",
+    descripcion:
+      "Sobre los derechos de las personas con discapacidad, especialmente respecto a su autonomía y a vivir una vida independiente.",
   },
   {
     id: 4,
     fotografia: "/img/servicios/DE.jpg",
     nombre: "Desarrollo",
-    descripcion: "Bienes, productos o servicios que resuelvan la necesidad de autonomía y vida independiente de personas con discapacidad.",
+    descripcion:
+      "Bienes, productos o servicios que resuelvan la necesidad de autonomía y vida independiente de personas con discapacidad.",
   },
   {
     id: 5,
     fotografia: "/img/servicios/IE.jpg",
     nombre: "Investigación y estudios",
-    descripcion: "En relación a temáticas relacionadas a la inclusión social, autonomía y vida independiente de personas con discapacidad.",
+    descripcion:
+      "En relación a temáticas relacionadas a la inclusión social, autonomía y vida independiente de personas con discapacidad.",
   },
   {
     id: 6,
     fotografia: "/img/servicios/OU.jpg",
     nombre: "Orientación usuarios/as",
-    descripcion: "Fortalecer conocimientos y habilidades de personas con discapacidad que permita aportar en el desarrollo de su autonomía.",
+    descripcion:
+      "Fortalecer conocimientos y habilidades de personas con discapacidad que permita aportar en el desarrollo de su autonomía.",
   },
 ];
 
@@ -176,7 +183,8 @@ export const ProgramasData = [
     Foto: "/img/programas/PV.jpg",
     NombrePrograma: "Programa vida",
     URL: "vida",
-    DescripcionPrograma: "Promoción de la Vida Independiente y Desarrollo de la Autonomía, destinado a personas con discapacidad.",
+    DescripcionPrograma:
+      "Promoción de la Vida Independiente y Desarrollo de la Autonomía, destinado a personas con discapacidad.",
     Informacion:
       "¿De qué trata?: Buscamos orientar y asesorar a personas con discapacidad, a lograr una vida independiente de manera integral. Algunas de las áreas a abordar son las siguientes: \nOrientación para la autonomía: Evaluar de manera personalizada la situación de cada persona, elaborar un plan de vida independiente y colaborar en el logro de los objetivos individuales. \nAsistencia personal: Orientar sobre todo el proceso que permita contar con asistencia personal, si es que ésta es necesaria para la persona en situación de discapacidad.\nAccesibilidad y movilidad: Adaptar y accesibilizar las viviendas y aprender a moverse en la ciudad, en el uso del transporte público y privado, y conocer los servicios inclusivos disponibles.\nOrientación familiar: Colaborar con el entorno familiar, que permita comprender los conceptos de autonomía personal y cambiar el paradigma de la sobreprotección.",
   },
@@ -206,7 +214,8 @@ export const RecursosData = [
         url: "https://www.un.org/es/about-us/universal-declaration-of-human-rights",
       },
       {
-        titulo: "Convención Interamericana para la eliminación de todas las formas de discriminación contras las Personas con Discapacidad",
+        titulo:
+          "Convención Interamericana para la eliminación de todas las formas de discriminación contras las Personas con Discapacidad",
         publicado: "Organización de Estados Americanos",
         url: "https://www.oas.org/juridico/spanish/tratados/a-65.html",
       },
@@ -216,7 +225,8 @@ export const RecursosData = [
         url: "https://www.un.org/esa/socdev/enable/documents/tccconvs.pdf",
       },
       {
-        titulo: "Ley N°20.422 que establece Normas sobre Igualdad de Oportunidades e Inclusión Social de las Personas con Discapacidad",
+        titulo:
+          "Ley N°20.422 que establece Normas sobre Igualdad de Oportunidades e Inclusión Social de las Personas con Discapacidad",
         publicado: "Estado de Chile",
         url: "https://www.bcn.cl/leychile/navegar?idNorma=1010903",
       },
@@ -226,12 +236,14 @@ export const RecursosData = [
     categoria: "Autonomía y vida independiente",
     articulos: [
       {
-        titulo: "Observación general núm. 5 (2017) sobre el derecho a vivir de forma independiente y a ser incluido en la comunidad",
+        titulo:
+          "Observación general núm. 5 (2017) sobre el derecho a vivir de forma independiente y a ser incluido en la comunidad",
         publicado: "Comité sobre los Derechos de las Personas con Discapacidad",
         url: "https://fundacionvidaindependiente.cl/wp-content/uploads/2023/06/Observacion-5-Comite-Convencion-PcD-G1732890.pdf",
       },
       {
-        titulo: "Directrices sobre la desinstitucionalización, incluso en situaciones de emergencia",
+        titulo:
+          "Directrices sobre la desinstitucionalización, incluso en situaciones de emergencia",
         publicado: "Comité sobre los Derechos de las Personas con Discapacidad",
         url: "https://fundacionvidaindependiente.cl/wp-content/uploads/2023/06/Directrices-sobre-la-desinstitucionalizacion-incluso-en-situaciones-de-emergencia.pdf",
       },
@@ -277,7 +289,8 @@ export const RecursosData2 = [
     url: "https://www.un.org/es/about-us/universal-declaration-of-human-rights",
   },
   {
-    titulo: "Convención Interamericana para la eliminación de todas las formas de discriminación contras las Personas con Discapacidad",
+    titulo:
+      "Convención Interamericana para la eliminación de todas las formas de discriminación contras las Personas con Discapacidad",
     categoria: "Instrumentos sobre los derechos de las personas con discapacidad",
     publicado: "Organización de Estados Americanos",
     url: "https://www.oas.org/juridico/spanish/tratados/a-65.html",
@@ -288,13 +301,15 @@ export const RecursosData2 = [
     url: "https://www.un.org/esa/socdev/enable/documents/tccconvs.pdf",
   },
   {
-    titulo: "Ley N°20.422 que establece Normas sobre Igualdad de Oportunidades e Inclusión Social de las Personas con Discapacidad",
+    titulo:
+      "Ley N°20.422 que establece Normas sobre Igualdad de Oportunidades e Inclusión Social de las Personas con Discapacidad",
     categoria: "Instrumentos sobre los derechos de las personas con discapacidad",
     publicado: "Estado de Chile",
     url: "https://www.bcn.cl/leychile/navegar?idNorma=1010903",
   },
   {
-    titulo: "Observación general núm. 5 (2017) sobre el derecho a vivir de forma independiente y a ser incluido en la comunidad",
+    titulo:
+      "Observación general núm. 5 (2017) sobre el derecho a vivir de forma independiente y a ser incluido en la comunidad",
     publicado: "Comité sobre los Derechos de las Personas con Discapacidad",
     categoria: "Autonomía y vida independiente",
     url: "https://fundacionvidaindependiente.cl/wp-content/uploads/2023/06/Observacion-5-Comite-Convencion-PcD-G1732890.pdf",

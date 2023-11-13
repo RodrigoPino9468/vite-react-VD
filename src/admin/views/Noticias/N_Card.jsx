@@ -1,4 +1,5 @@
 import {} from "react";
+import { Link } from "react-router-dom";
 
 export default function NoticiaCard({ Id, Titulo, Fecha, Autor, Descripcion, LogoUrl, LogoAlt }) {
   const fecha_publicacion = new Date(Fecha);
@@ -13,10 +14,10 @@ export default function NoticiaCard({ Id, Titulo, Fecha, Autor, Descripcion, Log
       <div className="card shadow-sm">
         <img
           src={LogoUrl}
-          className="bd-placeholder-img card-img-top"
           alt={LogoAlt}
           width={"100%"}
           height={"225"}
+          className="bd-placeholder-img card-img-top"
         />
         <div className="card-body">
           <h5 className="card-title">{Titulo}</h5>
@@ -26,30 +27,27 @@ export default function NoticiaCard({ Id, Titulo, Fecha, Autor, Descripcion, Log
           </p>
           <div className="d-flex justify-content-center align-items-center">
             <div className="btn-group">
-              <button
-                onClick={hanldeClick}
+              <Link
+                to={`${Id}`}
                 name="ver"
                 type="button"
-                className="btn btn-sm btn-info mx-1 px-2 rounded"
-              >
+                className="btn btn-sm btn-info mx-1 px-2 rounded">
                 Ver
-              </button>
-              <button
-                onClick={hanldeClick}
+              </Link>
+              <Link
+                to={`${Id}/editar`}
                 name="editar"
                 type="button"
-                className="btn btn-sm btn-warning mx-1 px-2 rounded"
-              >
+                className="btn btn-sm btn-warning mx-1 px-2 rounded">
                 Editar
-              </button>
-              <button
-                onClick={hanldeClick}
+              </Link>
+              <Link
+                to={`${Id}/eliminar`}
                 name="eliminar"
                 type="button"
-                className="btn btn-sm btn-danger mx-1 px-2 rounded"
-              >
+                className="btn btn-sm btn-danger mx-1 px-2 rounded">
                 Eliminar
-              </button>
+              </Link>
             </div>
           </div>
         </div>
