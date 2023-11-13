@@ -1,4 +1,4 @@
-/* Variables globales */
+/* -----------------------------------  Variables globales ----------------------------------- */
 :root {
   /* colores del RED*/
   --color-red-c: rgb(229, 113, 114);
@@ -9,9 +9,10 @@
   --color-vic-c: rgb(236, 98, 114);
   --color-vic-m: rgb(183, 59, 88);
   --color-vic-y: rgb(125, 20, 59);
+  --tamaño-fuente: 16px;
 }
 
-/* Fuentes */
+/* ----------------------------------- Fuentes ----------------------------------- */
 @font-face {
   font-family: "Futura PT Bold";
   src: url("/font/FuturaPTBold.otf") format("truetype");
@@ -22,7 +23,7 @@
   src: url("/font/FuturaPTBook.otf") format("truetype");
 }
 
-/* Etiquetas HTML5 */
+/* ----------------------------------- Etiquetas HTML5 ----------------------------------- */
 * {
   margin: 0;
   padding: 0;
@@ -30,15 +31,21 @@
 
 body {
   font-family: "Futura PT Bold", sans-serif;
+  font-size: var(--tamaño-fuente);
 }
 
 textarea {
   resize: none;
 }
 
-/* IDs de elementos */
+/* ----------------------------------- IDs ----------------------------------- */
 
-/* Clases de elementos */
+/* ----------------------------------- Clases de elementos -----------------------------------*/
+
+.carrousel {
+  background-color: var(--color-vic-y);
+  color: #fff;
+}
 
 .logo-fundacion-header {
   height: 8rem;
@@ -105,12 +112,16 @@ textarea {
   color: white;
 
   &:hover {
-    color: gray;
+    color: var(--color-red-k);
   }
 
   &.active {
     color: #000;
   }
+}
+
+.link-footer {
+  color: #000;
 }
 
 .btn-rounded {
@@ -128,4 +139,193 @@ textarea {
 .btn-lg {
   font-size: 1.25rem;
   padding: 15px 30px;
+}
+
+/* Rodrigo */
+
+/* escala gris */
+.grayscale,
+.grayscale a {
+  filter: grayscale(100%);
+}
+
+/* accesibilidad fondo blanco */
+.fondo-blanco {
+  background-color: #fff;
+  color: #000;
+}
+
+.fondo-blanco a {
+  color: #000;
+}
+
+.fondo-blanco .navbar-color {
+  background-color: #fff;
+  text-decoration: underline;
+}
+
+.fondo-blanco .carrousel {
+  background-color: #fff;
+}
+
+.fondo-blanco .btn {
+  background-color: #ededed;
+  color: #000;
+  text-decoration: underline;
+}
+
+.fondo-blanco .lema-fundacion {
+  background-color: #fff;
+  color: #000;
+}
+
+.fondo-blanco .offcanvas {
+  background-color: #fff;
+  color: #000;
+}
+/* ----------------------------- */
+
+/* accesibilidad modo oscuro */
+.dark-theme {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-theme .offcanvas {
+  background-color: #333;
+  color: #fff;
+}
+.dark-theme a {
+  color: #fff;
+}
+
+.dark-theme .navbar-color {
+  background-color: #333;
+  text-decoration: underline;
+}
+
+.dark-theme .carrousel {
+  background-color: #333;
+}
+
+.dark-theme .aaaa {
+  background-color: #fff;
+}
+
+.dark-theme .btn {
+  background-color: #3d3d3d;
+  color: #fff;
+  text-decoration: underline;
+  border: 2px solid #403d3d;
+}
+
+.dark-theme .lema-fundacion {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-theme .card {
+  background-color: #333;
+  color: #fff;
+  border: 2px solid #403d3d;
+}
+
+.dark-theme .card-text {
+  color: #fff;
+}
+
+/* ----------------------------- */
+
+/* accesibilidad modo contraste */
+.modo-contraste {
+  background-color: #000;
+  color: #76bb51;
+}
+
+.modo-contraste .offcanvas {
+  background-color: #000;
+  color: #76bb51;
+}
+
+.modo-contraste a {
+  color: #76bb51;
+}
+
+.modo-contraste .navbar-color {
+  background-color: #000;
+  text-decoration: underline;
+}
+
+.modo-contraste .carrousel {
+  background-color: #000;
+}
+
+.modo-contraste .btn {
+  background-color: #232323;
+  color: #4ec4fc;
+  text-decoration: underline;
+  border: 2px solid #4c4a4a;
+}
+
+.modo-contraste .lema-fundacion {
+  background-color: #000;
+  color: #76bb51;
+}
+
+.modo-contraste .card {
+  background-color: #000;
+  color: #76bb51;
+  border: 2px solid #4c4a4a;
+}
+
+.modo-contraste .card-text {
+  color: #76bb51;
+}
+
+.modo-contraste .link-footer {
+  color: #76bb51;
+}
+/* ----------------------------- */
+
+/* Aumentar fuente*/
+.fuente-grande {
+  font-size: 150%;
+}
+
+.fuente-grande h1 {
+  font-size: 200%;
+}
+.fuente-grande h2,
+.fuente-grande h3 {
+  font-size: 180%;
+}
+
+.fuente-grande h4 {
+  font-size: 150%;
+}
+
+.fuente-grande h5 {
+  font-size: 150%;
+}
+
+.fuente-grande h6 {
+  font-size: 100%;
+}
+
+.fuente-grande .btn {
+  font-size: 90%;
+}
+
+.fuente-grande p {
+  font-size: 110%;
+}
+/*---------------------*/
+
+/* Subrayar enlaces*/
+.Underlined .btn {
+  text-decoration: underline;
+}
+
+.Underlined .nav-link {
+  text-decoration: underline;
 }
