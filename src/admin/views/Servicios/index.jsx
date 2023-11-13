@@ -1,34 +1,20 @@
-import { useState, useEffect } from "react";
-import Servicio from "./ServicioCard";
+import {} from "react";
+import { Routes, Route, Navigate } from "react-router-dom";
+import Lista from "./S_Lista";
+import Agregar from "./S_Agregar";
+import Detalles from "./S_Detalles";
+import Editar from "./S_Editar";
+import Eliminar from "./S_Eliminar";
 
 export default function Servicios() {
-  const [cargando, setCargando] = useState(true);
-  const [noticias, setNoticias] = useState({});
-
-  useEffect(() => {
-    async function cargarNoticias() {
-      try {
-        const data = await fetch(`https://rickandmortyapi.com/api/character/?page=2`);
-        if (!data.ok) {
-          throw new Error("Error en la solicitud a la API");
-        }
-        const { results } = await data.json();
-        setNoticias(results);
-        setCargando(false);
-      } catch (error) {
-        console.error("Error al cargar noticias:", error);
-      }
-    }
-    cargarNoticias();
-  }, []);
-
   return (
-    <section className="album py-5 bg-body-tertiary">
-      <div className="container">
-        <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-3  row-cols-xl-4 g-3">
-          {cargando ? <h1>Cargando datos...</h1> : noticias && noticias.map((noticia) => <Servicio key={noticia.id} Id={noticia.id} Titulo={noticia.name} Fecha={noticia.created} Autor={noticia.type} Descripcion={noticia.image} LogoUrl={noticia.image} LogoAlt={noticia.name} />)}
-        </div>
-      </div>
-    </section>
+    <Routes>
+      <Route path="/" element={<Lista />} />
+      <Route path="agregar" element={<Agregar />} />
+      <Route path=":IdServicio" element={<Detalles />} />
+      <Route path=":IdServicio/editar" element={<Editar />} />
+      <Route path=":IdServicio/eliminar" element={<Eliminar />} />
+      <Route path="*" element={<Navigate to="/not-found" />} />
+    </Routes>
   );
 }

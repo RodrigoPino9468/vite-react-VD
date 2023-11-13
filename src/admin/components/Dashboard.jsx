@@ -9,7 +9,6 @@ import Noticias from "../views/Noticias";
 import Servicios from "../views/Servicios";
 import Programas from "../views/Programas";
 import Colaboradores from "../views/Colaboradores";
-import Configuraciones from "../views/Configuraciones";
 
 export default function Dashboard() {
   return (
@@ -21,9 +20,8 @@ export default function Dashboard() {
         <Route path="programas/*" element={<Programas />} />
         <Route path="servicios/*" element={<Servicios />} />
         <Route path="colaboradores/*" element={<Colaboradores />} />
-        <Route path="configuraciones/*" element={<Configuraciones />} />
       </Route>
-      {/* <Route path="*" element={<Navigate to="/sistema-de-gestion/dashboard" />} /> */}
+      <Route path="*" element={<Navigate to="/not-found" />} />
     </Routes>
   );
 }

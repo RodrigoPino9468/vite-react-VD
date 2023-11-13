@@ -7,7 +7,13 @@ export default function ProgramaCard({ Id, Titulo, Descripcion, Texto, ImgUrl })
       <div className="row flex-lg-row-reverse align-items-center justify-content-center g-5">
         {/* Imagen */}
         <section className="col-10 col-sm-8 col-lg-6">
-          <img src={ImgUrl} className="d-block mx-sm-auto img-fluid rounded" alt="Bootstrap Themes" width="700" height="500" />
+          <img
+            src={ImgUrl}
+            className="d-block mx-sm-auto img-fluid rounded"
+            alt="Bootstrap Themes"
+            width="700"
+            height="500"
+          />
         </section>
         {/* Descripcion */}
         <section className="col-lg-6">
@@ -17,10 +23,20 @@ export default function ProgramaCard({ Id, Titulo, Descripcion, Texto, ImgUrl })
             <Link name="ver" type="button" className="btn btn-outline-primary" to={`${Id}`}>
               Ver detalles
             </Link>
-            <Link name="editar" type="button" className="btn btn-outline-success" to={`${Id}/editar`}>
+            <Link
+              name="editar"
+              type="button"
+              className="btn btn-outline-success"
+              to={`${Id}/editar`}
+            >
               Editar
             </Link>
-            <Link name="eliminar" type="button" className="btn btn-outline-danger" to={`${Id}/eliminar`}>
+            <Link
+              name="eliminar"
+              type="button"
+              className="btn btn-outline-danger"
+              to={`${Id}/eliminar`}
+            >
               Eliminar
             </Link>
           </div>

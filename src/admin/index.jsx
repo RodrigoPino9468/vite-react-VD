@@ -1,10 +1,8 @@
 import {} from "react";
 import { Route, Routes, Navigate } from "react-router-dom";
-
 import Login from "./components/Login";
 import Dashboard from "./components/Dashboard";
 import RutasProtegidas from "./components/RutasPrivadas";
-
 import "../assets/admin.css";
 
 export default function Administradores() {

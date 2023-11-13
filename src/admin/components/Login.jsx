@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { RiLockPasswordLine, RiShieldUserLine } from "react-icons/ri";
 
 import { useAdministrador } from "../../contexts/AdministradorContext";
@@ -51,7 +51,9 @@ export default function Login() {
         <div className="row justify-content-center">
           <section className="col-12 col-md-10 col-lg-8 col-xxl-6 p-sm-4 border rounded">
             <div className="text-center px-0 px-sm-5">
-              <img src="/img/logos/fvic_colores.png" width={"200rem"} height={"100rem"} alt="logo" />
+              <Link to={"/"}>
+                <img src="/img/logos/fvic_colores.png" width={"200rem"} height={"100rem"} alt="logo" />
+              </Link>
               <h3 className="my-3">Sistema de gestión</h3>
             </div>
             <form id="formularioAdministrador" className="needs-validation row g-3" onSubmit={handleSubmit}>

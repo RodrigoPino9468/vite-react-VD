@@ -1,24 +1,20 @@
-import React from "react";
-
-import { RecursosData2 } from "../../../../data/datos";
-import { Link } from "react-router-dom";
-import Recurso from "./RecursoCard";
+import {} from "react";
+import { Routes, Route, Navigate } from "react-router-dom";
+import Lista from "./R_Lista";
+import Agregar from "./R_Agregar";
+import Detalles from "./R_Detalles";
+import Editar from "./R_Editar";
+import Eliminar from "./R_Eliminar";
 
 export default function Recursos() {
   return (
-    <section className="album py-5 container">
-      <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 g-3">
-        {RecursosData2.map((articulo, index) => (
-          <Recurso
-            key={index}
-            Id={index}
-            Cartegoria={articulo.categoria}
-            Titutlo={articulo.titulo}
-            Publicado={articulo.publicado}
-            UrlDoc={articulo.url}
-          />
-        ))}
-      </div>
-    </section>
+    <Routes>
+      <Route path="/" element={<Lista />} />
+      <Route path="agregar" element={<Agregar />} />
+      <Route path=":IdRecurso" element={<Detalles />} />
+      <Route path=":IdRecurso/editar" element={<Editar />} />
+      <Route path=":IdRecurso/eliminar" element={<Eliminar />} />
+      <Route path="*" element={<Navigate to="/not-found" />} />
+    </Routes>
   );
 }
