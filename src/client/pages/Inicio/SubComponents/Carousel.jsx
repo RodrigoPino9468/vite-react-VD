@@ -124,8 +124,8 @@ export default function Carousel() {
       </div>
       <div className="col-12 d-flex flex-row justify-content-center">
         <button
-          className="btn Fuente-Textos Boton-Redondeado"
-          style={{ background: "#B73B58", color: "white" }}>
+          className="btn Fuente-Textos btn-rounded"
+          >
           Más noticias
         </button>
       </div>

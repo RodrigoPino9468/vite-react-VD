@@ -16,12 +16,12 @@ export default function Modulos({ Posicion, UrlImg, AltImg, Titulo, Texto, Boton
         </div>
         <div className="container d-flex flex-row justify-content-center align-items-center">
           <div className="col-6 d-flex flex-row justify-content-center">
-            <Link to={"contacto"} className="btn btn-sm" style={{ background: "#B73B58", color: "white" }}>
+            <Link to={"contacto"} className="btn btn-sm btn-rounded">
               Contactanos
             </Link>
           </div>
           <div className="col-6 d-flex flex-row justify-content-center">
-            <Link to={BotonURL} className="btn btn-sm" style={{ background: "#B73B58", color: "white" }}>
+            <Link to={BotonURL} className="btn btn-sm btn-rounded">
               Más información
             </Link>
           </div>

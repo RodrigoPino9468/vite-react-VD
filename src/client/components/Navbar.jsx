@@ -1,17 +1,10 @@
-import { useEffect, useState } from "react";
+import { useContext, useState } from "react";
+import { AccesibilidadContext} from "../../contexts/AccesibilidadContext";
 import { NavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { useAccesibilidad } from "../../contexts/AccesibilidadContext";
 
 export default function Navbar() {
-  const {
-    handleModoDeVista,
-    cambiarGris,
-    cambiarFondoBlanco,
-    cambiarTamaño,
-    cambiarModoContraste,
-    subrayarEnlaces,
-  } = useAccesibilidad();
+  const { handleModoDeVista, modoDevista, cambiarGris, grayScale, cambiarFondoBlanco, fondoBlanco, cambiarTamaño, tamañoFuente, cambiarModoContraste, modoContraste, subrayarEnlaces, enlacesSubrayados} = useContext(AccesibilidadContext);
 
   return (
     <>
@@ -19,26 +12,13 @@ export default function Navbar() {
       <nav className="sticky-top navbar navbar-color navbar-expand-md justify-content-center py-2">
         <div className="container-fluid">
           {/* Icono de configuracion de accesibilidad */}
-          <NavLink
-            className="navbar-brand m-0 p-0"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#demo">
-            <img
-              src="/icons/logo.png"
-              alt="Configuracion de accesibilidad"
-              style={{ height: "32px", width: "32px" }}
-            />
+          <NavLink className="navbar-brand m-0 p-0" data-bs-toggle="offcanvas" data-bs-target="#demo">
+            <img src="/icons/logo.png" alt="Configuracion de accesibilidad" style={{ height: "32px", width: "32px" }} />
           </NavLink>
+          
 
           {/* Inico hamburguesa del menu desplegable */}
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <GiHamburgerMenu className="navbar-toggler-icon" size={30} />
           </button>
 
@@ -98,30 +78,48 @@ export default function Navbar() {
 
       {/* Offcanvas de configuracion de accesibilidad */}
       <section>
-        <div class="offcanvas offcanvas-start" id="demo">
-          <div class="offcanvas-header">
-            <h1 class="offcanvas-title">Configuración de accesibilidad</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        <div className="offcanvas offcanvas-start" id="demo">
+          <div className="offcanvas-header">
+            <h1 className="offcanvas-title">Configuración de accesibilidad</h1>
+            <button type="button" className="btn-close" data-bs-dismiss="offcanvas"></button>
           </div>
-          <div class="offcanvas-body">
+          <div className="offcanvas-body">
             <ul>
               <li>
-                <span onClick={handleModoDeVista}>Modo Oscuro</span>
+                <div className="form-check form-switch">
+                  <input className="form-check-input" type="checkbox" id="mySwitch1" name="darkmode" value="yes" checked={modoDevista} onChange={handleModoDeVista}/>
+                  <label className="form-check-label" for="mySwitch1">Modo oscuro</label>
+                </div>
               </li>
               <li>
-                <span onClick={cambiarGris}>Escala de grises</span>
+                <div className="form-check form-switch">
+                  <input className="form-check-input" type="checkbox" id="mySwitch2" name="graymode" value="yes" checked={grayScale} onChange={cambiarGris}/>
+                  <label className="form-check-label" for="mySwitch2">Escala de grises</label>
+                </div>
               </li>
               <li>
-                <span onClick={cambiarModoContraste}>Alto Contraste</span>
+                <div className="form-check form-switch">
+                  <input className="form-check-input" type="checkbox" id="mySwitch3" name="constrastemode" value="yes" checked={modoContraste} onChange={cambiarModoContraste}/>
+                  <label className="form-check-label" for="mySwitch3">Alto contraste</label>
+                </div>
               </li>
               <li>
-                <span onClick={cambiarFondoBlanco}>Fondo Blanco</span>
+                <div className="form-check form-switch">
+                  <input className="form-check-input" type="checkbox" id="mySwitch4" name="blancomode" value="yes" checked={fondoBlanco} onChange={cambiarFondoBlanco}/>
+                  <label className="form-check-label" for="mySwitch4">Fondo blanco</label>
+                </div>
               </li>
               <li>
-                <span onClick={cambiarTamaño}>Aumentar Fuente</span>
+                <div className="form-check form-switch">
+                  <input className="form-check-input" type="checkbox" id="mySwitch5" name="fuentegrande" value="yes" checked={tamañoFuente} onChange={cambiarTamaño}/>
+                  <label className="form-check-label" for="mySwitch5">Aumentar fuente</label>
+                </div>
               </li>
               <li>
-                <span onClick={subrayarEnlaces}>Subrayar Enlaces</span>
+                <div className="form-check form-switch">
+                  <input className="form-check-input" type="checkbox" id="mySwitch6" name="subrayar" value="yes" checked={enlacesSubrayados} onChange={subrayarEnlaces}/>
+                  <label className="form-check-label" for="mySwitch6">Subrayar enlaces</label>
+                </div>
               </li>
             </ul>
           </div>

@@ -18,7 +18,7 @@ export default function Index() {
       {/* mision */}
       <section className="row">
         <div className="px-4 py-5 text-center">
-          <h1 className="display-5 fw-bold text-body-emphasis">{"Misión"}</h1>
+          <h1 className="display-5 fw-bold">{"Misión"}</h1>
           <div className="col-lg-6 mx-auto">
             <p className="lead mb-4">{QuienesSomosData.mision}</p>
           </div>
@@ -27,7 +27,7 @@ export default function Index() {
       {/* vision */}
       <section className="row">
         <div className="px-4 py-5 text-center">
-          <h1 className="display-5 fw-bold text-body-emphasis">{"Visión"}</h1>
+          <h1 className="display-5 fw-bold">{"Visión"}</h1>
           <div className="col-lg-6 mx-auto">
             <p className="lead mb-4">{QuienesSomosData.vision}</p>
           </div>

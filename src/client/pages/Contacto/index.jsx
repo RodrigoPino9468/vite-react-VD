@@ -140,7 +140,7 @@ export default function Index() {
             </article>
 
             <section className="col-12 d-flex justify-content-center">
-              <button name="submitContacto" className="btn btn-primary mt-3" type="submit">
+              <button name="submitContacto" className="btn btn-rounded mt-3" type="submit">
                 Enviar Mensaje
               </button>
             </section>

@@ -9,7 +9,7 @@ export default function OpćionesDonaciones() {
         <div className="col-md-7">
           <h2 className="featurette-heading fw-normal lh-1">Transferencias programadas o únicas</h2>
           <p className="lead">Recomendamos este medio de donación, donde cada socio y socia puede realizar la transferencia desde su propia cuenta bancaria. Accede a la información haciendo clic en el botón:</p>
-          <Link to="transferencias" type="button" className="btn btn-danger">
+          <Link to="transferencias" type="button" className="btn btn-danger btn-rounded">
             Ingrese Aqui
           </Link>
         </div>
@@ -24,7 +24,7 @@ export default function OpćionesDonaciones() {
         <div className="col-md-7 order-md-2">
           <h2 className="featurette-heading fw-normal lh-1">Plataforma DonarOnline.org</h2>
           <p className="lead">Sistema especializado en donaciones para organizaciones sin fines de lucro, es rápido y seguro. ¡Puedes donar desde cualquier parte del mundo! Clic para más información:</p>
-          <Link to={import.meta.env.VITE_FVIC_DONAR_ONLINE} target="_blank" type="button" className="btn btn-danger">
+          <Link to={import.meta.env.VITE_FVIC_DONAR_ONLINE} target="_blank" type="button" className="btn btn-danger btn-rounded">
             Ingrese Aqui
           </Link>
         </div>

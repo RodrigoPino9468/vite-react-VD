@@ -1,88 +1,72 @@
-import { useEffect, useState } from "react";
-import { Outlet } from "react-router-dom";
-
-import { useAccesibilidad } from "../../contexts/AccesibilidadContext";
-
+import React, { useContext, useEffect, useState } from "react";
 import Header from "./Header";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import { Outlet } from "react-router-dom";
+import { AccesibilidadContext } from "../../contexts/AccesibilidadContext";
 
 export default function Layout() {
-  const { modoDeVista, grayScale, fondoBlanco, modoContraste, tamañoFuente, enlacesSubrayados } =
-    useAccesibilidad();
-
-  const [themeClass, setThemeClass] = useState("");
-  const [tamaño, setTamaño] = useState("");
-  const [subra, setSubra] = useState("");
+  const { modoDeVista, grayScale, fondoBlanco, modoContraste, tamañoFuente, enlacesSubrayados} = useContext(AccesibilidadContext);
 
   useEffect(() => {
-    let newThemeClass = "";
-    let newFuente = "";
-    let subra = "";
 
-    if (modoDeVista === "modo-oscuro") {
-      newThemeClass = "dark-theme";
-    }
-
-    if (grayScale === "gris") {
-      newThemeClass = "grayscale";
-    }
-
-    if (modoContraste === "contraste") {
-      newThemeClass = "modo-contraste";
-    }
-
-    if (fondoBlanco === "blanco") {
-      newThemeClass = "fondo-blanco";
-    }
-
-    if (tamañoFuente === "Grande") {
-      newFuente = "fuente-grande";
-    }
-
-    if (enlacesSubrayados === "Subrayados") {
-      subra = "Underlined";
-    }
-
-    setThemeClass(newThemeClass);
-    setTamaño(newFuente);
-    setSubra(subra);
-  }, [modoDeVista, grayScale, fondoBlanco, modoContraste, tamañoFuente, enlacesSubrayados]);
-
-  useEffect(() => {
-    if (fondoBlanco === "blanco") {
-      document.body.classList.add("cambiar-fuente");
-    } else {
-      document.body.classList.remove("cambiar-fuente");
-    }
-  }, [fondoBlanco]);
-
-  useEffect(() => {
-    if (modoDeVista === "modo-oscuro") {
+    if (modoDeVista === true){
       document.body.classList.add("dark-theme");
-      document.body.classList.remove("grayscale");
-    } else {
+      document.getElementById("mySwitch2").checked = false;
+      document.getElementById("mySwitch3").checked = false;
+      document.getElementById("mySwitch4").checked = false;
+    }else{
       document.body.classList.remove("dark-theme");
-      document.body.classList.remove("grayscale");
     }
-  }, [modoDeVista]);
 
-  useEffect(() => {
-    if (grayScale === "gris") {
+    if (grayScale === true){
       document.body.classList.add("grayscale");
-      document.body.classList.remove("dark-theme");
-    } else {
+      document.getElementById("mySwitch1").checked = false;
+      document.getElementById("mySwitch3").checked = false;
+      document.getElementById("mySwitch4").checked = false;
+    }else{
       document.body.classList.remove("grayscale");
-      document.body.classList.remove("dark-theme");
     }
-  }, [grayScale]);
 
+    if (modoContraste === true){
+      document.body.classList.add("modo-contraste");
+      document.getElementById("mySwitch1").checked = false;
+      document.getElementById("mySwitch2").checked = false;
+      document.getElementById("mySwitch4").checked = false;
+    }else{
+      document.body.classList.remove("modo-contraste");
+    }
+
+    if (fondoBlanco === true){
+      document.body.classList.add("fondo-blanco");
+      document.getElementById("mySwitch1").checked = false;
+      document.getElementById("mySwitch2").checked = false;
+      document.getElementById("mySwitch3").checked = false;
+    }else{
+      document.body.classList.remove("fondo-blanco");
+    }
+
+    if (tamañoFuente === true){
+      document.body.classList.add("fuente-grande");
+    }else{
+      document.body.classList.remove("fuente-grande");
+    }
+
+    if (enlacesSubrayados === true){
+      document.body.classList.add("Underlined");
+    }else{
+      document.body.classList.remove("Underlined");
+    }
+    
+  }, [modoDeVista,grayScale, modoContraste, fondoBlanco, tamañoFuente, enlacesSubrayados]);
+
+  
   return (
-    <div className={`${themeClass} ${tamaño} ${subra}`}>
+    <main >
       <Header />
       <Navbar />
       <Outlet />
       <Footer />
-    </div>
+    </main>
   );
 }

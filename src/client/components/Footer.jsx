@@ -54,17 +54,17 @@ export default function Footer() {
           <section className="col-4 col-md-2 mb-3">
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
-                <NavLink to={"/"} className="nav-link p-0 text-body-secondary">
+                <NavLink to={"/"} className="nav-link p-0 link-footer">
                   Inicio
                 </NavLink>
               </li>
               <li className="nav-item mb-2">
-                <NavLink to={"quienes-somos"} className="nav-link p-0 text-body-secondary">
+                <NavLink to={"quienes-somos"} className="nav-link p-0 link-footer">
                   Quienes Somos
                 </NavLink>
               </li>
               <li className="nav-item mb-2">
-                <NavLink to={"servicios"} className="nav-link p-0 text-body-secondary">
+                <NavLink to={"servicios"} className="nav-link p-0 link-footer">
                   Servicios
                 </NavLink>
               </li>
@@ -74,17 +74,17 @@ export default function Footer() {
           <section className="col-4 col-md-2 mb-3">
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
-                <NavLink to={"recursos"} className="nav-link p-0 text-body-secondary">
+                <NavLink to={"recursos"} className="nav-link p-0 link-footer">
                   Recursos
                 </NavLink>
               </li>
               <li className="nav-item mb-2">
-                <NavLink to={"noticias"} className="nav-link p-0 text-body-secondary">
+                <NavLink to={"noticias"} className="nav-link p-0 link-footer">
                   Noticias
                 </NavLink>
               </li>
               <li className="nav-item mb-2">
-                <NavLink to={"programas"} className="nav-link p-0 text-body-secondary">
+                <NavLink to={"programas"} className="nav-link p-0 link-footer">
                   Programas
                 </NavLink>
               </li>
@@ -94,12 +94,12 @@ export default function Footer() {
           <section className="col-4 col-md-2 mb-3">
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
-                <NavLink to={"donaciones"} className="nav-link p-0 text-body-secondary">
+                <NavLink to={"donaciones"} className="nav-link p-0 link-footer">
                   Donaciones
                 </NavLink>
               </li>
               <li className="nav-item mb-2">
-                <NavLink to={"contacto"} className="nav-link p-0 text-body-secondary">
+                <NavLink to={"contacto"} className="nav-link p-0 link-footer">
                   Contacto
                 </NavLink>
               </li>
@@ -115,14 +115,14 @@ export default function Footer() {
                   Correo electrónico
                 </label>
                 <input id="subcripcion" name="subcripcion" type="email" required className="form-control" placeholder="Ingrese su correo electrónico..." autoComplete="off" onChange={handleChange} />
-                <button className={`btn btn-${subcripcion.validacion === null ? "secondary" : subcripcion.validacion === false ? "danger" : "success"}`} type="submit">
+                <button className={`btn btn-rounded ${subcripcion.validacion === null ? "secondary" : subcripcion.validacion === false ? "danger" : "success"}`} type="submit">
                   Subcribirme
                 </button>
               </div>
             </form>
           </section>
         </article>
-
+    
         <article className="d-flex flex-column flex-sm-row justify-content-center justify-content-sm-between py-4 border-top border-dark">
           <h6 className="text-center px-3 px-md-0 my-2">Fundación Vida Independiente Chile © {new Date().getFullYear()}</h6>
 
@@ -132,22 +132,22 @@ export default function Footer() {
 
           <ul className="list-unstyled d-flex justify-content-center my-2 my-md-0">
             <li className="mx-2">
-              <Link className="link-body-emphasis" target="_blank" to={import.meta.env.VITE_FVIC_INSTAGRAM}>
+              <Link className="link-body-emphasis" to={import.meta.env.VITE_FVIC_INSTAGRAM}>
                 <BsInstagram style={{ color: "black" }} size={20} />
               </Link>
             </li>
             <li className="mx-2">
-              <Link className="link-body-emphasis" target="_blank" to={import.meta.env.VITE_FVIC_FACEBOOK}>
+              <Link className="link-body-emphasis" to={import.meta.env.VITE_FVIC_FACEBOOK}>
                 <BsFacebook style={{ color: "black" }} size={20} />
               </Link>
             </li>
             <li className="mx-2">
-              <Link className="link-body-emphasis" target="_blank" to={import.meta.env.VITE_FVIC_YOUTUBE}>
+              <Link className="link-body-emphasis" to={import.meta.env.VITE_FVIC_YOUTUBE}>
                 <BsYoutube style={{ color: "black" }} size={20} />
               </Link>
             </li>
             <li className="mx-2">
-              <Link className="link-body-emphasis" target="_blank" to={import.meta.env.VITE_FVIC_LINKEDIN}>
+              <Link className="link-body-emphasis" to={import.meta.env.VITE_FVIC_LINKEDIN}>
                 <BsLinkedin style={{ color: "black" }} size={20} />
               </Link>
             </li>
