@@ -80,7 +80,7 @@ export default function Navbar() {
       <section>
         <div className="offcanvas offcanvas-start" id="demo">
           <div className="offcanvas-header">
-            <h1 className="offcanvas-title">Configuración de accesibilidad</h1>
+            <h3 className="offcanvas-title">Configuración de accesibilidad</h3>
             <button type="button" className="btn-close" data-bs-dismiss="offcanvas"></button>
           </div>
           <div className="offcanvas-body">

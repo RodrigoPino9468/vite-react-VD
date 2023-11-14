@@ -9,7 +9,7 @@
   --color-vic-c: rgb(236, 98, 114);
   --color-vic-m: rgb(183, 59, 88);
   --color-vic-y: rgb(125, 20, 59);
-  --tamaño-fuente: 16px; /* Tamaño de fuente predeterminado (puedes ajustar el valor) */
+  --tamaño-fuente: 24px; /* Tamaño de fuente predeterminado (puedes ajustar el valor) */
 }
 
 /* Fuentes */
@@ -95,10 +95,7 @@ small{
   }
 }
 
-.btn-lg {
-  font-size: 1.25rem;
-  padding: 15px 30px;
-}
+
 
 .gradiente-header-nav {
   background-image: linear-gradient(to top, #b2355a, #c45f73, #d5848f, #e4a9ad, #f0cdce);
@@ -355,35 +352,35 @@ small{
 
 /* Aumentar fuente*/
 .fuente-grande{
-  font-size: 150%;
+  font-size: 170%;
 }
 
 .fuente-grande h1{
-  font-size: 200%;
+  font-size: 220%;
 }
 .fuente-grande h2,
 .fuente-grande h3{
-  font-size: 180%;
+  font-size: 200%;
 }
 
 .fuente-grande h4{
-  font-size: 150%;
+  font-size: 170%;
 }
 
 .fuente-grande h5{
-  font-size: 150%;
+  font-size: 170%;
 }
 
 .fuente-grande h6 {
-  font-size: 100%;
+  font-size: 120%;
 }
 
 .fuente-grande .btn{
-  font-size: 90%;
+  font-size: 100%;
 }
 
 .fuente-grande p{
-  font-size: 110%;
+  font-size: 130%;
 }
 /*---------------------*/
 
