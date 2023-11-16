@@ -1,14 +1,17 @@
 import {} from "react";
 import { Route, Routes, Navigate } from "react-router-dom";
+import { NoticiasDataProvider } from "../../../contexts/NoticiasDataContext";
 
-import Noticias from "./N_Noticiero";
+import Noticiero from "./N_Noticiero";
 import Noticia from "./N_Noticia";
 
 export default function Index() {
   return (
     <Routes>
-      <Route index element={<Noticias />} />
-      <Route path=":NoticiaId" element={<Noticia />} />
+      <Route element={<NoticiasDataProvider />}>
+        <Route index element={<Noticiero />} />
+        <Route path=":NoticiaUrl" element={<Noticia />} />
+      </Route>
       <Route path="*" element={<Navigate to="/not-found" />} />
     </Routes>
   );

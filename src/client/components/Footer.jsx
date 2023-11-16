@@ -103,6 +103,11 @@ export default function Footer() {
                   Contacto
                 </NavLink>
               </li>
+              <li className="nav-item mb-2">
+                <NavLink to={import.meta.env.VITE_FVIC_MOODLE} className="nav-link p-0 link-footer">
+                  Cursos
+                </NavLink>
+              </li>
             </ul>
           </section>
 

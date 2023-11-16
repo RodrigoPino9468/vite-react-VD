@@ -88,37 +88,37 @@ export default function Navbar() {
               <li>
                 <div className="form-check form-switch">
                   <input className="form-check-input" type="checkbox" id="mySwitch1" name="darkmode" value="yes" checked={modoDevista} onChange={handleModoDeVista}/>
-                  <label className="form-check-label" for="mySwitch1">Modo oscuro</label>
+                  <label className="form-check-label" htmlFor="mySwitch1">Modo oscuro</label>
                 </div>
               </li>
               <li>
                 <div className="form-check form-switch">
                   <input className="form-check-input" type="checkbox" id="mySwitch2" name="graymode" value="yes" checked={grayScale} onChange={cambiarGris}/>
-                  <label className="form-check-label" for="mySwitch2">Escala de grises</label>
+                  <label className="form-check-label" htmlFor="mySwitch2">Escala de grises</label>
                 </div>
               </li>
               <li>
                 <div className="form-check form-switch">
                   <input className="form-check-input" type="checkbox" id="mySwitch3" name="constrastemode" value="yes" checked={modoContraste} onChange={cambiarModoContraste}/>
-                  <label className="form-check-label" for="mySwitch3">Alto contraste</label>
+                  <label className="form-check-label" htmlFor="mySwitch3">Alto contraste</label>
                 </div>
               </li>
               <li>
                 <div className="form-check form-switch">
                   <input className="form-check-input" type="checkbox" id="mySwitch4" name="blancomode" value="yes" checked={fondoBlanco} onChange={cambiarFondoBlanco}/>
-                  <label className="form-check-label" for="mySwitch4">Fondo blanco</label>
+                  <label className="form-check-label" htmlFor="mySwitch4">Fondo blanco</label>
                 </div>
               </li>
               <li>
                 <div className="form-check form-switch">
                   <input className="form-check-input" type="checkbox" id="mySwitch5" name="fuentegrande" value="yes" checked={tamañoFuente} onChange={cambiarTamaño}/>
-                  <label className="form-check-label" for="mySwitch5">Aumentar fuente</label>
+                  <label className="form-check-label" htmlFor="mySwitch5">Aumentar fuente</label>
                 </div>
               </li>
               <li>
                 <div className="form-check form-switch">
                   <input className="form-check-input" type="checkbox" id="mySwitch6" name="subrayar" value="yes" checked={enlacesSubrayados} onChange={subrayarEnlaces}/>
-                  <label className="form-check-label" for="mySwitch6">Subrayar enlaces</label>
+                  <label className="form-check-label" htmlFor="mySwitch6">Subrayar enlaces</label>
                 </div>
               </li>
             </ul>

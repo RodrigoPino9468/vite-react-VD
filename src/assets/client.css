@@ -34,19 +34,14 @@ body {
   font-size: var(--tamaño-fuente);
 }
 
-footer {
-  /* background-color: var(--color-vic-m); */
-}
-
 textarea {
   resize: none;
 }
 
-.carrousel{
+.carrousel {
   background-color: var(--color-vic-y);
   color: #fff;
 }
-
 
 /* Clases de elementos */
 .logo-fundacion-header {
@@ -58,7 +53,7 @@ textarea {
   background-color: var(--color-vic-m);
 }
 
-small{
+small {
   color: #4c4a4a;
 }
 .nav-link {
@@ -95,8 +90,6 @@ small{
   }
 }
 
-
-
 .gradiente-header-nav {
   background-image: linear-gradient(to top, #b2355a, #c45f73, #d5848f, #e4a9ad, #f0cdce);
 }
@@ -122,8 +115,8 @@ small{
   }
 }
 
-.link-footer{
-  color:#000
+.link-footer {
+  color: #000;
 }
 
 .btn-rounded {
@@ -145,7 +138,7 @@ small{
 
 /* escala gris */
 .grayscale,
-.grayscale a{
+.grayscale a {
   filter: grayscale(100%);
 }
 
@@ -161,7 +154,6 @@ small{
 
 .fondo-blanco .navbar-color {
   background-color: #fff;
-  
 }
 
 .fondo-blanco .carrousel {
@@ -171,20 +163,20 @@ small{
 .fondo-blanco .btn {
   background-color: #ededed;
   color: #000;
-  border: 2px solid #403d3d
+  border: 2px solid #403d3d;
 }
 
-.fondo-blanco .lema-fundacion{
+.fondo-blanco .lema-fundacion {
   background-color: #fff;
   color: #000;
 }
 
-.fondo-blanco .offcanvas{
+.fondo-blanco .offcanvas {
   background-color: #fff;
   color: #000;
 }
 
-.fondo-blanco .nav-link{
+.fondo-blanco .nav-link {
   color: #000;
 
   &:hover {
@@ -197,14 +189,13 @@ small{
 }
 /* ----------------------------- */
 
-
 /* accesibilidad modo oscuro */
 .dark-theme {
   background-color: #333;
   color: #fff;
 }
 
-.dark-theme .offcanvas{
+.dark-theme .offcanvas {
   background-color: #333;
   color: #fff;
 }
@@ -216,16 +207,14 @@ small{
   background-color: #333;
 }
 
-.dark-theme :is(h1, h3){
+.dark-theme :is(h1, h3) {
   color: #fff;
 }
 
-.dark-theme .info-fundacion{
+.dark-theme .info-fundacion {
   background-color: #333;
   color: #fff;
 }
-
-
 
 .dark-theme .carrousel {
   background-color: #333;
@@ -241,28 +230,28 @@ small{
   border: 2px solid #403d3d;
 }
 
-.dark-theme .lema-fundacion{
+.dark-theme .lema-fundacion {
   background-color: #333;
   color: #fff;
 }
 
-.dark-theme .card{
-  background-color: #333;
-  color: #fff;
-  border: 2px solid #403d3d;
-}
-
-.dark-theme :is(.modal-header, .modal-body, .modal-footer){
+.dark-theme .card {
   background-color: #333;
   color: #fff;
   border: 2px solid #403d3d;
 }
 
-.dark-theme .card-text{
+.dark-theme :is(.modal-header, .modal-body, .modal-footer) {
+  background-color: #333;
+  color: #fff;
+  border: 2px solid #403d3d;
+}
+
+.dark-theme .card-text {
   color: #fff;
 }
 
-.dark-theme .nav-link{
+.dark-theme .nav-link {
   color: white;
 
   &:hover {
@@ -276,29 +265,28 @@ small{
 
 /* ----------------------------- */
 
-
 /* accesibilidad modo contraste */
 .modo-contraste {
   background-color: #000;
-  color: #76BB51;
+  color: #76bb51;
 }
 
-.modo-contraste .offcanvas{
+.modo-contraste .offcanvas {
   background-color: #000;
-  color: #76BB51;
+  color: #76bb51;
 }
 
 .modo-contraste a {
-  color: #76BB51;
+  color: #76bb51;
 }
 
 .modo-contraste .navbar-color {
   background-color: #000;
 }
 
-.modo-contraste .info-fundacion{
+.modo-contraste .info-fundacion {
   background-color: #1f1f1f;
-  color: #76BB51;
+  color: #76bb51;
 }
 
 .modo-contraste .carrousel {
@@ -307,37 +295,37 @@ small{
 
 .modo-contraste .btn {
   background-color: #232323;
-  color: #4EC4FC;
+  color: #4ec4fc;
   border: 2px solid #4c4a4a;
 }
 
-.modo-contraste :is(.modal-header, .modal-body, .modal-footer){
+.modo-contraste :is(.modal-header, .modal-body, .modal-footer) {
   background-color: #000;
-  color: #76BB51;
+  color: #76bb51;
   border: 2px solid #403d3d;
 }
 
-.modo-contraste .lema-fundacion{
+.modo-contraste .lema-fundacion {
   background-color: #000;
-  color: #76BB51;
+  color: #76bb51;
 }
 
-.modo-contraste .card{
+.modo-contraste .card {
   background-color: #000;
-  color: #76BB51;
+  color: #76bb51;
   border: 2px solid #4c4a4a;
 }
 
-.modo-contraste .card-text{
-  color: #76BB51;
+.modo-contraste .card-text {
+  color: #76bb51;
 }
 
-.modo-contraste .link-footer{
-  color: #76BB51;
+.modo-contraste .link-footer {
+  color: #76bb51;
 }
 
-.modo-contraste .nav-link{
-  color: #76BB51;
+.modo-contraste .nav-link {
+  color: #76bb51;
 
   &:hover {
     color: var(--color-red-k);
@@ -349,25 +337,24 @@ small{
 }
 /* ----------------------------- */
 
-
 /* Aumentar fuente*/
-.fuente-grande{
+.fuente-grande {
   font-size: 170%;
 }
 
-.fuente-grande h1{
+.fuente-grande h1 {
   font-size: 220%;
 }
 .fuente-grande h2,
-.fuente-grande h3{
+.fuente-grande h3 {
   font-size: 200%;
 }
 
-.fuente-grande h4{
+.fuente-grande h4 {
   font-size: 170%;
 }
 
-.fuente-grande h5{
+.fuente-grande h5 {
   font-size: 170%;
 }
 
@@ -375,22 +362,21 @@ small{
   font-size: 120%;
 }
 
-.fuente-grande .btn{
+.fuente-grande .btn {
   font-size: 100%;
 }
 
-.fuente-grande p{
+.fuente-grande p {
   font-size: 130%;
 }
 /*---------------------*/
 
 /* Subrayar enlaces*/
-.Underlined .btn{
+.Underlined .btn {
   text-decoration: underline;
 }
 
-.Underlined .nav-link{
+.Underlined .nav-link {
   text-decoration: underline;
 }
 /*----------------------*/
-

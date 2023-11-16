@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react";
-import CardNoticia from "./SubComponents/CardNoticia";
+
+import { useNoticieroData } from "../../../contexts/NoticiasDataContext";
+
+import CardNoticia from "./N_Card";
 
 export default function Noticiero() {
+  const { noticias, filtrarNoticia } = useNoticieroData();
   const [cargando, setCargando] = useState(true);
   const [pagina, setPagina] = useState(1);
-  const [noticias, setNoticias] = useState({});
   const [informacion, setInformacion] = useState({});
 
   const scrollToTop = () => {
@@ -14,23 +17,30 @@ export default function Noticiero() {
     });
   };
 
+  // const [noticias, setNoticias] = useState({});
+  // useEffect(() => {
+  //   async function cargarNoticias() {
+  //     try {
+  //       const data = await fetch(`https://rickandmortyapi.com/api/character/?page=${pagina}`);
+  //       if (!data.ok) {
+  //         throw new Error("Error en la solicitud a la API");
+  //       }
+  //       const { info, results } = await data.json();
+  //       setNoticias(results);
+  //       setInformacion(info);
+  //       setCargando(false);
+  //     } catch (error) {
+  //       console.error("Error al cargar noticias:", error);
+  //     }
+  //   }
+  //   cargarNoticias();
+  // }, [pagina]);
+
   useEffect(() => {
-    async function cargarNoticias() {
-      try {
-        const data = await fetch(`https://rickandmortyapi.com/api/character/?page=${pagina}`);
-        if (!data.ok) {
-          throw new Error("Error en la solicitud a la API");
-        }
-        const { info, results } = await data.json();
-        setNoticias(results);
-        setInformacion(info);
-        setCargando(false);
-      } catch (error) {
-        console.error("Error al cargar noticias:", error);
-      }
+    if (noticias) {
+      setCargando(false);
     }
-    cargarNoticias();
-  }, [pagina]);
+  }, []);
 
   return (
     <main className="container-fluid my-5">
@@ -41,7 +51,22 @@ export default function Noticiero() {
       <div className="py-3">
         <div className="container">
           <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xxl-4 g-3">
-            {cargando ? <h1>Cargando datos...</h1> : noticias && noticias.map((noticia, index) => <CardNoticia key={index} Fecha={noticia.created} Titulo={noticia.name} Texto={noticia.url} Alt={noticia.type} ImgUrl={noticia.image} UrlNoticia={`${noticia.id}`} />)}
+            {cargando ? (
+              <h1>Cargando datos...</h1>
+            ) : (
+              noticias &&
+              noticias.map((noticia, index) => (
+                <CardNoticia
+                  key={index}
+                  Titulo={noticia.titulo}
+                  PublicadoPor={noticia.fuente}
+                  Fecha={noticia.fecha}
+                  ImgUrl={`/img/noticias/${noticia.icono}`}
+                  Alt={noticia.titulo}
+                  UrlNoticia={`${noticia.ruta}`}
+                />
+              ))
+            )}
           </div>
         </div>
       </div>

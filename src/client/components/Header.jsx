@@ -52,10 +52,10 @@ export default function Header() {
             </Link>
           )}
 
-          <Link className="btn btn-sm btn-rounded px-4" to={import.meta.env.VITE_FVIC_MOODLE} target="_blank">
+          {/* <Link className="btn btn-sm btn-rounded px-4" to={import.meta.env.VITE_FVIC_MOODLE} target="_blank">
             <GiBlackBook size={18} className="mb-1" />
-            Moodle
-          </Link>
+            Cursos
+          </Link> */}
         </div>
       </section>
     </header>
